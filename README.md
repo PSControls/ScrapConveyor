@@ -1,7 +1,7 @@
 ScrapConveyor
 =============
 
-A Node-Red program for controlling and monitoring the scrap conveyor
+A Node-Red program for controlling and monitoring the scrap conveyor.
 
 ### About
 
