@@ -1,0 +1,25 @@
+    #Conveyor_Status_Scrap_Monitoring {
+
+    border: none !important; /* Change the border color and width as needed */
+
+    }
+    /* Target the specific card panel */
+    #Conveyor_Status_Scrap_Monitoring_cards {
+        width: 82vw !important;
+        height: 92vh !important;
+        border: 5px solid #333 !important; /* Change the border color and width as needed */
+        padding: 5px !important; /* Adjust padding as needed */
+    }
+
+    .nr-dashboard-ui_table {
+        border: inset 2px #303030 !important;
+        border-radius: 5px ; 
+    }
+
+    .nr-dashboard-ui_table .tabulator{
+        font-size: 24px !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
