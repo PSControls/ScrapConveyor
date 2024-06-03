@@ -1,0 +1,12 @@
+{
+    "name": "ScrapConveyor",
+    "description": "A Node-Red program for controlling and monitoring the scrap conveyor",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}
