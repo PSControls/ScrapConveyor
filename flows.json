@@ -531,10 +531,10 @@
         "id": "e2293b2c6ee894f8",
         "type": "ui_group",
         "name": "Scrap Monitoring",
-        "tab": "2566f325d56895f3",
+        "tab": "265646f6d5686527",
         "order": 1,
         "disp": false,
-        "width": 29,
+        "width": "29",
         "collapse": false,
         "className": ""
     },
@@ -609,7 +609,25 @@
         "hidden": false
     },
     {
-        "id": "73912de7c68402b6",
+        "id": "b6e41b3a1d35e55d",
+        "type": "eth-ip endpoint",
+        "address": "128.121.33.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "P23_Idle_Tmr_1.DN": {
+                    "type": "BOOL"
+                },
+                "P23_Idle_Tmr_2.DN": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "e50fd4f2895feb2c",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -619,37 +637,37 @@
         "height": 1
     },
     {
-        "id": "451b9010f95e7a63",
+        "id": "4b1f3f4987dfde0f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 4,
-        "width": 26,
+        "width": 25,
         "height": 1
     },
     {
-        "id": "7d14556bdf6ec235",
+        "id": "b4f44b1efae3c243",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 6,
-        "width": 26,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "d889a4dcf20d4003",
+        "id": "5f4fb66eed96b71b",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 7,
-        "width": 24,
+        "order": 8,
+        "width": 16,
         "height": 1
     },
     {
-        "id": "fdb4074609127147",
+        "id": "d7f83a5c39b72304",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -659,47 +677,37 @@
         "height": 1
     },
     {
-        "id": "64ea962b5ec11f84",
+        "id": "574bff7c0a5a4348",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 10,
-        "width": 13,
+        "width": 23,
         "height": 1
     },
     {
-        "id": "8603fe5bfb8e4345",
+        "id": "f62214a18e8cabf3",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 12,
-        "width": 12,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "11e752b5a2c6ec8c",
+        "id": "c924eb2698f0102e",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 13,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "9aa9f52253b25936",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 14,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "562a229804d6c84c",
+        "id": "5b68fb270c8437a9",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -709,7 +717,7 @@
         "height": 1
     },
     {
-        "id": "1f325f956e4eaddf",
+        "id": "08d376e990efca4b",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -719,17 +727,17 @@
         "height": 1
     },
     {
-        "id": "7f952396d04214f1",
+        "id": "a4dd1707728a9a38",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 17,
-        "width": 13,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "aacae76df2af9968",
+        "id": "566f316df0e999e9",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -739,37 +747,37 @@
         "height": 1
     },
     {
-        "id": "6f8c49fefc9b5126",
+        "id": "011b90dd024aacac",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 19,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "a4cadfba0fc4d4ee",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 20,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "f246e3ec30354ed3",
+        "id": "d52295ede82e63ce",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 21,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "1f9dc6649f99bdbc",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 22,
         "width": 12,
         "height": 1
     },
     {
-        "id": "737f637a9daff0d9",
+        "id": "e321c4436bb08a50",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -779,97 +787,97 @@
         "height": 1
     },
     {
-        "id": "384e2482806b8854",
+        "id": "379eebdafbcd0e06",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 24,
-        "width": 1,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "b3ff45d39ba6f6b1",
+        "id": "9cd43baf58637cf0",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 25,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "076a8c4a0cdd7b77",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 26,
-        "width": 10,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "84c63e4d7f162cad",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 27,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "0c20897c593e3b75",
+        "id": "877528eb32c644a1",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 28,
-        "width": 3,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "b9e127b40c7f4c52",
+        "id": "ec5f14bded6ff6b4",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 29,
-        "width": 1,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "ee239f651b04f9e9",
+        "id": "648fdfe28b600a62",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 31,
+        "order": 30,
         "width": 3,
         "height": 1
     },
     {
-        "id": "30c9e38d8446dfed",
+        "id": "62790dad9c5e746d",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 32,
-        "width": 26,
-        "height": 1
-    },
-    {
-        "id": "467d31286626b692",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 34,
         "width": 3,
         "height": 1
     },
     {
-        "id": "d5f53856301bc003",
+        "id": "c79e80c09c095f1d",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 33,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "7f62fe7fcde12593",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 35,
-        "width": 1,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "ed56c89bcad9af93",
+        "id": "3a4b8179d5a5a883",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -879,7 +887,7 @@
         "height": 1
     },
     {
-        "id": "0a6a35348d0bbd63",
+        "id": "ab1645994a634f37",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -889,52 +897,42 @@
         "height": 1
     },
     {
-        "id": "4e3faae13ebd6eea",
+        "id": "90754959ecbc9e51",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 39,
-        "width": 1,
+        "order": 40,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "5a06a1d37b77eaf1",
+        "id": "20856f21b49c5a3e",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 41,
-        "width": 13,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "c1cb65038d05c165",
+        "id": "324c531b88b8994d",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 42,
-        "width": 3,
+        "width": 11,
         "height": 1
     },
     {
-        "id": "ed0c7c1a2d2430ca",
+        "id": "115b59372ac32e97",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 43,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "0b70a95fe896f84d",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 45,
+        "order": 44,
         "width": 3,
         "height": 1
     },
@@ -1113,8 +1111,7 @@
         "y": 660,
         "wires": [
             [
-                "a295fde53e3d6cef",
-                "1f784cd3b3344558"
+                "a295fde53e3d6cef"
             ]
         ]
     },
@@ -1140,15 +1137,15 @@
         "type": "function",
         "z": "6f8c834d45cb5fa1",
         "name": "function 1",
-        "func": "var i = 0;\nif(global.get('fault_counter') == 88){\nif (!msg.payload[\"Drive[1].Alarm.0\"])\n{\n msg.payload[i] = \"Conv.1-Drive M1 Fault\";\n i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.1\"])\n{\n    msg.payload = \"Conv.1-Zero Speed Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.2\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop ACTIVE\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.3\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.4\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.5\"])\n{\n    msg.payload[i]= \"Conv.1-Maintenance Warning\";\n    i++;\n}\nelse if(!msg.payload[\"Drive[11].Alarm.0\"])\n{\n    msg.payload[i]= \"Conv.7 M11 Overload Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.1\"])\n{\n    msg.payload[i] = \"Conv.7 Zero Speed Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.2\"])\n{\n    msg.payload[i] = \"Conv.7 E-Stop ACTIVE\";\n    i++;\n}\nelse if(!msg.payload[\"Drive[11].Alarm.5\"])\n{\n    msg.payload[i] = \"Conv.7 Maintenance Warning\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.6\"])\n{\n    msg.payload[i] = \"Conv.7 Shock Relay Tripped\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.7\"])\n{\n    msg.payload[i] = \"Conv.7 Clutch Limit Tripped\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.8\"])\n{\n    msg.payload[i] = \"Conv.7 Downstream Timout\";\n}\nelse if (msg.payload[\"Drive[6].Alarm.0\"]) {\n    msg.payload = \"Conv.2-M6 Overload Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.2-Zero Speed Fault\";\n}\nelse if (msg.payload[\"Drive[6].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.2 E-Stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.2 - E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.2-Maintenance Warning\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.6\"]) {\n    msg.payload[i] = \"Conv. 2 M6 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.8\"]) {\n    msg.payload[i] = \"Conv. 2 Downstream Timout\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.4 -M7 Overload Fault\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.4-Zero Speed Fault\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.4-E-stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.4 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.4\"]) {\n    msg.payload[i] = \"Conv.4 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.4-Maintenance Warning\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.4 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.8\"]) {\n    msg.payload[i] = \"Conv.4 Downstream Timout\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.5- M8 Overload Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.5-Zero Speed Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.5 E-Stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.5 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.4\"]) {\n    msg.payload[i] = \"Conv.5 - spare\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.5-Maintenance Warning\";\n    i++;\n}\nelse if (!msg.payload[\"Drive[8].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.5 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.9\"]) {\n    msg.payload[i] = \"Conv.5 Downstream Timout\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.6 M9  Overload Fault\";\n    i++;\n}\nelse if (!msg.payload[\"Drive[9].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.6 E-stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.6-Maintenance Warning\";\n}\nelse if (msg.payload[\"Drive[9].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.6 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.8\"]) {\n    msg.payload[i] = \"Conv.6 Downstream Timout\";\n    i++;\n}\nreturn msg;\n}\n\n\n\n\n",
+        "func": "var counter = global.get('fault_counter')+1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = []\nif(counter ==88){\n    if (!msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = \"Conv.1-Drive M1 Fault\";\n        i++;\n    }\n    if (!msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = \"Conv.1-Zero Speed Fault\";\n        i++;\n        node.warn(\"test\");\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = \"Conv.1 E-stop ACTIVE\";\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = \"Conv.1 E-stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = \"Conv.1 E-stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = \"Conv.1-Maintenance Warning\";\n        i++;\n    }\n    if (!msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = \"Conv.7 M11 Overload Fault\";\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = \"Conv.7 Zero Speed Fault\";\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = \"Conv.7 E-Stop ACTIVE\";\n        i++;\n    }\n    if (!msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = \"Conv.7 Maintenance Warning\";\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = \"Conv.7 Shock Relay Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = \"Conv.7 Clutch Limit Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = \"Conv.7 Downstream Timout\";\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = \"Conv.2-M6 Overload Fault\";\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = \"Conv.2-Zero Speed Fault\";\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = \"Conv.2 E-Stop ACTIVE\";\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = \"Conv.2 - E-Stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = \"Conv.2-Maintenance Warning\";\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = \"Conv. 2 M6 Shock Relay Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = \"Conv. 2 Downstream Timout\";\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = \"Conv.4 -M7 Overload Fault\";\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = \"Conv.4-Zero Speed Fault\";\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = \"Conv.4-E-stop ACTIVE\";\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = \"Conv.4 E-Stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = \"Conv.4 E-Stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = \"Conv.4-Maintenance Warning\";\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = \"Conv.4 Shock Relay Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = \"Conv.4 Downstream Timout\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = \"Conv.5- M8 Overload Fault\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = \"Conv.5-Zero Speed Fault\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = \"Conv.5 E-Stop ACTIVE\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = \"Conv.5 E-Stop\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = \"Conv.5 - spare\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = \"Conv.5-Maintenance Warning\";\n        i++;\n    }\n    if (!msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = \"Conv.5 Shock Relay Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = \"Conv.5 Downstream Timout\";\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = \"Conv.6 M9  Overload Fault\";\n        i++;\n    }\n    if (!msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = \"Conv.6 E-stop ACTIVE\";\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = \"Conv.6-Maintenance Warning\";\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = \"Conv.6 Shock Relay Tripped\";\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = \"Conv.6 Downstream Timout\";\n        i++;\n    }\nmsg.payload = faults;\nreturn msg;\n\n}\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set('fault_counter',0);",
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 640,
+        "y": 660,
         "wires": [
             [
                 "c586d25acc976ead"
@@ -1161,7 +1158,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C6",
-        "order": 43,
+        "order": 39,
         "width": 12,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1182,7 +1179,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C5",
-        "order": 47,
+        "order": 43,
         "width": 14,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor5 {\n        width: 99.2%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor5.moving .pattern {\n        background-color: green;\n        animation: move-horizontal5 12s linear infinite;\n    }\n\n    @keyframes move-horizontal5 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor5 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor5 .number5{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n</style>\n\n\n<div class=\"horizontal-conveyor5\" id=\"horizontal-conveyor5\">\n    <div class=\"pattern\"></div>\n    <div class=\"number5\">#5</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor5 = document.getElementById('horizontal-conveyor5');\n            if (payload === true) {\n                conveyor5.classList.add('moving');\n            } else {\n                conveyor5.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1192,7 +1189,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 280,
+        "y": 200,
         "wires": [
             []
         ]
@@ -1203,7 +1200,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C4",
-        "order": 36,
+        "order": 34,
         "width": 1,
         "height": 4,
         "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1213,7 +1210,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 440,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1224,7 +1221,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C1",
-        "order": 33,
+        "order": 31,
         "width": 25,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1234,7 +1231,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 620,
+        "y": 360,
         "wires": [
             []
         ]
@@ -1255,7 +1252,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 780,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1276,7 +1273,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 940,
+        "y": 520,
         "wires": [
             []
         ]
@@ -1296,8 +1293,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 180,
-        "y": 1740,
+        "x": 160,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -1308,7 +1305,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "Shuttle",
-        "order": 6,
+        "order": 5,
         "width": 1,
         "height": 5,
         "format": "<style>\n    .vertical-conveyor3 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid ;\n        border-color: black;\n    }\n\n    .vertical-conveyor3.moving .pattern {\n        background-color: green;\n        animation: move-vertical3 5s linear infinite;\n    }\n\n    @keyframes move-vertical3 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor3 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor3 .number3{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor3\" id=\"vertical-conveyor3\">\n    <div class=\"pattern\"></div>\n    <div class = \"number3\">#3</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor3 = document.getElementById('vertical-conveyor3');\n            if (payload === true) {\n                conveyor3.classList.add('moving');\n            } else {\n                conveyor3.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1318,7 +1315,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 1060,
+        "y": 580,
         "wires": [
             []
         ]
@@ -1328,7 +1325,7 @@
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "order": 28,
+        "order": 27,
         "width": 2,
         "height": 1,
         "name": "ZONE 1",
@@ -1340,8 +1337,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 180,
-        "y": 1520,
+        "x": 160,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1349,7 +1346,7 @@
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "order": 39,
+        "order": 36,
         "width": 2,
         "height": 1,
         "name": "ZONE 2",
@@ -1361,8 +1358,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 180,
-        "y": 1580,
+        "x": 160,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1382,8 +1379,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 180,
-        "y": 1640,
+        "x": 160,
+        "y": 1120,
         "wires": []
     },
     {
@@ -1403,83 +1400,9 @@
         "font": "",
         "fontSize": "24",
         "color": "#eeeeed",
-        "x": 190,
-        "y": 1180,
+        "x": 150,
+        "y": 940,
         "wires": []
-    },
-    {
-        "id": "3f457da0560aa9c9",
-        "type": "change",
-        "z": "6f8c834d45cb5fa1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "fault_counter",
-                "pt": "global",
-                "to": "0",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0b1096f4ad5b8275",
-        "type": "inject",
-        "z": "6f8c834d45cb5fa1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 880,
-        "wires": [
-            [
-                "3f457da0560aa9c9"
-            ]
-        ]
-    },
-    {
-        "id": "1f784cd3b3344558",
-        "type": "function",
-        "z": "6f8c834d45cb5fa1",
-        "name": "function 7",
-        "func": "var count = global.get('fault_counter')+1;\nif (msg.payload)\n{\n    global.set('fault_counter', count);\n}\nmsg.payload = count;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 700,
-        "wires": [
-            [
-                "37091b18a2f03376"
-            ]
-        ]
     },
     {
         "id": "c586d25acc976ead",
@@ -1493,46 +1416,25 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "37091b18a2f03376",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
         "x": 500,
-        "y": 700,
+        "y": 660,
         "wires": []
     },
     {
-        "id": "dd807949c4d9d00b",
-        "type": "gate",
+        "id": "ed834a31ab0f9cea",
+        "type": "ui_table",
         "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
         "name": "",
-        "controlTopic": "control",
-        "defaultState": "open",
-        "openCmd": "open",
-        "closeCmd": "close",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "statusCmd": "status",
-        "persist": false,
-        "storeName": "memory",
-        "x": 350,
+        "order": 7,
+        "width": 9,
+        "height": 1,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 510,
         "y": 760,
-        "wires": [
-            []
-        ]
+        "wires": []
     },
     {
         "id": "5c56de40a62abee9",
@@ -2144,384 +2046,6 @@
             ],
             []
         ]
-    },
-    {
-        "id": "c4853799558b63fd",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 2,
-        "width": 22,
-        "height": 1
-    },
-    {
-        "id": "d42c43a353e0174a",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 4,
-        "width": 27,
-        "height": 1
-    },
-    {
-        "id": "a00564e874b630cb",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 5,
-        "width": 26,
-        "height": 1
-    },
-    {
-        "id": "d28404048ca50043",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 7,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "835014ba26506dad",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 8,
-        "width": 26,
-        "height": 1
-    },
-    {
-        "id": "cb36dca47f77f6e8",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 9,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "db32522d54c59503",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 10,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "cc7844f89acb4fcb",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 12,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "e80fa63126148716",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 13,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "c53e617771d00c99",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 15,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "5442786f46aabd89",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 16,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "4d7b405bd019e2be",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 17,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "9385669f67ba88c8",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 18,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "a82d112c8f623331",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 19,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "dba1770e43a108d3",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 20,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "bacc856ef58fb10b",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 21,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "f864e5254c71e51f",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 23,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "4e7e7ed413949141",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 24,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "c61c6eb939a13b5b",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 25,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "fa6d7189fb8010b0",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 26,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "3c683e05e3a24c2e",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 27,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "466c5815a4c973f5",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 29,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "3004a41d3d1da55e",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 30,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "ce341e53055ba81e",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 31,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "00181df42ac0e06e",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 32,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "fe21a75e4cfef466",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 34,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "e54fc43720fb47b0",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 35,
-        "width": 26,
-        "height": 1
-    },
-    {
-        "id": "b9db372a2b9230a6",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 37,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "0cc4912bfd549406",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 38,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8bf05e6a60e00f6a",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 40,
-        "width": 23,
-        "height": 1
-    },
-    {
-        "id": "26be0f502c8bbc70",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 41,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "7a989fc1b1cb9b54",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 42,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "52e5bcb62ea27978",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 44,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "4dbffbb7b4c17a1a",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 45,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "55104fdeebba213e",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 46,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "c0e6fde1dd322ee1",
-        "type": "ui_spacer",
-        "z": "b83d70117faba64f",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 48,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "b6e41b3a1d35e55d",
-        "type": "eth-ip endpoint",
-        "address": "128.121.33.1",
-        "slot": "0",
-        "cycletime": "500",
-        "name": "",
-        "vartable": {
-            "": {
-                "P23_Idle_Tmr_1.DN": {
-                    "type": "BOOL"
-                },
-                "P23_Idle_Tmr_2.DN": {
-                    "type": "BOOL"
-                }
-            }
-        }
     },
     {
         "id": "4750fb59f6bfac88",
