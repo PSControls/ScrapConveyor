@@ -1,16 +1,16 @@
 [
     {
-        "id": "b83d70117faba64f",
+        "id": "6f8c834d45cb5fa1",
         "type": "tab",
-        "label": "Conveyor Control",
+        "label": "Monitoring",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "6f8c834d45cb5fa1",
+        "id": "b83d70117faba64f",
         "type": "tab",
-        "label": "Monitoring",
+        "label": "Conveyor Control",
         "disabled": false,
         "info": "",
         "env": []
@@ -433,7 +433,7 @@
         "id": "c73efd7f085eb372",
         "type": "ui_base",
         "theme": {
-            "name": "theme-dark",
+            "name": "theme-light",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#1232b4",
@@ -456,7 +456,7 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#097479",
+                    "default": "#0094CE",
                     "value": "#1232b4",
                     "edited": true
                 },
@@ -465,7 +465,7 @@
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#111111",
+                    "value": "#fafafa",
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
@@ -477,15 +477,15 @@
                     "edited": false
                 },
                 "group-borderColor": {
-                    "value": "#555555",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "widget-textColor": {
-                    "value": "#eeeeee",
+                    "value": "#111111",
                     "edited": false
                 },
                 "widget-backgroundColor": {
@@ -493,7 +493,7 @@
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "base-font": {
@@ -528,21 +528,13 @@
         }
     },
     {
-        "id": "2566f325d56895f3",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "e2293b2c6ee894f8",
         "type": "ui_group",
         "name": "Scrap Monitoring",
-        "tab": "2566f325d56895f3",
+        "tab": "265646f6d5686527",
         "order": 1,
         "disp": false,
-        "width": 30,
+        "width": "30",
         "collapse": false,
         "className": ""
     },
@@ -609,6 +601,14 @@
         "sessionExpiry": ""
     },
     {
+        "id": "265646f6d5686527",
+        "type": "ui_tab",
+        "name": "Conveyor Status",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "b6e41b3a1d35e55d",
         "type": "eth-ip endpoint",
         "address": "128.121.33.1",
@@ -627,317 +627,353 @@
         }
     },
     {
-        "id": "0b60054e00b58608",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 2,
-        "width": 23,
-        "height": 1
+        "id": "59864ef6956160d5",
+        "type": "eth-ip endpoint",
+        "address": "128.121.50.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "Shuttle Positions",
+        "vartable": {
+            "": {
+                "Bin_Left.Pos_1_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_2_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_3_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_4_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_1_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_2_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_3_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_4_Filling": {
+                    "type": "BOOL"
+                }
+            }
+        }
     },
     {
-        "id": "ae8df71a530c32f0",
+        "id": "02f48d47bdd476d9",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 4,
+        "order": 1,
         "width": 28,
         "height": 1
     },
     {
-        "id": "519b05596bebc316",
+        "id": "d7649120d66fcd47",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d8a1c769c18d1589",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 5,
-        "width": 30,
+        "width": 18,
         "height": 1
     },
     {
-        "id": "6b2a1a72882160a7",
+        "id": "22f4dcc18ed293d8",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 6,
-        "width": 26,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "d29e204985908200",
+        "id": "52356395151c8734",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 8,
-        "width": 3,
+        "width": 7,
         "height": 1
     },
     {
-        "id": "cfc2c4280c149ed5",
+        "id": "9b531db1c9fbe760",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 9,
-        "width": 26,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "8613698b6f267f07",
+        "id": "cdb70f5841b92899",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 10,
-        "width": 3,
+        "width": 7,
         "height": 1
     },
     {
-        "id": "e419464132f2c978",
+        "id": "c219de7d6f619866",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 11,
-        "width": 24,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "e00f4ab705e4e65a",
+        "id": "b8394bf244dfdbc5",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 13,
-        "width": 3,
+        "order": 12,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "746cba84e751d329",
+        "id": "aeb283aa9c3bf07a",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 14,
-        "width": 13,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "a30bd662a4ea8dea",
+        "id": "a66e9269f2e3132e",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 16,
-        "width": 12,
+        "order": 15,
+        "width": 24,
         "height": 1
     },
     {
-        "id": "cae3671c0379f0ca",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 17,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "2b983b1bad6c8728",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 18,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "2a6a5d5f1a3fbccf",
+        "id": "b979c8a77325f99c",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 19,
-        "width": 12,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "cf32e01a175e53c7",
+        "id": "cdc96713cec74326",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 20,
-        "width": 3,
+        "width": 24,
         "height": 1
     },
     {
-        "id": "886d9127a21b5f03",
+        "id": "6713095f371a4c3d",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 21,
-        "width": 13,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "bf972415a6669d08",
+        "id": "30a7c89ac400eac8",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 22,
-        "width": 12,
+        "width": 24,
         "height": 1
     },
     {
-        "id": "6c79cfd6cc21f9d7",
+        "id": "ca6a5f7f81c911ee",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d823a88f7c2d7efe",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 24,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "bda241938ade0d1d",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 25,
         "width": 13,
         "height": 1
     },
     {
-        "id": "cde42d2b941db878",
+        "id": "e4da472c48a14079",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 26,
-        "width": 12,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "8250ae2453784bc7",
+        "id": "f36fc5d323a63656",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 27,
-        "width": 3,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "303a5f016b22789b",
+        "id": "32441a18b59d7d14",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 28,
-        "width": 1,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "058d745d226b4d92",
+        "id": "e605c103fc992319",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 29,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "f55f3917be7a9b82",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 30,
-        "width": 10,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "d1b74d6b4e505795",
+        "id": "6ed2f3e3fa324a9a",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 31,
-        "width": 12,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "595aaa920cfed312",
+        "id": "837f0e6d3aabaa53",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 32,
-        "width": 3,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "214329e8186d7f05",
+        "id": "b4d2f68df0db156a",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 33,
-        "width": 1,
+        "order": 34,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "ee017da2122adbdd",
+        "id": "6efe7bca1fe3a64c",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 35,
-        "width": 3,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "5903b2e42dfdaa9c",
+        "id": "3ba8b0cea5ea282e",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 36,
-        "width": 26,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "aa736d5fe4aa31e9",
+        "id": "d6e9f88c75be3b21",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 37,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8ffccd62274efd1f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 38,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "cdba713bdbd64275",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 39,
         "width": 1,
         "height": 1
     },
     {
-        "id": "bffc05cad39c4d7a",
+        "id": "6ea78411166ba848",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 40,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "c0be98dbd3bda9b2",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 41,
-        "width": 23,
+        "width": 12,
         "height": 1
     },
     {
-        "id": "0f383cabaab7224a",
+        "id": "08bff206853cb50c",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -947,7 +983,7 @@
         "height": 1
     },
     {
-        "id": "991c12ee68ff2819",
+        "id": "144f794545736142",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -957,44 +993,719 @@
         "height": 1
     },
     {
-        "id": "63b20b471d54077d",
+        "id": "4a1af4b580fcfd9e",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 45,
-        "width": 13,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "bf5df918806e4e5c",
+        "id": "c8af466db735abfc",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 46,
-        "width": 3,
+        "width": 26,
         "height": 1
     },
     {
-        "id": "cfd3d85bbc10ad9f",
+        "id": "a10b5a03b120c192",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 47,
-        "width": 12,
+        "order": 48,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "dceb46b8d7a3b919",
+        "id": "a7ae421a4215f3f6",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 49,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "956a86f1b9b55b72",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 51,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "49f9249c04301758",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 52,
         "width": 3,
         "height": 1
+    },
+    {
+        "id": "69c3d0215807852f",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 53,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fc4de84296204b7e",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 55,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "c6dc54a10603d2c7",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 56,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "d4a7cc5ad1226c2f",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 57,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "37ba72bdef338de6",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 59,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "4e090530348facda",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv6_M9_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "7c4c43e36748cfb3"
+            ]
+        ]
+    },
+    {
+        "id": "38c379d69b226e67",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C6 Status",
+        "info": "",
+        "x": 180,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "0c153caa246d053f",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv5_M8_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "c8e00ca63585171b"
+            ]
+        ]
+    },
+    {
+        "id": "428d2a62d7a51468",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv4_M7_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "88f985dad33fe639"
+            ]
+        ]
+    },
+    {
+        "id": "f58ef6d9f6fbeec1",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C5 Status",
+        "info": "",
+        "x": 180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c7e9d98f24f0ed7f",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C4 Status",
+        "info": "",
+        "x": 180,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "53650e1fb3913028",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv1_M1_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "31321c89180d5ba1"
+            ]
+        ]
+    },
+    {
+        "id": "48c47a0793071f61",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv2_M6_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "759e4b08eb657d14"
+            ]
+        ]
+    },
+    {
+        "id": "de36f6932e655f6c",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Out_Conv7_M11_RUN_FWD",
+        "program": "",
+        "name": "",
+        "x": 240,
+        "y": 520,
+        "wires": [
+            [
+                "c2f151570f5535dc"
+            ]
+        ]
+    },
+    {
+        "id": "1a304c99a18729be",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C2 Status",
+        "info": "",
+        "x": 180,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d5dfca39a0d9502a",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C7 Status",
+        "info": "",
+        "x": 180,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "46600b88b0a362d1",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "C1 Status",
+        "info": "",
+        "x": 180,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e1ebea3469afc3b1",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "11f522e462c02ce7",
+        "mode": "all",
+        "variable": "",
+        "program": "",
+        "name": "ALARMS",
+        "x": 180,
+        "y": 660,
+        "wires": [
+            [
+                "a295fde53e3d6cef"
+            ]
+        ]
+    },
+    {
+        "id": "2eb2f1813eab0534",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Shuttle.Running",
+        "program": "",
+        "name": "",
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "c36d2995e2143d77"
+            ]
+        ]
+    },
+    {
+        "id": "a295fde53e3d6cef",
+        "type": "function",
+        "z": "6f8c834d45cb5fa1",
+        "name": "function 1",
+        "func": "var counter = global.get('fault_counter') + 1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = [];\nif (counter == 89) {\n    if (msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Drive M1 Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 M11 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Clutch Limit Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-M6 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 - E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 M6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 -M7 Overload Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.5- M8 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 - spare\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 M9  Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.6-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload.NR_Stop_Condition_Alarm){\n        faults[i] = {\"Fault\": \"Zone 2 stopped due to down presses\"};\n        i++;\n    }\n    if(i==0)\n    {\n        faults[i] = {\"Faults\": \"No faults present\"};   \n    }\n    msg.payload = faults;\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set('fault_counter',0)",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 660,
+        "wires": [
+            [
+                "a2e080fed0b5b89d"
+            ]
+        ]
+    },
+    {
+        "id": "7c4c43e36748cfb3",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C6",
+        "order": 54,
+        "width": 12,
+        "height": 1,
+        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99% ;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c8e00ca63585171b",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C5",
+        "order": 58,
+        "width": 14,
+        "height": 1,
+        "format": "<style>\n    .horizontal-conveyor5 {\n        width: 99.2%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor5.moving .pattern {\n        background-color: green;\n        animation: move-horizontal5 12s linear infinite;\n    }\n\n    @keyframes move-horizontal5 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor5 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor5 .number5{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n</style>\n\n\n<div class=\"horizontal-conveyor5\" id=\"horizontal-conveyor5\">\n    <div class=\"pattern\"></div>\n    <div class=\"number5\">#5</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor5 = document.getElementById('horizontal-conveyor5');\n            if (payload === true) {\n                conveyor5.classList.add('moving');\n            } else {\n                conveyor5.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88f985dad33fe639",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C4",
+        "order": 47,
+        "width": 1,
+        "height": 4,
+        "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31321c89180d5ba1",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C1",
+        "order": 44,
+        "width": 25,
+        "height": 1,
+        "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "759e4b08eb657d14",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C2",
+        "order": 33,
+        "width": 1,
+        "height": 4,
+        "format": "<style>\n    .vertical-conveyor2 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor2.moving .pattern {\n        background-color: green;\n        animation: move-vertical2 4s linear infinite;\n    }\n\n    @keyframes move-vertical2 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor2 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n    .vertical-conveyor2 .number2{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor2\" id=\"vertical-conveyor2\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number2\">#2</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor2 = document.getElementById('vertical-conveyor2');\n            if (payload === true) {\n                conveyor2.classList.add('moving');\n            } else {\n                conveyor2.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2f151570f5535dc",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C7",
+        "order": 25,
+        "width": 1,
+        "height": 5,
+        "format": "<style>\n    .vertical-conveyor7 {\n        width: 88%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor7.moving .pattern {\n        background-color: green;\n        animation: move-vertical7 5s linear infinite;\n    }\n\n    @keyframes move-vertical7 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 0 100%;\n        }\n    }\n\n    .vertical-conveyor7 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor7 .number7{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor7\" id=\"vertical-conveyor7\">\n    <div class=\"pattern\"></div>\n    <div class = \"number7\">#7</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor7 = document.getElementById('vertical-conveyor7');\n            if (payload === true) {\n                conveyor7.classList.add('moving');\n            } else {\n                conveyor7.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "709ac59772bc73ef",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "Styling",
+        "order": 2,
+        "width": 2,
+        "height": 2,
+        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .img_logo{\n        height: auto;\n        width: auto;\n        max-height: 100%;\n        max-width: 100%;\n        display: block;\n    }\n    #Conveyor_Status_Scrap_Monitoring {\n\n    border: none !important; /* Change the border color and width as needed */\n\n    }\n    /* Target the specific card panel */\n    #Conveyor_Status_Scrap_Monitoring_cards {\n        width: 78vw !important;\n        height: 95vh !important;\n        padding: 5px !important; /* Adjust padding as needed */\n    }\n\n    .nr-dashboard-ui_table {\n   //     border: inset 2px #303030 !important;\n   //     border-radius: 5px ; \n\n    }\n\n    .nr-dashboard-ui_table .tabulator{\n        font-size: 24px !important;\n        border: 2px solid black; \n        \n    }\n\n    .tabulator-header {\n       // display: none !important;\n    }\n\n    ::-webkit-scrollbar {\n        display: none !important;\n    }\n\n\n \n\n\n\n\n</style>\n<img class = \"img_logo\" src = \"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\">\n\n\n\n<script>\n$('#toolbar').css(\"display\", \"none\")\n(function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n\n    if (payload === true) {\n    document.getElementByClassName(\"tabulator-header\").style.display = \"none\";\n    node.warn(\"ooga\");\n} \n\n});\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c36d2995e2143d77",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle",
+        "order": 17,
+        "width": 1,
+        "height": 5,
+        "format": "<style>\n    .vertical-conveyor3 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid ;\n        border-color: black;\n    }\n\n    .vertical-conveyor3.moving .pattern {\n        background-color: green;\n        animation: move-vertical3 5s linear infinite;\n    }\n\n    @keyframes move-vertical3 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor3 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor3 .number3{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor3\" id=\"vertical-conveyor3\">\n    <div class=\"pattern\"></div>\n    <div class = \"number3\">#3</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor3 = document.getElementById('vertical-conveyor3');\n            if (payload === true) {\n                conveyor3.classList.add('moving');\n            } else {\n                conveyor3.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7458e47fee00c6a",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "order": 39,
+        "width": 2,
+        "height": 1,
+        "name": "ZONE 1",
+        "label": "",
+        "format": "ZONE 1:",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "75d1854197bc33e8",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "order": 50,
+        "width": 2,
+        "height": 1,
+        "name": "ZONE 2",
+        "label": "",
+        "format": "ZONE 2:",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1000,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "31a3c02d400cac20",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "order": 13,
+        "width": 3,
+        "height": 1,
+        "name": "Shuttle",
+        "label": "",
+        "format": "Shuttle",
+        "layout": "row-center",
+        "className": "table",
+        "style": true,
+        "font": "",
+        "fontSize": "20",
+        "color": "#000000",
+        "x": 1000,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "598ebea8403835dd",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "order": 4,
+        "width": 9,
+        "height": 1,
+        "name": "",
+        "label": "Scrap Conveyor",
+        "format": "",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "",
+        "fontSize": "32",
+        "color": "#000000",
+        "x": 1020,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a2e080fed0b5b89d",
+        "type": "ui_table",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "",
+        "order": 7,
+        "width": 22,
+        "height": 3,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 490,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8d0567010f964511",
+        "type": "comment",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Shuttle Status",
+        "info": "",
+        "x": 190,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "30157b91e3f48641",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle Right",
+        "order": 18,
+        "width": 2,
+        "height": 5,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionR_1\" class=\"sectionR\">1</div>\n    <div id=\"sectionR_2\" class=\"sectionR\">2</div>\n    <div id=\"sectionR_3\" class=\"sectionR\">3</div>\n    <div id=\"sectionR_4\" class=\"sectionR\">4</div>\n</div>\n\n<style>\n    .barR {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionR {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightR{\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionR_1').classList.remove('highlightR');\n            document.getElementById('sectionR_2').classList.remove('highlightR');\n            document.getElementById('sectionR_3').classList.remove('highlightR');\n            document.getElementById('sectionR_4').classList.remove('highlightR');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionR_1').classList.add('highlightR');\n            } else if (newValue === 2) {\n                document.getElementById('sectionR_2').classList.add('highlightR');\n            } else if (newValue === 3) {\n                document.getElementById('sectionR_3').classList.add('highlightR');\n            } else if (newValue === 4) {\n                document.getElementById('sectionR_4').classList.add('highlightR');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 530,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b02807a45a85509a",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle Left",
+        "order": 16,
+        "width": 2,
+        "height": 5,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 530,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80a45b79f3383e28",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "59864ef6956160d5",
+        "mode": "all",
+        "variable": "Bin_Left.Pos_1_Filling",
+        "program": "",
+        "name": "",
+        "x": 200,
+        "y": 760,
+        "wires": [
+            [
+                "3751fe02364d1269"
+            ]
+        ]
+    },
+    {
+        "id": "3751fe02364d1269",
+        "type": "function",
+        "z": "6f8c834d45cb5fa1",
+        "name": "function 7",
+        "func": "var msgL={};\nvar msgR={};\n\nif (msg.payload[\"Bin_Left.Pos_1_Filling\"])\n{\n    msgL.payload = 1;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_2_Filling\"]) {\n    msgL.payload = 2;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_3_Filling\"]) {\n    msgL.payload = 3;\n    msgR.payload =null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_4_Filling\"]) {\n    msgL.payload = 4;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_1_Filling\"]) {\n    msgR.payload = 1;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_2_Filling\"]) {\n    msgR.payload = 2;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_3_Filling\"]) {\n    msgR.payload = 3;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_4_Filling\"]) {\n    msgR.payload = 4;\n    msgL.payload = null;\n}\n\n\nreturn [msgR, msgL];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 760,
+        "wires": [
+            [
+                "30157b91e3f48641"
+            ],
+            [
+                "b02807a45a85509a"
+            ]
+        ]
+    },
+    {
+        "id": "5de6104d6e1e7989",
+        "type": "inject",
+        "z": "6f8c834d45cb5fa1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 790,
+        "y": 440,
+        "wires": [
+            [
+                "709ac59772bc73ef"
+            ]
+        ]
     },
     {
         "id": "5c56de40a62abee9",
@@ -1698,516 +2409,5 @@
                 "0c160a16eb296eb7"
             ]
         ]
-    },
-    {
-        "id": "4e090530348facda",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv6_M9_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 120,
-        "wires": [
-            [
-                "7c4c43e36748cfb3"
-            ]
-        ]
-    },
-    {
-        "id": "38c379d69b226e67",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C6 Status",
-        "info": "",
-        "x": 180,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "0c153caa246d053f",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv5_M8_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 280,
-        "wires": [
-            [
-                "c8e00ca63585171b"
-            ]
-        ]
-    },
-    {
-        "id": "428d2a62d7a51468",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv4_M7_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 440,
-        "wires": [
-            [
-                "88f985dad33fe639"
-            ]
-        ]
-    },
-    {
-        "id": "f58ef6d9f6fbeec1",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C5 Status",
-        "info": "",
-        "x": 180,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "c7e9d98f24f0ed7f",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C4 Status",
-        "info": "",
-        "x": 180,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "53650e1fb3913028",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv1_M1_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 620,
-        "wires": [
-            [
-                "31321c89180d5ba1"
-            ]
-        ]
-    },
-    {
-        "id": "48c47a0793071f61",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv2_M6_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 780,
-        "wires": [
-            [
-                "759e4b08eb657d14"
-            ]
-        ]
-    },
-    {
-        "id": "de36f6932e655f6c",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Out_Conv7_M11_RUN_FWD",
-        "program": "",
-        "name": "",
-        "x": 240,
-        "y": 940,
-        "wires": [
-            [
-                "c2f151570f5535dc"
-            ]
-        ]
-    },
-    {
-        "id": "1a304c99a18729be",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C2 Status",
-        "info": "",
-        "x": 180,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "d5dfca39a0d9502a",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C7 Status",
-        "info": "",
-        "x": 180,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "46600b88b0a362d1",
-        "type": "comment",
-        "z": "6f8c834d45cb5fa1",
-        "name": "C1 Status",
-        "info": "",
-        "x": 180,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "d82f1a55f5ed0dc0",
-        "type": "inject",
-        "z": "6f8c834d45cb5fa1",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 170,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e1ebea3469afc3b1",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "11f522e462c02ce7",
-        "mode": "all",
-        "variable": "",
-        "program": "",
-        "name": "ALARMS",
-        "x": 180,
-        "y": 1160,
-        "wires": [
-            [
-                "a295fde53e3d6cef"
-            ]
-        ]
-    },
-    {
-        "id": "2eb2f1813eab0534",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Shuttle.Running",
-        "program": "",
-        "name": "",
-        "x": 200,
-        "y": 1060,
-        "wires": [
-            [
-                "c36d2995e2143d77"
-            ]
-        ]
-    },
-    {
-        "id": "a295fde53e3d6cef",
-        "type": "function",
-        "z": "6f8c834d45cb5fa1",
-        "name": "function 1",
-        "func": "var i = 0\nif (msg.payload[\"Drive[1].Alarm.0\"])\n{\n msg.payload[i] = \"Conv.1-Drive M1 Fault\";\n i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.1\"])\n{\n    msg.payload = \"Conv.1-Zero Speed Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.2\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop ACTIVE\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.3\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.4\"])\n{\n    msg.payload[i] = \"Conv.1 E-stop\";\n    i++;\n}\nelse if(msg.payload[\"Drive[1].Alarm.5\"])\n{\n    msg.payload[i]= \"Conv.1-Maintenance Warning\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.0\"])\n{\n    msg.payload[i]= \"Conv.7 M11 Overload Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.1\"])\n{\n    msg.payload[i] = \"Conv.7 Zero Speed Fault\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.2\"])\n{\n    msg.payload[i] = \"Conv.7 E-Stop ACTIVE\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.5\"])\n{\n    msg.payload[i] = \"Conv.7 Maintenance Warning\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.6\"])\n{\n    msg.payload[i] = \"Conv.7 Shock Relay Tripped\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.7\"])\n{\n    msg.payload[i] = \"Conv.7 Clutch Limit Tripped\";\n    i++;\n}\nelse if(msg.payload[\"Drive[11].Alarm.8\"])\n{\n    msg.payload[i] = \"Conv.7 Downstream Timout\";\n}\nelse if (msg.payload[\"Drive[6].Alarm.0\"]) {\n    msg.payload = \"Conv.2-M6 Overload Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.2-Zero Speed Fault\";\n}\nelse if (msg.payload[\"Drive[6].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.2 E-Stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.2 - E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.2-Maintenance Warning\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.6\"]) {\n    msg.payload[i] = \"Conv. 2 M6 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[6].Alarm.8\"]) {\n    msg.payload[i] = \"Conv. 2 Downstream Timout\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.4 -M7 Overload Fault\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.4-Zero Speed Fault\";\n}\nelse if (msg.payload[\"Drive[7].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.4-E-stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.4 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.4\"]) {\n    msg.payload[i] = \"Conv.4 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.4-Maintenance Warning\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.4 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[7].Alarm.8\"]) {\n    msg.payload[i] = \"Conv.4 Downstream Timout\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.5- M8 Overload Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.1\"]) {\n    msg.payload[i] = \"Conv.5-Zero Speed Fault\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.5 E-Stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.3\"]) {\n    msg.payload[i] = \"Conv.5 E-Stop\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.4\"]) {\n    msg.payload[i] = \"Conv.5 - spare\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.5-Maintenance Warning\";\n    i++;\n}\nelse if (!msg.payload[\"Drive[8].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.5 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[8].Alarm.9\"]) {\n    msg.payload[i] = \"Conv.5 Downstream Timout\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.0\"]) {\n    msg.payload[i] = \"Conv.6 M9  Overload Fault\";\n    i++;\n}\nelse if (!msg.payload[\"Drive[9].Alarm.2\"]) {\n    msg.payload[i] = \"Conv.6 E-stop ACTIVE\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.5\"]) {\n    msg.payload[i] = \"Conv.6-Maintenance Warning\";\n}\nelse if (msg.payload[\"Drive[9].Alarm.6\"]) {\n    msg.payload[i] = \"Conv.6 Shock Relay Tripped\";\n    i++;\n}\nelse if (msg.payload[\"Drive[9].Alarm.8\"]) {\n    msg.payload[i] = \"Conv.6 Downstream Timout\";\n    i++;\n}\n\n\nif(i >> 0){\n    return msg;\n}\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 520,
-        "y": 1160,
-        "wires": [
-            [
-                "f14b85256cb8fc24"
-            ]
-        ]
-    },
-    {
-        "id": "f14b85256cb8fc24",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "7c4c43e36748cfb3",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C6",
-        "order": 44,
-        "width": 12,
-        "height": 1,
-        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c8e00ca63585171b",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C5",
-        "order": 48,
-        "width": 14,
-        "height": 1,
-        "format": "<style>\n    .horizontal-conveyor5 {\n        width: 99.2%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor5.moving .pattern {\n        background-color: green;\n        animation: move-horizontal5 12s linear infinite;\n    }\n\n    @keyframes move-horizontal5 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor5 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor5 .number5{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n</style>\n\n\n<div class=\"horizontal-conveyor5\" id=\"horizontal-conveyor5\">\n    <div class=\"pattern\"></div>\n    <div class=\"number5\">#5</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor5 = document.getElementById('horizontal-conveyor5');\n            if (payload === true) {\n                conveyor5.classList.add('moving');\n            } else {\n                conveyor5.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "88f985dad33fe639",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C4",
-        "order": 37,
-        "width": 1,
-        "height": 4,
-        "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "31321c89180d5ba1",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C1",
-        "order": 34,
-        "width": 25,
-        "height": 1,
-        "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "759e4b08eb657d14",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C2",
-        "order": 23,
-        "width": 1,
-        "height": 4,
-        "format": "<style>\n    .vertical-conveyor2 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor2.moving .pattern {\n        background-color: green;\n        animation: move-vertical2 4s linear infinite;\n    }\n\n    @keyframes move-vertical2 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor2 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n    .vertical-conveyor2 .number2{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor2\" id=\"vertical-conveyor2\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number2\">#2</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor2 = document.getElementById('vertical-conveyor2');\n            if (payload === true) {\n                conveyor2.classList.add('moving');\n            } else {\n                conveyor2.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c2f151570f5535dc",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C7",
-        "order": 15,
-        "width": 1,
-        "height": 5,
-        "format": "<style>\n    .vertical-conveyor7 {\n        width: 88%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor7.moving .pattern {\n        background-color: green;\n        animation: move-vertical7 5s linear infinite;\n    }\n\n    @keyframes move-vertical7 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 0 100%;\n        }\n    }\n\n    .vertical-conveyor7 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor7 .number7{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor7\" id=\"vertical-conveyor7\">\n    <div class=\"pattern\"></div>\n    <div class = \"number7\">#7</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor7 = document.getElementById('vertical-conveyor7');\n            if (payload === true) {\n                conveyor7.classList.add('moving');\n            } else {\n                conveyor7.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "709ac59772bc73ef",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "",
-        "order": 3,
-        "width": 2,
-        "height": 2,
-        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .img_logo{\n        height: auto;\n        width: auto;\n        max-height: 100%;\n        max-width: 100%;\n        display: block;\n    }\n    /* Target the specific card panel */\n    #Home_Scrap_Monitoring {\n        width: 82vw;\n        height: 90vh;\n        border: 5px solid #333 !important; /* Change the border color and width as needed */\n        padding: 10px !important; /* Adjust padding as needed */\n    }\n\n \n\n\n\n\n</style>\n<img class = \"img_logo\" src = \"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\">\n\n<script>\n       $('#toolbar').css(\"display\",\"none\")\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 180,
-        "y": 1740,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c36d2995e2143d77",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "Shuttle",
-        "order": 7,
-        "width": 1,
-        "height": 5,
-        "format": "<style>\n    .vertical-conveyor3 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid ;\n        border-color: black;\n    }\n\n    .vertical-conveyor3.moving .pattern {\n        background-color: green;\n        animation: move-vertical3 5s linear infinite;\n    }\n\n    @keyframes move-vertical3 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor3 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor3 .number3{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor3\" id=\"vertical-conveyor3\">\n    <div class=\"pattern\"></div>\n    <div class = \"number3\">#3</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor3 = document.getElementById('vertical-conveyor3');\n            if (payload === true) {\n                conveyor3.classList.add('moving');\n            } else {\n                conveyor3.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 500,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c7458e47fee00c6a",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "order": 29,
-        "width": 2,
-        "height": 1,
-        "name": "ZONE 1",
-        "label": "",
-        "format": "ZONE 1:",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 180,
-        "y": 1520,
-        "wires": []
-    },
-    {
-        "id": "75d1854197bc33e8",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "order": 40,
-        "width": 2,
-        "height": 1,
-        "name": "ZONE 2",
-        "label": "",
-        "format": "ZONE 2:",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 180,
-        "y": 1580,
-        "wires": []
-    },
-    {
-        "id": "31a3c02d400cac20",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "order": 12,
-        "width": 2,
-        "height": 1,
-        "name": "Shuttle",
-        "label": "",
-        "format": "Shuttle:",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 180,
-        "y": 1640,
-        "wires": []
-    },
-    {
-        "id": "598ebea8403835dd",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "order": 1,
-        "width": 5,
-        "height": 1,
-        "name": "",
-        "label": "",
-        "format": "Scrap Conveyor",
-        "layout": "row-spread",
-        "className": "",
-        "style": true,
-        "font": "",
-        "fontSize": "24",
-        "color": "#eeeeed",
-        "x": 190,
-        "y": 1700,
-        "wires": []
     }
 ]
