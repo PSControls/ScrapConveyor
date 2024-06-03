@@ -51,7 +51,9 @@
             "5c56de40a62abee9",
             "0c160a16eb296eb7",
             "6bc86b78aacb45ad",
-            "bcb63e277050cc06"
+            "bcb63e277050cc06",
+            "a6b57a173cb17ec1",
+            "56b27e8ceaa651d6"
         ],
         "x": 34,
         "y": 199,
@@ -99,11 +101,14 @@
             "cebac63eedc1b5ea",
             "32c476b8d60b7d2d",
             "256ec6bbac85e891",
-            "3e805050ecc39aac"
+            "3e805050ecc39aac",
+            "4750fb59f6bfac88",
+            "8770020c90566845",
+            "7d1721dd7f67854f"
         ],
         "x": 34,
         "y": 599,
-        "w": 932,
+        "w": 1172,
         "h": 222
     },
     {
@@ -112,7 +117,7 @@
         "address": "128.121.50.1",
         "slot": "0",
         "cycletime": "500",
-        "name": "Conveyor Status",
+        "name": "",
         "vartable": {
             "": {
                 "Out_Conv6_M9_RUN_FWD": {
@@ -138,6 +143,9 @@
                 },
                 "NR_Stop_Condition": {
                     "type": "BOOL"
+                },
+                "In_Zone2_MPStop_PB": {
+                    "type": "BOOL"
                 }
             }
         }
@@ -148,7 +156,7 @@
         "address": "128.121.50.1",
         "slot": "0",
         "cycletime": "1000",
-        "name": "Alarms",
+        "name": "",
         "vartable": {
             "": {
                 "Drive[1].Alarm.0": {
@@ -415,8 +423,8 @@
                 "Drive[9].Alarm.8": {
                     "type": "BOOL"
                 },
-                "": {
-                    "type": ""
+                "NR_Stop_Condition_Alarm": {
+                    "type": "BOOL"
                 }
             }
         }
@@ -523,10 +531,10 @@
         "id": "e2293b2c6ee894f8",
         "type": "ui_group",
         "name": "Scrap Monitoring",
-        "tab": "265646f6d5686527",
+        "tab": "2566f325d56895f3",
         "order": 1,
         "disp": false,
-        "width": "30",
+        "width": 29,
         "collapse": false,
         "className": ""
     },
@@ -591,22 +599,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "fab10d4b144d0c28",
-        "type": "eth-ip endpoint",
-        "address": "128.121.50.1",
-        "slot": "0",
-        "cycletime": "3000",
-        "name": "",
-        "vartable": {
-            "": {
-                "NR_Stop_Condition": {
-                    "type": "BOOL",
-                    "mapping": ""
-                }
-            }
-        }
     },
     {
         "id": "265646f6d5686527",
@@ -1169,7 +1161,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C6",
-        "order": 40,
+        "order": 43,
         "width": 12,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1190,33 +1182,12 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C5",
-        "order": 44,
+        "order": 47,
         "width": 14,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor5 {\n        width: 99.2%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor5.moving .pattern {\n        background-color: green;\n        animation: move-horizontal5 12s linear infinite;\n    }\n\n    @keyframes move-horizontal5 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor5 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor5 .number5{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n</style>\n\n\n<div class=\"horizontal-conveyor5\" id=\"horizontal-conveyor5\">\n    <div class=\"pattern\"></div>\n    <div class=\"number5\">#5</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor5 = document.getElementById('horizontal-conveyor5');\n            if (payload === true) {\n                conveyor5.classList.add('moving');\n            } else {\n                conveyor5.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "88f985dad33fe639",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C4",
-        "order": 33,
-        "width": 1,
-        "height": 4,
-        "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
@@ -1227,36 +1198,15 @@
         ]
     },
     {
-        "id": "31321c89180d5ba1",
+        "id": "88f985dad33fe639",
         "type": "ui_template",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "name": "C1",
-        "order": 30,
-        "width": 25,
-        "height": 1,
-        "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "759e4b08eb657d14",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "name": "C2",
-        "order": 19,
+        "name": "C4",
+        "order": 36,
         "width": 1,
         "height": 4,
-        "format": "<style>\n    .vertical-conveyor2 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor2.moving .pattern {\n        background-color: green;\n        animation: move-vertical2 4s linear infinite;\n    }\n\n    @keyframes move-vertical2 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor2 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n    .vertical-conveyor2 .number2{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor2\" id=\"vertical-conveyor2\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number2\">#2</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor2 = document.getElementById('vertical-conveyor2');\n            if (payload === true) {\n                conveyor2.classList.add('moving');\n            } else {\n                conveyor2.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -1269,12 +1219,54 @@
         ]
     },
     {
+        "id": "31321c89180d5ba1",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C1",
+        "order": 33,
+        "width": 25,
+        "height": 1,
+        "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "759e4b08eb657d14",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "name": "C2",
+        "order": 22,
+        "width": 1,
+        "height": 4,
+        "format": "<style>\n    .vertical-conveyor2 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor2.moving .pattern {\n        background-color: green;\n        animation: move-vertical2 4s linear infinite;\n    }\n\n    @keyframes move-vertical2 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor2 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n    .vertical-conveyor2 .number2{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor2\" id=\"vertical-conveyor2\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number2\">#2</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor2 = document.getElementById('vertical-conveyor2');\n            if (payload === true) {\n                conveyor2.classList.add('moving');\n            } else {\n                conveyor2.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "c2f151570f5535dc",
         "type": "ui_template",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "C7",
-        "order": 11,
+        "order": 14,
         "width": 1,
         "height": 5,
         "format": "<style>\n    .vertical-conveyor7 {\n        width: 88%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor7.moving .pattern {\n        background-color: green;\n        animation: move-vertical7 5s linear infinite;\n    }\n\n    @keyframes move-vertical7 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 0 100%;\n        }\n    }\n\n    .vertical-conveyor7 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor7 .number7{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor7\" id=\"vertical-conveyor7\">\n    <div class=\"pattern\"></div>\n    <div class = \"number7\">#7</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor7 = document.getElementById('vertical-conveyor7');\n            if (payload === true) {\n                conveyor7.classList.add('moving');\n            } else {\n                conveyor7.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1284,7 +1276,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 520,
+        "y": 940,
         "wires": [
             []
         ]
@@ -1296,16 +1288,16 @@
         "group": "e2293b2c6ee894f8",
         "name": "",
         "order": 3,
-        "width": 3,
-        "height": 3,
-        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .img_logo{\n        height: auto;\n        width: auto;\n        max-height: 100%;\n        max-width: 100%;\n        display: block;\n    }\n    /* Target the specific card panel */\n    #Home_Scrap_Monitoring {\n        border-bottom: 5px solid #333 !important; /* Change the border color and width as needed */\n        padding: 10px !important; /* Adjust padding as needed */\n    }\n\n \n\n\n\n\n</style>\n<img class = \"img_logo\" src = \"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\">\n\n<script>\n       $('#toolbar').css(\"display\",\"none\")\n</script>",
+        "width": 2,
+        "height": 2,
+        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .img_logo{\n        height: auto;\n        width: auto;\n        max-height: 100%;\n        max-width: 100%;\n        display: block;\n    }\n    /* Target the specific card panel */\n    #Home_Scrap_Monitoring {\n        width: 90vw;\n        height: 90vh;\n        border: 5px solid #333 !important; /* Change the border color and width as needed */\n        padding: 10px !important; /* Adjust padding as needed */\n    }\n\n \n\n\n\n\n</style>\n<img class = \"img_logo\" src = \"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\">\n\n<script>\n       $('#toolbar').css(\"display\",\"none\")\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 180,
-        "y": 1220,
+        "y": 1740,
         "wires": [
             []
         ]
@@ -1316,7 +1308,7 @@
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
         "name": "Shuttle",
-        "order": 5,
+        "order": 6,
         "width": 1,
         "height": 5,
         "format": "<style>\n    .vertical-conveyor3 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid ;\n        border-color: black;\n    }\n\n    .vertical-conveyor3.moving .pattern {\n        background-color: green;\n        animation: move-vertical3 5s linear infinite;\n    }\n\n    @keyframes move-vertical3 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor3 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor3 .number3{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor3\" id=\"vertical-conveyor3\">\n    <div class=\"pattern\"></div>\n    <div class = \"number3\">#3</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor3 = document.getElementById('vertical-conveyor3');\n            if (payload === true) {\n                conveyor3.classList.add('moving');\n            } else {\n                conveyor3.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -1326,7 +1318,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 580,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -1336,7 +1328,7 @@
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "order": 25,
+        "order": 28,
         "width": 2,
         "height": 1,
         "name": "ZONE 1",
@@ -1349,7 +1341,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 180,
-        "y": 1000,
+        "y": 1520,
         "wires": []
     },
     {
@@ -1357,7 +1349,7 @@
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "order": 36,
+        "order": 39,
         "width": 2,
         "height": 1,
         "name": "ZONE 2",
@@ -1370,7 +1362,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 180,
-        "y": 1060,
+        "y": 1580,
         "wires": []
     },
     {
@@ -1378,7 +1370,7 @@
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "group": "e2293b2c6ee894f8",
-        "order": 8,
+        "order": 11,
         "width": 2,
         "height": 1,
         "name": "Shuttle",
@@ -1391,7 +1383,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 180,
-        "y": 1120,
+        "y": 1640,
         "wires": []
     },
     {
@@ -1893,7 +1885,7 @@
             "8b1f36c9b429e233"
         ],
         "uncaught": false,
-        "x": 530,
+        "x": 550,
         "y": 540,
         "wires": [
             [
@@ -1935,7 +1927,9 @@
         "x": 860,
         "y": 680,
         "wires": [
-            []
+            [
+                "8770020c90566845"
+            ]
         ]
     },
     {
@@ -1987,7 +1981,9 @@
         "x": 860,
         "y": 740,
         "wires": [
-            []
+            [
+                "7d1721dd7f67854f"
+            ]
         ]
     },
     {
@@ -2079,7 +2075,7 @@
         "id": "dcac32e11447cede",
         "type": "eth-ip in",
         "z": "b83d70117faba64f",
-        "endpoint": "fab10d4b144d0c28",
+        "endpoint": "4e651a6592d36d68",
         "mode": "single",
         "variable": "NR_Stop_Condition",
         "program": "",
@@ -2088,25 +2084,9 @@
         "y": 880,
         "wires": [
             [
-                "e57fdf4317021b1a"
+                "f3afc1aa6f8d1027"
             ]
         ]
-    },
-    {
-        "id": "e57fdf4317021b1a",
-        "type": "debug",
-        "z": "b83d70117faba64f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 880,
-        "wires": []
     },
     {
         "id": "d858ffea5a818e9a",
@@ -2163,6 +2143,476 @@
                 "2f5e98bbd7134ca7"
             ],
             []
+        ]
+    },
+    {
+        "id": "c4853799558b63fd",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 2,
+        "width": 22,
+        "height": 1
+    },
+    {
+        "id": "d42c43a353e0174a",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 4,
+        "width": 27,
+        "height": 1
+    },
+    {
+        "id": "a00564e874b630cb",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 5,
+        "width": 26,
+        "height": 1
+    },
+    {
+        "id": "d28404048ca50043",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "835014ba26506dad",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 8,
+        "width": 26,
+        "height": 1
+    },
+    {
+        "id": "cb36dca47f77f6e8",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "db32522d54c59503",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 10,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "cc7844f89acb4fcb",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e80fa63126148716",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 13,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "c53e617771d00c99",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 15,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "5442786f46aabd89",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4d7b405bd019e2be",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 17,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "9385669f67ba88c8",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 18,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "a82d112c8f623331",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "dba1770e43a108d3",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 20,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "bacc856ef58fb10b",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 21,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "f864e5254c71e51f",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4e7e7ed413949141",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 24,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "c61c6eb939a13b5b",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 25,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "fa6d7189fb8010b0",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 26,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "3c683e05e3a24c2e",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "466c5815a4c973f5",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 29,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "3004a41d3d1da55e",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 30,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "ce341e53055ba81e",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "00181df42ac0e06e",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fe21a75e4cfef466",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 34,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e54fc43720fb47b0",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 35,
+        "width": 26,
+        "height": 1
+    },
+    {
+        "id": "b9db372a2b9230a6",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 37,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0cc4912bfd549406",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 38,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8bf05e6a60e00f6a",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 40,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "26be0f502c8bbc70",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 41,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7a989fc1b1cb9b54",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 42,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "52e5bcb62ea27978",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 44,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "4dbffbb7b4c17a1a",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 45,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "55104fdeebba213e",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 46,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "c0e6fde1dd322ee1",
+        "type": "ui_spacer",
+        "z": "b83d70117faba64f",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 48,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b6e41b3a1d35e55d",
+        "type": "eth-ip endpoint",
+        "address": "128.121.33.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "P23_Idle_Tmr_1.DN": {
+                    "type": "BOOL"
+                },
+                "P23_Idle_Tmr_2.DN": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "4750fb59f6bfac88",
+        "type": "eth-ip in",
+        "z": "b83d70117faba64f",
+        "g": "ffa33797b8602337",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "In_Zone2_MPStop_PB",
+        "program": "",
+        "name": "",
+        "x": 160,
+        "y": 780,
+        "wires": [
+            [
+                "256ec6bbac85e891"
+            ]
+        ]
+    },
+    {
+        "id": "8770020c90566845",
+        "type": "eth-ip out",
+        "z": "b83d70117faba64f",
+        "g": "ffa33797b8602337",
+        "endpoint": "4e651a6592d36d68",
+        "variable": "NR_Stop_Condition",
+        "program": "",
+        "name": "",
+        "x": 1080,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7d1721dd7f67854f",
+        "type": "eth-ip out",
+        "z": "b83d70117faba64f",
+        "g": "ffa33797b8602337",
+        "endpoint": "4e651a6592d36d68",
+        "variable": "NR_Stop_Condition",
+        "program": "",
+        "name": "",
+        "x": 1080,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f3afc1aa6f8d1027",
+        "type": "eth-ip out",
+        "z": "b83d70117faba64f",
+        "endpoint": "11f522e462c02ce7",
+        "variable": "NR_Stop_Condition_Alarm",
+        "program": "",
+        "name": "",
+        "x": 400,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a6b57a173cb17ec1",
+        "type": "eth-ip in",
+        "z": "b83d70117faba64f",
+        "g": "90fb172daa4dab64",
+        "endpoint": "b6e41b3a1d35e55d",
+        "mode": "single",
+        "variable": "P23_Idle_Tmr_1.DN",
+        "program": "",
+        "name": "",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "6bc86b78aacb45ad"
+            ]
+        ]
+    },
+    {
+        "id": "56b27e8ceaa651d6",
+        "type": "eth-ip in",
+        "z": "b83d70117faba64f",
+        "g": "90fb172daa4dab64",
+        "endpoint": "b6e41b3a1d35e55d",
+        "mode": "single",
+        "variable": "P23_Idle_Tmr_2.DN",
+        "program": "",
+        "name": "",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "0c160a16eb296eb7"
+            ]
         ]
     }
 ]
