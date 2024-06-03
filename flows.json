@@ -112,7 +112,7 @@
         "address": "128.121.50.1",
         "slot": "0",
         "cycletime": "500",
-        "name": "",
+        "name": "Conveyor Status",
         "vartable": {
             "": {
                 "Out_Conv6_M9_RUN_FWD": {
@@ -148,7 +148,7 @@
         "address": "128.121.50.1",
         "slot": "0",
         "cycletime": "1000",
-        "name": "",
+        "name": "Alarms",
         "vartable": {
             "": {
                 "Drive[1].Alarm.0": {
@@ -983,7 +983,7 @@
         "program": "",
         "name": "",
         "x": 240,
-        "y": 280,
+        "y": 200,
         "wires": [
             [
                 "c8e00ca63585171b"
@@ -1000,7 +1000,7 @@
         "program": "",
         "name": "",
         "x": 240,
-        "y": 440,
+        "y": 280,
         "wires": [
             [
                 "88f985dad33fe639"
@@ -1014,7 +1014,7 @@
         "name": "C5 Status",
         "info": "",
         "x": 180,
-        "y": 220,
+        "y": 160,
         "wires": []
     },
     {
@@ -1024,7 +1024,7 @@
         "name": "C4 Status",
         "info": "",
         "x": 180,
-        "y": 380,
+        "y": 240,
         "wires": []
     },
     {
@@ -1037,7 +1037,7 @@
         "program": "",
         "name": "",
         "x": 240,
-        "y": 620,
+        "y": 360,
         "wires": [
             [
                 "31321c89180d5ba1"
@@ -1054,7 +1054,7 @@
         "program": "",
         "name": "",
         "x": 240,
-        "y": 780,
+        "y": 440,
         "wires": [
             [
                 "759e4b08eb657d14"
@@ -1071,7 +1071,7 @@
         "program": "",
         "name": "",
         "x": 240,
-        "y": 940,
+        "y": 520,
         "wires": [
             [
                 "c2f151570f5535dc"
@@ -1085,7 +1085,7 @@
         "name": "C2 Status",
         "info": "",
         "x": 180,
-        "y": 720,
+        "y": 400,
         "wires": []
     },
     {
@@ -1095,7 +1095,7 @@
         "name": "C7 Status",
         "info": "",
         "x": 180,
-        "y": 880,
+        "y": 480,
         "wires": []
     },
     {
@@ -1105,7 +1105,7 @@
         "name": "C1 Status",
         "info": "",
         "x": 180,
-        "y": 560,
+        "y": 320,
         "wires": []
     },
     {
@@ -1135,7 +1135,7 @@
         "program": "",
         "name": "",
         "x": 200,
-        "y": 1060,
+        "y": 580,
         "wires": [
             [
                 "c36d2995e2143d77"
@@ -1215,7 +1215,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 280,
+        "y": 200,
         "wires": [
             []
         ]
@@ -1236,7 +1236,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 440,
+        "y": 280,
         "wires": [
             []
         ]
@@ -1257,7 +1257,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 620,
+        "y": 360,
         "wires": [
             []
         ]
@@ -1278,7 +1278,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 780,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1299,7 +1299,7 @@
         "templateScope": "local",
         "className": "",
         "x": 490,
-        "y": 940,
+        "y": 520,
         "wires": [
             []
         ]
@@ -1341,7 +1341,7 @@
         "templateScope": "local",
         "className": "",
         "x": 500,
-        "y": 1060,
+        "y": 580,
         "wires": [
             []
         ]
