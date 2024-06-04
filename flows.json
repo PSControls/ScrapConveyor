@@ -112,6 +112,121 @@
         "h": 222
     },
     {
+        "id": "3984e132198dd61f",
+        "type": "group",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Fault Display",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e1ebea3469afc3b1",
+            "a295fde53e3d6cef",
+            "a2e080fed0b5b89d",
+            "d7d23d32ac92925b"
+        ],
+        "x": 14,
+        "y": 799,
+        "w": 572,
+        "h": 122
+    },
+    {
+        "id": "56907c240d2b4a89",
+        "type": "group",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Display Shuttle Position",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b02807a45a85509a",
+            "80a45b79f3383e28",
+            "3751fe02364d1269"
+        ],
+        "x": 14,
+        "y": 959,
+        "w": 572,
+        "h": 102
+    },
+    {
+        "id": "ac6b5e1a16fa8144",
+        "type": "group",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Read and display conveyor statuses",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "7c4c43e36748cfb3",
+            "c8e00ca63585171b",
+            "88f985dad33fe639",
+            "31321c89180d5ba1",
+            "759e4b08eb657d14",
+            "c2f151570f5535dc",
+            "c36d2995e2143d77",
+            "4e090530348facda",
+            "38c379d69b226e67",
+            "0c153caa246d053f",
+            "428d2a62d7a51468",
+            "f58ef6d9f6fbeec1",
+            "c7e9d98f24f0ed7f",
+            "53650e1fb3913028",
+            "48c47a0793071f61",
+            "de36f6932e655f6c",
+            "1a304c99a18729be",
+            "d5dfca39a0d9502a",
+            "46600b88b0a362d1",
+            "2eb2f1813eab0534",
+            "8d0567010f964511"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 452,
+        "h": 722
+    },
+    {
+        "id": "7e446569487d40de",
+        "type": "group",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Extra UI elements",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "709ac59772bc73ef",
+            "c7458e47fee00c6a",
+            "75d1854197bc33e8",
+            "31a3c02d400cac20",
+            "c2768342b2a30824"
+        ],
+        "x": 514,
+        "y": 79,
+        "w": 272,
+        "h": 322
+    },
+    {
+        "id": "75f469265823b86e",
+        "type": "group",
+        "z": "b83d70117faba64f",
+        "name": "Write idle condition to HMI",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "dcac32e11447cede",
+            "f3afc1aa6f8d1027"
+        ],
+        "x": 34,
+        "y": 839,
+        "w": 512,
+        "h": 82
+    },
+    {
         "id": "4e651a6592d36d68",
         "type": "eth-ip endpoint",
         "address": "128.121.50.1",
@@ -1047,6 +1162,482 @@
         "height": 1
     },
     {
+        "id": "59864ef6956160d5",
+        "type": "eth-ip endpoint",
+        "address": "128.121.50.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "Shuttle Positions",
+        "vartable": {
+            "": {
+                "Bin_Left.Pos_1_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_2_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_3_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Pos_4_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_1_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_2_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_3_Filling": {
+                    "type": "BOOL"
+                },
+                "Bin_Right.Pos_4_Filling": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "134a27681c299d69",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 1,
+        "width": 28,
+        "height": 1
+    },
+    {
+        "id": "ec65d659865b445d",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8a9020eac04d471e",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 5,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "9416d750fd53eae9",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "260dd59677df031d",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 8,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "45086ed0846ae646",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1c7070f189964e75",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 10,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "562ba882e3bcb735",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "17bbb45729451966",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 12,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9729c3bfb5ddd929",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 14,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "1569310b3475c02b",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 15,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "cdb961002b541ec4",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "65d351728c802cba",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 20,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "5754e11ec3e07a67",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "58b1b2d61936c7d7",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 22,
+        "width": 24,
+        "height": 1
+    },
+    {
+        "id": "1cdf9bf4e386cb8c",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d431c82bdd86fac8",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 24,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "bec946ea1b6cfb9b",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 26,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "d7941c311597ed8a",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f326688266ee9dfd",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 28,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "b592de4da1c252ad",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 29,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "ce81529f116aaad7",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "49f668a1817074e5",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 31,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "c99a18c1d1d3f90a",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 32,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "e3aa9a8b7fa1f218",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 34,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "cf2f75efa63d1743",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 35,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "77508e28fe55c4e4",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 36,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "e9536b528fddac71",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 37,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "8736e7fc8a0cdade",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 38,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dba9ffd7bb8d1047",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 40,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "cc7ad70d281bed5a",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 41,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "78975c96888e522c",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 42,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "933a029219abe780",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 43,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "32e60697db700e49",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 45,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "fcb940668ff8a70d",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 46,
+        "width": 26,
+        "height": 1
+    },
+    {
+        "id": "143384768ea78cab",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 48,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "2dd2f90305e96144",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 49,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4806e3d84ff7a948",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 51,
+        "width": 23,
+        "height": 1
+    },
+    {
+        "id": "6576a04b3100d5db",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 52,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "650a7b3ca011f2d2",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 53,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "16210ba666e89d54",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 55,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "9d1afb7a41970dfe",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 56,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "06459225ee7b5976",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 57,
+        "width": 12,
+        "height": 1
+    },
+    {
+        "id": "4a69029039cfc9b1",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 59,
+        "width": 3,
+        "height": 1
+    },
+    {
         "id": "4e090530348facda",
         "type": "eth-ip in",
         "z": "6f8c834d45cb5fa1",
@@ -1262,7 +1853,7 @@
         "z": "6f8c834d45cb5fa1",
         "g": "3984e132198dd61f",
         "name": "Display Alarms",
-        "func": "var counter = global.get('fault_counter') + 1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = [];\nif (counter == 89) {\n    if (msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Drive M1 Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 M11 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Clutch Limit Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-M6 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 - E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 M6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 -M7 Overload Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.5- M8 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 - spare\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 M9  Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.6-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload.NR_Stop_Condition_Alarm){\n        faults[i] = {\"Fault\": \"Zone 2 idle condition active\"};\n        i++;\n    }\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    if(i==0)\n    {\n        faults[i] = {\"Faults\": \"No faults present\"};   \n    }\n    msg.payload = faults;\n    return msg;\n}\n\n",
+        "func": "var counter = global.get('fault_counter') + 1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = [];\nif (counter == 89) {\n    if (msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Drive M1 Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 M11 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Clutch Limit Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-M6 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 - E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 M6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 -M7 Overload Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.5- M8 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 - spare\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 M9  Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.6-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload.NR_Stop_Condition_Alarm){\n        faults[i] = {\"Fault\": \"Zone 2 idle condition active\"};\n        i++;\n    }\n    if (msg.payload[\"Bin_Left.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Left Bin Full\" };\n        i++;\n    }\n    if (msg.payload[\"Bin_Left.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Left Bin Missing\" };\n        i++;\n    }\n    if (msg.payload[\"Bin_Right.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Right Bin Full\" };\n        i++;\n    } \n    if (msg.payload[\"Bin_Right.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Right Bin Missing\" };\n        i++;\n    }            \n    if (msg.payload[\"Shuttle.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Travel - M5 Overload Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Travel Timout - Travel Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-Stop - ACTIVE\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-stop 2\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-stop 3\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.10\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv.3 - M4 Overload Fault\" };\n        i++;\n    }    \n    if (msg.payload[\"Shuttle.Alarm.11\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv. 3 - Zero Speed Fault\" };\n        i++;\n    }    \n    if (msg.payload[\"Shuttle.Alarm.15\"]) {\n        faults[i] = { \"Fault\": \"Diverter 1 Front - Travel Timout Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.16\"]) {\n        faults[i] = { \"Fault\": \"Diverter 2 Rear - Travel Timout Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.17\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv.3 Shock Relay Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.18\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Diverter 1 O/L Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.19\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Diverter 2 O/L Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Scrap_System.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"MCCP2 Rack Communication Fault\" };\n        i++;\n    }\n    if(i==0)\n    {\n        faults[i] = {\"Faults\": \"No faults present\"};   \n    }\n    msg.payload = faults;\n    return msg;\n}\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1552,6 +2143,7 @@
         "id": "c2768342b2a30824",
         "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
+        "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
         "order": 4,
         "width": 8,
@@ -1565,9 +2157,88 @@
         "font": "",
         "fontSize": "28",
         "color": "#ffffff",
-        "x": 230,
-        "y": 720,
+        "x": 650,
+        "y": 360,
         "wires": []
+    },
+    {
+        "id": "3751fe02364d1269",
+        "type": "function",
+        "z": "6f8c834d45cb5fa1",
+        "g": "56907c240d2b4a89",
+        "name": "Shuttle Position",
+        "func": "var msgL={};\nvar msgR={};\n\nif (msg.payload[\"Bin_Left.Pos_1_Filling\"])\n{\n    msgL.payload = 1;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_2_Filling\"]) {\n    msgL.payload = 2;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_3_Filling\"]) {\n    msgL.payload = 3;\n    msgR.payload =null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_4_Filling\"]) {\n    msgL.payload = 4;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_1_Filling\"]) {\n    msgR.payload = 1;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_2_Filling\"]) {\n    msgR.payload = 2;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_3_Filling\"]) {\n    msgR.payload = 3;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_4_Filling\"]) {\n    msgR.payload = 4;\n    msgL.payload = null;\n}\n\n\nreturn [msgR, msgL];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1000,
+        "wires": [
+            [],
+            [
+                "b02807a45a85509a"
+            ]
+        ]
+    },
+    {
+        "id": "d7d23d32ac92925b",
+        "type": "debug",
+        "z": "6f8c834d45cb5fa1",
+        "g": "3984e132198dd61f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "80a45b79f3383e28",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "56907c240d2b4a89",
+        "endpoint": "59864ef6956160d5",
+        "mode": "all",
+        "variable": "Bin_Left.Pos_1_Filling",
+        "program": "",
+        "name": "",
+        "x": 120,
+        "y": 1000,
+        "wires": [
+            [
+                "3751fe02364d1269"
+            ]
+        ]
+    },
+    {
+        "id": "b02807a45a85509a",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "g": "56907c240d2b4a89",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle Left",
+        "order": 16,
+        "width": 2,
+        "height": 5,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 1020,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "5c56de40a62abee9",
@@ -2272,679 +2943,6 @@
             [
                 "0c160a16eb296eb7"
             ]
-        ]
-    },
-    {
-        "id": "3984e132198dd61f",
-        "type": "group",
-        "z": "6f8c834d45cb5fa1",
-        "name": "Fault Display",
-        "style": {
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "e1ebea3469afc3b1",
-            "a295fde53e3d6cef",
-            "a2e080fed0b5b89d",
-            "d7d23d32ac92925b"
-        ],
-        "x": 14,
-        "y": 799,
-        "w": 572,
-        "h": 122
-    },
-    {
-        "id": "56907c240d2b4a89",
-        "type": "group",
-        "z": "6f8c834d45cb5fa1",
-        "name": "Display Shuttle Position",
-        "style": {
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "30157b91e3f48641",
-            "b02807a45a85509a",
-            "80a45b79f3383e28",
-            "3751fe02364d1269"
-        ],
-        "x": 14,
-        "y": 939,
-        "w": 572,
-        "h": 122
-    },
-    {
-        "id": "ac6b5e1a16fa8144",
-        "type": "group",
-        "z": "6f8c834d45cb5fa1",
-        "name": "Read and display conveyor statuses",
-        "style": {
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "7c4c43e36748cfb3",
-            "c8e00ca63585171b",
-            "88f985dad33fe639",
-            "31321c89180d5ba1",
-            "759e4b08eb657d14",
-            "c2f151570f5535dc",
-            "c36d2995e2143d77",
-            "4e090530348facda",
-            "38c379d69b226e67",
-            "0c153caa246d053f",
-            "428d2a62d7a51468",
-            "f58ef6d9f6fbeec1",
-            "c7e9d98f24f0ed7f",
-            "53650e1fb3913028",
-            "48c47a0793071f61",
-            "de36f6932e655f6c",
-            "1a304c99a18729be",
-            "d5dfca39a0d9502a",
-            "46600b88b0a362d1",
-            "2eb2f1813eab0534",
-            "8d0567010f964511"
-        ],
-        "x": 34,
-        "y": 19,
-        "w": 452,
-        "h": 722
-    },
-    {
-        "id": "7e446569487d40de",
-        "type": "group",
-        "z": "6f8c834d45cb5fa1",
-        "name": "Extra UI elements",
-        "style": {
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "709ac59772bc73ef",
-            "c7458e47fee00c6a",
-            "75d1854197bc33e8",
-            "31a3c02d400cac20",
-            "598ebea8403835dd"
-        ],
-        "x": 514,
-        "y": 19,
-        "w": 212,
-        "h": 322
-    },
-    {
-        "id": "75f469265823b86e",
-        "type": "group",
-        "z": "b83d70117faba64f",
-        "name": "Write idle condition to HMI",
-        "style": {
-            "label": true,
-            "color": "#000000"
-        },
-        "nodes": [
-            "dcac32e11447cede",
-            "f3afc1aa6f8d1027"
-        ],
-        "x": 34,
-        "y": 839,
-        "w": 512,
-        "h": 82
-    },
-    {
-        "id": "59864ef6956160d5",
-        "type": "eth-ip endpoint",
-        "address": "128.121.50.1",
-        "slot": "0",
-        "cycletime": "500",
-        "name": "Shuttle Positions",
-        "vartable": {
-            "": {
-                "Bin_Left.Pos_1_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Left.Pos_2_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Left.Pos_3_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Left.Pos_4_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Right.Pos_1_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Right.Pos_2_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Right.Pos_3_Filling": {
-                    "type": "BOOL"
-                },
-                "Bin_Right.Pos_4_Filling": {
-                    "type": "BOOL"
-                }
-            }
-        }
-    },
-    {
-        "id": "134a27681c299d69",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 1,
-        "width": 28,
-        "height": 1
-    },
-    {
-        "id": "ec65d659865b445d",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "8a9020eac04d471e",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 5,
-        "width": 18,
-        "height": 1
-    },
-    {
-        "id": "9416d750fd53eae9",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "260dd59677df031d",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 8,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "45086ed0846ae646",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "1c7070f189964e75",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 10,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "562ba882e3bcb735",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "17bbb45729451966",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 12,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "9729c3bfb5ddd929",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 14,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "1569310b3475c02b",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 15,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "cdb961002b541ec4",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 19,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "65d351728c802cba",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 20,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "5754e11ec3e07a67",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 21,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "58b1b2d61936c7d7",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 22,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "1cdf9bf4e386cb8c",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 23,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d431c82bdd86fac8",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 24,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "bec946ea1b6cfb9b",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 26,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "d7941c311597ed8a",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 27,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "f326688266ee9dfd",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 28,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "b592de4da1c252ad",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 29,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "ce81529f116aaad7",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 30,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "49f668a1817074e5",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 31,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "c99a18c1d1d3f90a",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 32,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "e3aa9a8b7fa1f218",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 34,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "cf2f75efa63d1743",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 35,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "77508e28fe55c4e4",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 36,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "e9536b528fddac71",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 37,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "8736e7fc8a0cdade",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 38,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "dba9ffd7bb8d1047",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 40,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "cc7ad70d281bed5a",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 41,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "78975c96888e522c",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 42,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "933a029219abe780",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 43,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "32e60697db700e49",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 45,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "fcb940668ff8a70d",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 46,
-        "width": 26,
-        "height": 1
-    },
-    {
-        "id": "143384768ea78cab",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 48,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "2dd2f90305e96144",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 49,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "4806e3d84ff7a948",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 51,
-        "width": 23,
-        "height": 1
-    },
-    {
-        "id": "6576a04b3100d5db",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 52,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "650a7b3ca011f2d2",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 53,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "16210ba666e89d54",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 55,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "9d1afb7a41970dfe",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 56,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "06459225ee7b5976",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 57,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "4a69029039cfc9b1",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 59,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "3751fe02364d1269",
-        "type": "function",
-        "z": "6f8c834d45cb5fa1",
-        "g": "56907c240d2b4a89",
-        "name": "Shuttle Position",
-        "func": "var msgL={};\nvar msgR={};\n\nif (msg.payload[\"Bin_Left.Pos_1_Filling\"])\n{\n    msgL.payload = 1;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_2_Filling\"]) {\n    msgL.payload = 2;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_3_Filling\"]) {\n    msgL.payload = 3;\n    msgR.payload =null;\n}\nelse if (msg.payload[\"Bin_Left.Pos_4_Filling\"]) {\n    msgL.payload = 4;\n    msgR.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_1_Filling\"]) {\n    msgR.payload = 1;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_2_Filling\"]) {\n    msgR.payload = 2;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_3_Filling\"]) {\n    msgR.payload = 3;\n    msgL.payload = null;\n}\nelse if (msg.payload[\"Bin_Right.Pos_4_Filling\"]) {\n    msgR.payload = 4;\n    msgL.payload = null;\n}\n\n\nreturn [msgR, msgL];",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 300,
-        "y": 1000,
-        "wires": [
-            [
-                "30157b91e3f48641"
-            ],
-            [
-                "b02807a45a85509a"
-            ]
-        ]
-    },
-    {
-        "id": "d7d23d32ac92925b",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "g": "3984e132198dd61f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "80a45b79f3383e28",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "g": "56907c240d2b4a89",
-        "endpoint": "59864ef6956160d5",
-        "mode": "all",
-        "variable": "Bin_Left.Pos_1_Filling",
-        "program": "",
-        "name": "",
-        "x": 120,
-        "y": 1000,
-        "wires": [
-            [
-                "3751fe02364d1269"
-            ]
-        ]
-    },
-    {
-        "id": "b02807a45a85509a",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "g": "56907c240d2b4a89",
-        "group": "e2293b2c6ee894f8",
-        "name": "Shuttle Left",
-        "order": 16,
-        "width": 2,
-        "height": 5,
-        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 490,
-        "y": 1020,
-        "wires": [
-            []
         ]
     }
 ]
