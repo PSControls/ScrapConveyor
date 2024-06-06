@@ -1,8 +1,16 @@
 [
     {
+        "id": "67cb1218d2e51466",
+        "type": "tab",
+        "label": "Z1 Conveyor Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "b83d70117faba64f",
         "type": "tab",
-        "label": "Conveyor Control",
+        "label": "Z2 Conveyor Control",
         "disabled": false,
         "info": "",
         "env": []
@@ -34,7 +42,7 @@
             "c50f88ce775f2ebe"
         ],
         "x": 34,
-        "y": 419,
+        "y": 339,
         "w": 852,
         "h": 162
     },
@@ -48,17 +56,14 @@
             "color": "#000000"
         },
         "nodes": [
-            "5c56de40a62abee9",
-            "0c160a16eb296eb7",
-            "6bc86b78aacb45ad",
             "bcb63e277050cc06",
             "a6b57a173cb17ec1",
-            "56b27e8ceaa651d6"
+            "cbb1b6c4ddd1d8d4"
         ],
         "x": 34,
         "y": 199,
-        "w": 672,
-        "h": 202
+        "w": 452,
+        "h": 122
     },
     {
         "id": "92508e1e5704960e",
@@ -104,12 +109,14 @@
             "3e805050ecc39aac",
             "4750fb59f6bfac88",
             "8770020c90566845",
-            "7d1721dd7f67854f"
+            "7d1721dd7f67854f",
+            "4f25565b9bd8c104",
+            "95d9941ce4b4dacc"
         ],
         "x": 34,
-        "y": 599,
-        "w": 1172,
-        "h": 222
+        "y": 519,
+        "w": 1192,
+        "h": 262
     },
     {
         "id": "3984e132198dd61f",
@@ -121,15 +128,14 @@
             "color": "#000000"
         },
         "nodes": [
-            "e1ebea3469afc3b1",
             "a295fde53e3d6cef",
             "a2e080fed0b5b89d",
-            "d7d23d32ac92925b"
+            "71ba785f1ab81c27"
         ],
-        "x": 14,
+        "x": 34,
         "y": 799,
-        "w": 572,
-        "h": 122
+        "w": 612,
+        "h": 82
     },
     {
         "id": "56907c240d2b4a89",
@@ -146,7 +152,7 @@
             "80a45b79f3383e28",
             "3751fe02364d1269"
         ],
-        "x": 14,
+        "x": 34,
         "y": 939,
         "w": 572,
         "h": 122
@@ -202,30 +208,91 @@
             "c7458e47fee00c6a",
             "75d1854197bc33e8",
             "31a3c02d400cac20",
-            "598ebea8403835dd"
+            "7d434b8d3479eb80"
         ],
-        "x": 514,
-        "y": 19,
+        "x": 954,
+        "y": 79,
         "w": 212,
         "h": 322
     },
     {
-        "id": "75f469265823b86e",
+        "id": "ceef8847d246faf6",
         "type": "group",
-        "z": "b83d70117faba64f",
-        "name": "Write idle condition to HMI",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Bin Full Status",
         "style": {
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "dcac32e11447cede",
-            "f3afc1aa6f8d1027"
+            "675f7a8d8eeda685",
+            "67fe080bbb77a030",
+            "188485b74e22f7df",
+            "8ce8599e51e6ef45",
+            "d2210e9b8adca547",
+            "3f8ea797ce848619"
         ],
         "x": 34,
-        "y": 839,
-        "w": 512,
-        "h": 82
+        "y": 1079,
+        "w": 432,
+        "h": 202
+    },
+    {
+        "id": "20ec85c638a89077",
+        "type": "group",
+        "z": "67cb1218d2e51466",
+        "name": "Capture idle status of P03",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f67f5a9f5e9ec38f",
+            "364f199aa0a6317d",
+            "498b58b8ac46c9c9"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "4aca2ef89bde5686",
+        "type": "group",
+        "z": "67cb1218d2e51466",
+        "name": "Capture idle status of P04",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "a1e3d1c1a181f55a",
+            "869e72fa150220fd",
+            "68a16f2fbe8f6d58"
+        ],
+        "x": 34,
+        "y": 159,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "187ae371413a2c12",
+        "type": "group",
+        "z": "67cb1218d2e51466",
+        "name": "Capture idle status of P05",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "19f2497fdfa9b68e",
+            "354a9b4a63a14d40",
+            "a93dccc8035b3f2b"
+        ],
+        "x": 34,
+        "y": 299,
+        "w": 612,
+        "h": 122
     },
     {
         "id": "b36d4cce571bea0d",
@@ -294,7 +361,7 @@
         "type": "eth-ip endpoint",
         "address": "128.121.50.1",
         "slot": "0",
-        "cycletime": "500",
+        "cycletime": "10",
         "name": "",
         "vartable": {
             "": {
@@ -319,10 +386,19 @@
                 "Shuttle.Running": {
                     "type": "BOOL"
                 },
-                "NR_Stop_Condition": {
+                "In_Zone2_MPStop_PB": {
                     "type": "BOOL"
                 },
-                "In_Zone2_MPStop_PB": {
+                "Bin_Right.Full": {
+                    "type": "BOOL"
+                },
+                "Bin_Left.Full": {
+                    "type": "BOOL"
+                },
+                "NR_Stop_Condition_Z1": {
+                    "type": "BOOL"
+                },
+                "NR_Stop_Condition_Z2": {
                     "type": "BOOL"
                 }
             }
@@ -333,7 +409,7 @@
         "type": "eth-ip endpoint",
         "address": "128.121.50.1",
         "slot": "0",
-        "cycletime": "1000",
+        "cycletime": "10",
         "name": "",
         "vartable": {
             "": {
@@ -612,14 +688,11 @@
         "type": "eth-ip endpoint",
         "address": "128.121.33.1",
         "slot": "0",
-        "cycletime": "500",
+        "cycletime": "200",
         "name": "",
         "vartable": {
             "": {
-                "P23_Idle_Tmr_1.DN": {
-                    "type": "BOOL"
-                },
-                "P23_Idle_Tmr_2.DN": {
+                "P23_Continuous_Mode": {
                     "type": "BOOL"
                 }
             }
@@ -741,7 +814,7 @@
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
+            "name": "Scrap Conveyor",
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
@@ -750,8 +823,8 @@
             "sizes": {
                 "sx": 48,
                 "sy": 48,
-                "gx": 6,
-                "gy": 6,
+                "gx": 0,
+                "gy": 0,
                 "cx": 0,
                 "cy": 0,
                 "px": 0,
@@ -762,7 +835,7 @@
     {
         "id": "265646f6d5686527",
         "type": "ui_tab",
-        "name": "Conveyor Status",
+        "name": "Scrap Conveyor Monitor",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -772,294 +845,288 @@
         "type": "ui_group",
         "name": "Scrap Monitoring",
         "tab": "265646f6d5686527",
-        "order": 1,
+        "order": 2,
         "disp": false,
         "width": "30",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "134a27681c299d69",
+        "id": "a994904a1656cdcf",
+        "type": "ui_group",
+        "name": "titlebar",
+        "tab": "265646f6d5686527",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": "TitleBar"
+    },
+    {
+        "id": "9171cc06836dc8bf",
+        "type": "eth-ip endpoint",
+        "address": "128.121.50.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "NR_Stop_Condition_Alarm": {
+                    "type": "BOOL"
+                },
+                "HMI.StatusDisplay_Lg": {
+                    "type": "INT"
+                }
+            }
+        }
+    },
+    {
+        "id": "62168526966e15a6",
+        "type": "eth-ip endpoint",
+        "address": "128.121.13.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "P03_Continuous_Mode": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "7be315c1129f1afd",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 1,
-        "width": 28,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "ec65d659865b445d",
+        "id": "300cdadce7a3492a",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 3,
-        "width": 1,
+        "width": 9,
         "height": 1
     },
     {
-        "id": "8a9020eac04d471e",
+        "id": "1c93eff42e5c2e5b",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 5,
-        "width": 18,
-        "height": 1
-    },
-    {
-        "id": "9416d750fd53eae9",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 6,
         "width": 1,
         "height": 1
     },
     {
-        "id": "260dd59677df031d",
+        "id": "1f6a777f2fceac73",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 7,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7cc5f283217ea3f3",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 8,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "45086ed0846ae646",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 9,
         "width": 1,
         "height": 1
     },
     {
-        "id": "1c7070f189964e75",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 10,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "562ba882e3bcb735",
+        "id": "db309badf538188f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 11,
-        "width": 1,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "17bbb45729451966",
+        "id": "cd97a44c7988d359",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 12,
-        "width": 2,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "9729c3bfb5ddd929",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 14,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "1569310b3475c02b",
+        "id": "e10dfe67e4239801",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 15,
-        "width": 24,
+        "width": 2,
         "height": 1
     },
     {
-        "id": "cdb961002b541ec4",
+        "id": "344ad7d13754fc85",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 16,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "de65801d745b8fa2",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 18,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9a632bdba9c5d95f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 19,
-        "width": 1,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "65d351728c802cba",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 20,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "5754e11ec3e07a67",
+        "id": "413ebd12a27e8769",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 21,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "94326d64187589dd",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 25,
         "width": 1,
         "height": 1
     },
     {
-        "id": "58b1b2d61936c7d7",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 22,
-        "width": 24,
-        "height": 1
-    },
-    {
-        "id": "1cdf9bf4e386cb8c",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 23,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d431c82bdd86fac8",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 24,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "bec946ea1b6cfb9b",
+        "id": "c0ece27bc22fa61b",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 26,
-        "width": 10,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "d7941c311597ed8a",
+        "id": "2c299191e3c30192",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 27,
-        "width": 1,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "f326688266ee9dfd",
+        "id": "8741166f38795ac3",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 28,
-        "width": 13,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "b592de4da1c252ad",
+        "id": "2f495d95df747db5",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 29,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "ce81529f116aaad7",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 30,
         "width": 1,
         "height": 1
     },
     {
-        "id": "49f668a1817074e5",
+        "id": "d555ed2b8c64c6ca",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 31,
-        "width": 13,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "c99a18c1d1d3f90a",
+        "id": "b6b4d213c0dc0f35",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 32,
-        "width": 12,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "e3aa9a8b7fa1f218",
+        "id": "9495d5fe77d42d0a",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 33,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "710a239592906a8f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 34,
-        "width": 3,
+        "width": 13,
         "height": 1
     },
     {
-        "id": "cf2f75efa63d1743",
+        "id": "e925cd46c6e43060",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 35,
-        "width": 13,
+        "width": 10,
         "height": 1
     },
     {
-        "id": "77508e28fe55c4e4",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 36,
-        "width": 12,
-        "height": 1
-    },
-    {
-        "id": "e9536b528fddac71",
+        "id": "21b7db3b072591d5",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 37,
-        "width": 3,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "8736e7fc8a0cdade",
+        "id": "e4a85a9f3fd37f3f",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -1069,27 +1136,27 @@
         "height": 1
     },
     {
-        "id": "dba9ffd7bb8d1047",
+        "id": "ed5135f23ce3a9ca",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 40,
-        "width": 10,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "cc7ad70d281bed5a",
+        "id": "aebf7ef7a1f8c2e4",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 41,
-        "width": 12,
+        "width": 26,
         "height": 1
     },
     {
-        "id": "78975c96888e522c",
+        "id": "e067c1ede71a46ed",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -1099,7 +1166,7 @@
         "height": 1
     },
     {
-        "id": "933a029219abe780",
+        "id": "27d0e37993d56de2",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
@@ -1109,130 +1176,289 @@
         "height": 1
     },
     {
-        "id": "32e60697db700e49",
+        "id": "8a41c91daa8a8b6a",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 45,
-        "width": 3,
+        "width": 23,
         "height": 1
     },
     {
-        "id": "fcb940668ff8a70d",
+        "id": "6284ed0843245cae",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 46,
-        "width": 26,
+        "order": 47,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "143384768ea78cab",
+        "id": "72268a80801d17d5",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 48,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "2dd2f90305e96144",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 49,
         "width": 1,
         "height": 1
     },
     {
-        "id": "4806e3d84ff7a948",
+        "id": "27a369a8deb8dbca",
+        "type": "ui_spacer",
+        "z": "6f8c834d45cb5fa1",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 50,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "513cf9bce36e4d93",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 51,
-        "width": 23,
+        "width": 3,
         "height": 1
     },
     {
-        "id": "6576a04b3100d5db",
+        "id": "6b339171263ad7b2",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 52,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "650a7b3ca011f2d2",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 53,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "16210ba666e89d54",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 55,
-        "width": 13,
-        "height": 1
-    },
-    {
-        "id": "9d1afb7a41970dfe",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 56,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "06459225ee7b5976",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 57,
         "width": 12,
         "height": 1
     },
     {
-        "id": "4a69029039cfc9b1",
+        "id": "f5bcbd29fcfebba1",
         "type": "ui_spacer",
         "z": "6f8c834d45cb5fa1",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 59,
+        "order": 54,
         "width": 3,
         "height": 1
     },
     {
-        "id": "5c56de40a62abee9",
+        "id": "9281ef71918eb02f",
+        "type": "pccc endpoint",
+        "address": "128.121.15.1",
+        "port": "44818",
+        "userouting": false,
+        "routingbuf": "[1,0]",
+        "cycletime": "500",
+        "timeout": "1500",
+        "name": "",
+        "vartable": []
+    },
+    {
+        "id": "a82baf579982b80e",
+        "type": "eth-ip endpoint",
+        "address": "128.121.14.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "P04_Continuous_Mode": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "ec166fe34aaf52ea",
+        "type": "eth-ip endpoint",
+        "address": "128.121.49.1",
+        "slot": "0",
+        "cycletime": "500",
+        "name": "",
+        "vartable": {
+            "": {
+                "P39_Continuous_Mode": {
+                    "type": "BOOL"
+                }
+            }
+        }
+    },
+    {
+        "id": "f67f5a9f5e9ec38f",
+        "type": "comment",
+        "z": "67cb1218d2e51466",
+        "g": "20ec85c638a89077",
+        "name": "P03",
+        "info": "",
+        "x": 110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "364f199aa0a6317d",
+        "type": "eth-ip in",
+        "z": "67cb1218d2e51466",
+        "g": "20ec85c638a89077",
+        "endpoint": "62168526966e15a6",
+        "mode": "single",
+        "variable": "P03_Continuous_Mode",
+        "program": "",
+        "name": "",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "498b58b8ac46c9c9"
+            ]
+        ]
+    },
+    {
+        "id": "498b58b8ac46c9c9",
         "type": "function",
-        "z": "b83d70117faba64f",
-        "g": "90fb172daa4dab64",
-        "name": "function 1",
-        "func": "let timer_1 = flow.get('p23_timer_1');\nlet timer_2 = flow.get('p23_timer_2');\n\nlet idle_condition; \n\n\nif (timer_1 || timer_2)\n{\n    idle_condition = true;\n}\nelse idle_condition = false;\n\nflow.set('P23_idle_condition', idle_condition)\n\n\nmsg.payload = idle_condition;\n\nreturn msg;",
+        "z": "67cb1218d2e51466",
+        "g": "20ec85c638a89077",
+        "name": "set flow variable",
+        "func": "flow.set(\"p03_idle_condition\", !msg.payload)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 320,
+        "x": 380,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1e3d1c1a181f55a",
+        "type": "comment",
+        "z": "67cb1218d2e51466",
+        "g": "4aca2ef89bde5686",
+        "name": "P04",
+        "info": "",
+        "x": 110,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "869e72fa150220fd",
+        "type": "eth-ip in",
+        "z": "67cb1218d2e51466",
+        "g": "4aca2ef89bde5686",
+        "endpoint": "a82baf579982b80e",
+        "mode": "single",
+        "variable": "P04_Continuous_Mode",
+        "program": "",
+        "name": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "68a16f2fbe8f6d58"
+            ]
+        ]
+    },
+    {
+        "id": "68a16f2fbe8f6d58",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "4aca2ef89bde5686",
+        "name": "set flow variable",
+        "func": "flow.set(\"p04_idle_condition\", !msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19f2497fdfa9b68e",
+        "type": "comment",
+        "z": "67cb1218d2e51466",
+        "g": "187ae371413a2c12",
+        "name": "P05",
+        "info": "",
+        "x": 110,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "354a9b4a63a14d40",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "187ae371413a2c12",
+        "name": "set flow variable",
+        "func": "flow.set(\"p05_idle_condition\", !msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a93dccc8035b3f2b",
+        "type": "pccc in",
+        "z": "67cb1218d2e51466",
+        "g": "187ae371413a2c12",
+        "endpoint": "9281ef71918eb02f",
+        "mode": "single",
+        "variable": "test",
+        "diff": false,
+        "name": "",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "354a9b4a63a14d40",
+                "0ccaa81856c991f4"
+            ]
+        ]
+    },
+    {
+        "id": "0ccaa81856c991f4",
+        "type": "debug",
+        "z": "67cb1218d2e51466",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "cff8cd82936d86f8",
+        "type": "eth-ip in",
+        "z": "67cb1218d2e51466",
+        "endpoint": "ec166fe34aaf52ea",
+        "mode": "single",
+        "variable": "P39_Continuous_Mode",
+        "program": "",
+        "name": "",
+        "x": 160,
+        "y": 520,
         "wires": [
             []
         ]
@@ -1304,7 +1530,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 500,
+        "y": 420,
         "wires": [
             [
                 "8b1f36c9b429e233"
@@ -1377,7 +1603,7 @@
         "to": "",
         "reg": false,
         "x": 750,
-        "y": 540,
+        "y": 460,
         "wires": [
             []
         ]
@@ -1396,65 +1622,9 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 500,
+        "y": 420,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "0c160a16eb296eb7",
-        "type": "change",
-        "z": "b83d70117faba64f",
-        "g": "90fb172daa4dab64",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "p23_timer_2",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 360,
-        "wires": [
-            [
-                "5c56de40a62abee9"
-            ]
-        ]
-    },
-    {
-        "id": "6bc86b78aacb45ad",
-        "type": "change",
-        "z": "b83d70117faba64f",
-        "g": "90fb172daa4dab64",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "p23_timer_1",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 280,
-        "wires": [
-            [
-                "5c56de40a62abee9"
-            ]
         ]
     },
     {
@@ -1465,7 +1635,7 @@
         "name": "P24",
         "info": "",
         "x": 110,
-        "y": 460,
+        "y": 380,
         "wires": []
     },
     {
@@ -1513,7 +1683,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "a415689c27b3e0d8"
@@ -1534,7 +1704,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "32c476b8d60b7d2d"
@@ -1570,7 +1740,7 @@
         ],
         "uncaught": false,
         "x": 550,
-        "y": 540,
+        "y": 460,
         "wires": [
             [
                 "295ae9703392b53e"
@@ -1585,7 +1755,7 @@
         "name": "need to add connection verification ",
         "info": "",
         "x": 200,
-        "y": 640,
+        "y": 600,
         "wires": []
     },
     {
@@ -1609,7 +1779,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "8770020c90566845"
@@ -1635,7 +1805,7 @@
         "repair": false,
         "outputs": 1,
         "x": 610,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "cebac63eedc1b5ea"
@@ -1663,7 +1833,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "7d1721dd7f67854f"
@@ -1685,7 +1855,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 140,
-        "y": 500,
+        "y": 420,
         "wires": [
             [
                 "a85da8f18e1fafeb"
@@ -1700,7 +1870,7 @@
         "name": "read me",
         "info": "The JSON object from P24 is too large to be read in Node-Red.\nA string is inputted instead.\nThe string is too large to convert to JSON object so I \ntest to see when the first comma occurs in the string, \nthen cut out the rest (that leaves just the press angle JSON object).\nThe shortened string is then converted to JSON object so the Press Angle can be used. ",
         "x": 520,
-        "y": 460,
+        "y": 380,
         "wires": []
     },
     {
@@ -1709,7 +1879,7 @@
         "z": "b83d70117faba64f",
         "g": "ffa33797b8602337",
         "name": "function 6",
-        "func": "if (msg.payload)\n{\n    flow.set('start_PB', true);\n}\nreturn msg;",
+        "func": "if (!msg.payload)\n{\n    flow.set('start_PB', true);\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1717,7 +1887,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 780,
+        "y": 740,
         "wires": [
             []
         ]
@@ -1736,7 +1906,7 @@
         "property": "payload",
         "topi": "topic",
         "x": 470,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "d858ffea5a818e9a",
@@ -1752,26 +1922,8 @@
         "name": "interrupt stop condition if physical start button is pressed",
         "info": "",
         "x": 260,
-        "y": 740,
+        "y": 700,
         "wires": []
-    },
-    {
-        "id": "dcac32e11447cede",
-        "type": "eth-ip in",
-        "z": "b83d70117faba64f",
-        "g": "75f469265823b86e",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "NR_Stop_Condition",
-        "program": "",
-        "name": "",
-        "x": 150,
-        "y": 880,
-        "wires": [
-            [
-                "f3afc1aa6f8d1027"
-            ]
-        ]
     },
     {
         "id": "4750fb59f6bfac88",
@@ -1784,7 +1936,7 @@
         "program": "",
         "name": "",
         "x": 160,
-        "y": 780,
+        "y": 740,
         "wires": [
             [
                 "256ec6bbac85e891"
@@ -1798,32 +1950,14 @@
         "g": "90fb172daa4dab64",
         "endpoint": "b6e41b3a1d35e55d",
         "mode": "single",
-        "variable": "P23_Idle_Tmr_1.DN",
+        "variable": "P23_Continuous_Mode",
         "program": "",
         "name": "",
-        "x": 150,
+        "x": 160,
         "y": 280,
         "wires": [
             [
-                "6bc86b78aacb45ad"
-            ]
-        ]
-    },
-    {
-        "id": "56b27e8ceaa651d6",
-        "type": "eth-ip in",
-        "z": "b83d70117faba64f",
-        "g": "90fb172daa4dab64",
-        "endpoint": "b6e41b3a1d35e55d",
-        "mode": "single",
-        "variable": "P23_Idle_Tmr_2.DN",
-        "program": "",
-        "name": "",
-        "x": 150,
-        "y": 360,
-        "wires": [
-            [
-                "0c160a16eb296eb7"
+                "cbb1b6c4ddd1d8d4"
             ]
         ]
     },
@@ -1833,11 +1967,11 @@
         "z": "b83d70117faba64f",
         "g": "ffa33797b8602337",
         "endpoint": "4e651a6592d36d68",
-        "variable": "NR_Stop_Condition",
+        "variable": "NR_Stop_Condition_Z2",
         "program": "",
         "name": "",
-        "x": 1080,
-        "y": 680,
+        "x": 1090,
+        "y": 640,
         "wires": []
     },
     {
@@ -1846,24 +1980,11 @@
         "z": "b83d70117faba64f",
         "g": "ffa33797b8602337",
         "endpoint": "4e651a6592d36d68",
-        "variable": "NR_Stop_Condition",
+        "variable": "NR_Stop_Condition_Z2",
         "program": "",
         "name": "",
-        "x": 1080,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "f3afc1aa6f8d1027",
-        "type": "eth-ip out",
-        "z": "b83d70117faba64f",
-        "g": "75f469265823b86e",
-        "endpoint": "11f522e462c02ce7",
-        "variable": "NR_Stop_Condition_Alarm",
-        "program": "",
-        "name": "",
-        "x": 400,
-        "y": 880,
+        "x": 1090,
+        "y": 700,
         "wires": []
     },
     {
@@ -1873,9 +1994,9 @@
         "g": "ffa33797b8602337",
         "name": "shut down timer",
         "timerType": "delay",
-        "timerDurationUnit": "second",
+        "timerDurationUnit": "hour",
         "timerDurationType": "num",
-        "timerDuration": 10,
+        "timerDuration": 1,
         "timerLoopTimeoutUnit": "second",
         "timerLoopTimeoutType": "num",
         "timerLoopTimeout": 0,
@@ -1915,11 +2036,90 @@
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
         "x": 640,
-        "y": 680,
+        "y": 640,
         "wires": [
             [
                 "2f5e98bbd7134ca7"
             ],
+            []
+        ]
+    },
+    {
+        "id": "4f25565b9bd8c104",
+        "type": "inject",
+        "z": "b83d70117faba64f",
+        "g": "ffa33797b8602337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 910,
+        "y": 560,
+        "wires": [
+            [
+                "8770020c90566845"
+            ]
+        ]
+    },
+    {
+        "id": "95d9941ce4b4dacc",
+        "type": "inject",
+        "z": "b83d70117faba64f",
+        "g": "ffa33797b8602337",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 890,
+        "y": 600,
+        "wires": [
+            [
+                "8770020c90566845"
+            ]
+        ]
+    },
+    {
+        "id": "cbb1b6c4ddd1d8d4",
+        "type": "function",
+        "z": "b83d70117faba64f",
+        "g": "90fb172daa4dab64",
+        "name": "set flow variable",
+        "func": "flow.set(\"p23_idle_condition\", !msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 280,
+        "wires": [
             []
         ]
     },
@@ -1929,19 +2129,18 @@
         "z": "6f8c834d45cb5fa1",
         "g": "3984e132198dd61f",
         "name": "Display Alarms",
-        "func": "var counter = global.get('fault_counter') + 1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = [];\nif (counter == 89) {\n    if (msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Drive M1 Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 M11 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Clutch Limit Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-M6 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 - E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 M6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 -M7 Overload Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.5- M8 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 - spare\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 M9  Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.6-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload.NR_Stop_Condition_Alarm){\n        faults[i] = {\"Fault\": \"Zone 2 idle condition active\"};\n        i++;\n    }\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    if(i==0)\n    {\n        faults[i] = {\"Faults\": \"No faults present\"};   \n    }\n    msg.payload = faults;\n    return msg;\n}\n\n",
+        "func": "var counter = global.get('fault_counter') + 1;\nglobal.set('fault_counter', counter);\nvar i = 0;\nvar faults = [];\n\nlet alarm;\n\n    if (msg.payload[\"Drive[1].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Drive M1 Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.1 E-stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[1].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.1-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 M11 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.7\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Clutch Limit Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[11].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.7 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-M6 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[6].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.2 - E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.2-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 M6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[6].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv. 2 Downstream Timout\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 -M7 Overload Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Zero Speed Fault\" };\n    }\n    if (msg.payload[\"Drive[7].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.4-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[7].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.4 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.5- M8 Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Zero Speed Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 E-Stop\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 - spare\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.5-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[8].Alarm.9\"]) {\n        faults[i] = { \"Fault\": \"Conv.5 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 M9  Overload Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 E-stop ACTIVE\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.5\"]) {\n        faults[i] = { \"Fault\": \"Conv.6-Maintenance Warning\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.6\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Shock Relay Tripped\" };\n        i++;\n    }\n    if (msg.payload[\"Drive[9].Alarm.8\"]) {\n        faults[i] = { \"Fault\": \"Conv.6 Downstream Timout\" };\n        i++;\n    }\n    if (msg.payload.NR_Stop_Condition_Alarm){\n        faults[i] = {\"Fault\": \"Zone 2 idle condition active\"};\n        i++;\n    }\n    if (msg.payload[\"Bin_Left.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Left Bin Full\" };\n        i++;\n    }\n    if (msg.payload[\"Bin_Left.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Left Bin Missing\" };\n        i++;\n    }\n    if (msg.payload[\"Bin_Right.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Right Bin Full\" };\n        i++;\n    } \n    if (msg.payload[\"Bin_Right.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Bin Fault - Right Bin Missing\" };\n        i++;\n    }            \n    if (msg.payload[\"Shuttle.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Travel - M5 Overload Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.1\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Travel Timout - Travel Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.2\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-Stop - ACTIVE\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.3\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-stop 2\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.4\"]) {\n        faults[i] = { \"Fault\": \"Shuttle E-stop 3\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.10\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv.3 - M4 Overload Fault\" };\n        i++;\n    }    \n    if (msg.payload[\"Shuttle.Alarm.11\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv. 3 - Zero Speed Fault\" };\n        i++;\n    }    \n    if (msg.payload[\"Shuttle.Alarm.15\"]) {\n        faults[i] = { \"Fault\": \"Diverter 1 Front - Travel Timout Fault\" };\n        i++;\n    } \n    if (msg.payload[\"Shuttle.Alarm.16\"]) {\n        faults[i] = { \"Fault\": \"Diverter 2 Rear - Travel Timout Fault\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.17\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Conv.3 Shock Relay Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.18\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Diverter 1 O/L Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Shuttle.Alarm.19\"]) {\n        faults[i] = { \"Fault\": \"Shuttle Diverter 2 O/L Trip\" };\n        i++;\n    }\n    if (msg.payload[\"Scrap_System.Alarm.0\"]) {\n        faults[i] = { \"Fault\": \"MCCP2 Rack Communication Fault\" };\n        i++;\n    }\n    if(i==0)\n    {\n        faults[i] = {\"Fault\": \"No faults present\"};   \n    }\n    msg.payload = faults;\n    return msg;\n\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set('fault_counter',0)",
         "finalize": "",
         "libs": [],
-        "x": 280,
+        "x": 340,
         "y": 840,
         "wires": [
             [
-                "a2e080fed0b5b89d",
-                "d7d23d32ac92925b"
+                "a2e080fed0b5b89d"
             ]
         ]
     },
@@ -1958,7 +2157,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
+        "x": 320,
         "y": 1000,
         "wires": [
             [
@@ -1968,23 +2167,6 @@
                 "b02807a45a85509a"
             ]
         ]
-    },
-    {
-        "id": "d7d23d32ac92925b",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "g": "3984e132198dd61f",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 880,
-        "wires": []
     },
     {
         "id": "38c379d69b226e67",
@@ -2064,24 +2246,6 @@
         "wires": []
     },
     {
-        "id": "e1ebea3469afc3b1",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "g": "3984e132198dd61f",
-        "endpoint": "11f522e462c02ce7",
-        "mode": "all",
-        "variable": "",
-        "program": "",
-        "name": "ALARMS",
-        "x": 100,
-        "y": 840,
-        "wires": [
-            [
-                "a295fde53e3d6cef"
-            ]
-        ]
-    },
-    {
         "id": "80a45b79f3383e28",
         "type": "eth-ip in",
         "z": "6f8c834d45cb5fa1",
@@ -2091,7 +2255,7 @@
         "variable": "Bin_Left.Pos_1_Filling",
         "program": "",
         "name": "",
-        "x": 120,
+        "x": 140,
         "y": 1000,
         "wires": [
             [
@@ -2231,7 +2395,7 @@
         "z": "6f8c834d45cb5fa1",
         "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
-        "order": 39,
+        "order": 30,
         "width": 2,
         "height": 1,
         "name": "ZONE 1",
@@ -2243,7 +2407,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 600,
+        "x": 1040,
         "y": 120,
         "wires": []
     },
@@ -2253,7 +2417,7 @@
         "z": "6f8c834d45cb5fa1",
         "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
-        "order": 50,
+        "order": 44,
         "width": 2,
         "height": 1,
         "name": "ZONE 2",
@@ -2265,7 +2429,7 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 600,
+        "x": 1040,
         "y": 180,
         "wires": []
     },
@@ -2275,7 +2439,7 @@
         "z": "6f8c834d45cb5fa1",
         "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
-        "order": 13,
+        "order": 17,
         "width": 3,
         "height": 1,
         "name": "Shuttle",
@@ -2284,33 +2448,11 @@
         "layout": "row-center",
         "className": "table",
         "style": true,
-        "font": "",
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
         "fontSize": "20",
         "color": "#000000",
-        "x": 600,
+        "x": 1040,
         "y": 240,
-        "wires": []
-    },
-    {
-        "id": "598ebea8403835dd",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "g": "7e446569487d40de",
-        "group": "e2293b2c6ee894f8",
-        "order": 4,
-        "width": 9,
-        "height": 1,
-        "name": "",
-        "label": "Scrap Conveyor",
-        "format": "",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "",
-        "fontSize": "32",
-        "color": "#000000",
-        "x": 620,
-        "y": 60,
         "wires": []
     },
     {
@@ -2320,10 +2462,10 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C6",
-        "order": 54,
+        "order": 49,
         "width": 12,
         "height": 1,
-        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99% ;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99% ;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n        border-top-right-radius: 40px;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -2342,7 +2484,7 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C5",
-        "order": 58,
+        "order": 53,
         "width": 14,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor5 {\n        width: 99.2%;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor5.moving .pattern {\n        background-color: green;\n        animation: move-horizontal5 12s linear infinite;\n    }\n\n    @keyframes move-horizontal5 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor5 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor5 .number5{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n</style>\n\n\n<div class=\"horizontal-conveyor5\" id=\"horizontal-conveyor5\">\n    <div class=\"pattern\"></div>\n    <div class=\"number5\">#5</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor5 = document.getElementById('horizontal-conveyor5');\n            if (payload === true) {\n                conveyor5.classList.add('moving');\n            } else {\n                conveyor5.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -2364,9 +2506,9 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C4",
-        "order": 47,
+        "order": 46,
         "width": 1,
-        "height": 4,
+        "height": 3,
         "format": "<style>\n    .vertical-conveyor4 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor4.moving .pattern {\n        background-color: green;\n        animation: move-vertical4 5s linear infinite;\n    }\n\n    @keyframes move-vertical4 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor4 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n   .vertical-conveyor4 .number4{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor4\" id=\"vertical-conveyor4\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number4\">#4</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor4 = document.getElementById('vertical-conveyor4');\n            if (payload === true) {\n                conveyor4.classList.add('moving');\n            } else {\n                conveyor4.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -2386,7 +2528,7 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C1",
-        "order": 44,
+        "order": 39,
         "width": 25,
         "height": 1,
         "format": "<style>\n    .horizontal-conveyor1 {\n        width: 99.55%;\n        height: 85%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .horizontal-conveyor1.moving .pattern {\n        background-color: green;\n        animation: move-horizontal1 20s linear infinite;\n    }\n\n    @keyframes move-horizontal1 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor1 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n    .horizontal-conveyor1 .number1{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"horizontal-conveyor1\" id=\"horizontal-conveyor1\">\n    <div class=\"pattern\"></div>\n    <div class=\"number1\">#1</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor1 = document.getElementById('horizontal-conveyor1');\n            if (payload === true) {\n                conveyor1.classList.add('moving');\n            } else {\n                conveyor1.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
@@ -2408,9 +2550,9 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C2",
-        "order": 33,
+        "order": 36,
         "width": 1,
-        "height": 4,
+        "height": 3,
         "format": "<style>\n    .vertical-conveyor2 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor2.moving .pattern {\n        background-color: green;\n        animation: move-vertical2 4s linear infinite;\n    }\n\n    @keyframes move-vertical2 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor2 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n    }\n\n    .vertical-conveyor2 .number2{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor2\" id=\"vertical-conveyor2\" >\n    <div class=\"pattern\"></div>\n    <div class = \"number2\">#2</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor2 = document.getElementById('vertical-conveyor2');\n            if (payload === true) {\n                conveyor2.classList.add('moving');\n            } else {\n                conveyor2.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -2430,9 +2572,9 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "C7",
-        "order": 25,
+        "order": 20,
         "width": 1,
-        "height": 5,
+        "height": 4,
         "format": "<style>\n    .vertical-conveyor7 {\n        width: 88%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n    }\n\n    .vertical-conveyor7.moving .pattern {\n        background-color: green;\n        animation: move-vertical7 5s linear infinite;\n    }\n\n    @keyframes move-vertical7 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 0 100%;\n        }\n    }\n\n    .vertical-conveyor7 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor7 .number7{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor7\" id=\"vertical-conveyor7\">\n    <div class=\"pattern\"></div>\n    <div class = \"number7\">#7</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor7 = document.getElementById('vertical-conveyor7');\n            if (payload === true) {\n                conveyor7.classList.add('moving');\n            } else {\n                conveyor7.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -2452,16 +2594,16 @@
         "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
         "name": "Styling",
-        "order": 2,
+        "order": 4,
         "width": 2,
         "height": 2,
-        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .img_logo{\n        height: auto;\n        width: auto;\n        max-height: 100%;\n        max-width: 100%;\n        display: block;\n    }\n    #Conveyor_Status_Scrap_Monitoring {\n\n    border: none !important; /* Change the border color and width as needed */\n\n    }\n    /* Target the specific card panel */\n    #Conveyor_Status_Scrap_Monitoring_cards {\n        width: 78vw !important;\n        height: 95vh !important;\n        padding: 5px !important; /* Adjust padding as needed */\n    }\n\n    .nr-dashboard-ui_table {\n   //     border: inset 2px #303030 !important;\n   //     border-radius: 5px ; \n\n    }\n\n    .nr-dashboard-ui_table .tabulator{\n        font-size: 24px !important;\n        border: 2px solid black; \n        \n    }\n\n    .tabulator-header {\n       // display: none !important;\n    }\n\n    ::-webkit-scrollbar {\n        display: none !important;\n    }\n\n\n \n\n\n\n\n</style>\n<img class = \"img_logo\" src = \"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\">\n\n\n\n<script>\n$('#toolbar').css(\"display\", \"none\")\n(function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n\n    if (payload === true) {\n    document.getElementByClassName(\"tabulator-header\").style.display = \"none\";\n} \n\n});\n})(scope);\n</script>\n\n",
+        "format": "<style>\n    .nr-dashboard-cardpanel {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n    }\n\n    #Conveyor_Status_Scrap_Monitoring {\n\n    border: none !important; /* Change the border color and width as needed */\n\n    }\n    /* Target the specific card panel */\n    #Scrap_Conveyor_Monitor_Scrap_Monitoring {\n     //   width: 78vw !important;\n        height: 80vh !important;\n        width: 1430px !important;\n     //   height: 100% !important;\n        padding: 5px !important; /* Adjust padding as needed */\n        padding-top: 10px !important;\n        background-image: url(\"/images/P1Layout.png\") !important;\n        background-repeat: no-repeat;\n        background-size: 1500px 700px ;\n    }\n\n    .nr-dashboard-ui_table {\n   //     border: inset 2px #303030 !important;\n   //     border-radius: 5px ; \n\n    }\n\n    .nr-dashboard-ui_table .tabulator{\n        font-size: 24px !important;\n       // border: 2px solid black; \n        \n    }\n\n    .tabulator-header {\n       // display: none !important;\n    }\n\n    ::-webkit-scrollbar {\n        display: none !important;\n    }\n    .binLeftFull{\n        border: 4px solid;\n    }\n\n\n\n</style>\n\n\n\n\n<script>\n$('#toolbar').css(\"display\", \"none\")\n(function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n\n    if (payload === true) {\n    document.getElementByClassName(\"tabulator-header\").style.display = \"none\";\n} \n\n});\n})(scope);\n</script>\n\n",
         "storeOutMessages": true,
-        "fwdInMessages": true,
+        "fwdInMessages": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 590,
+        "x": 1030,
         "y": 300,
         "wires": [
             []
@@ -2474,9 +2616,9 @@
         "g": "ac6b5e1a16fa8144",
         "group": "e2293b2c6ee894f8",
         "name": "Shuttle",
-        "order": 17,
+        "order": 23,
         "width": 1,
-        "height": 5,
+        "height": 3,
         "format": "<style>\n    .vertical-conveyor3 {\n        width: 85%;\n        height: 98%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid ;\n        border-color: black;\n    }\n\n    .vertical-conveyor3.moving .pattern {\n        background-color: green;\n        animation: move-vertical3 5s linear infinite;\n    }\n\n    @keyframes move-vertical3 {\n        from {\n            background-position: 0 100%;\n        }\n\n        to {\n            background-position: 0 0;\n        }\n    }\n\n    .vertical-conveyor3 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to bottom, black 10%, transparent 10%);\n        background-size: 100% 20px;\n        \n    }\n    .vertical-conveyor3 .number3{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n</style>\n\n<div class=\"vertical-conveyor3\" id=\"vertical-conveyor3\">\n    <div class=\"pattern\"></div>\n    <div class = \"number3\">#3</div>\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor3 = document.getElementById('vertical-conveyor3');\n            if (payload === true) {\n                conveyor3.classList.add('moving');\n            } else {\n                conveyor3.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -2496,16 +2638,16 @@
         "g": "56907c240d2b4a89",
         "group": "e2293b2c6ee894f8",
         "name": "Shuttle Right",
-        "order": 18,
+        "order": 24,
         "width": 2,
-        "height": 5,
-        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionR_4\" class=\"sectionR\">4</div>\n    <div id=\"sectionR_3\" class=\"sectionR\">3</div>\n    <div id=\"sectionR_1\" class=\"sectionR\">1</div>\n    <div id=\"sectionR_2\" class=\"sectionR\">2</div>\n</div>\n\n<style>\n    .barR {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionR {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightR{\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionR_1').classList.remove('highlightR');\n            document.getElementById('sectionR_2').classList.remove('highlightR');\n            document.getElementById('sectionR_3').classList.remove('highlightR');\n            document.getElementById('sectionR_4').classList.remove('highlightR');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionR_1').classList.add('highlightR');\n            } else if (newValue === 2) {\n                document.getElementById('sectionR_2').classList.add('highlightR');\n            } else if (newValue === 3) {\n                document.getElementById('sectionR_3').classList.add('highlightR');\n            } else if (newValue === 4) {\n                document.getElementById('sectionR_4').classList.add('highlightR');\n            }\n        });\n    })(scope);\n</script>\n",
+        "height": 4,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionR_4\" class=\"sectionR\">4</div>\n    <div id=\"sectionR_3\" class=\"sectionR\">3</div>\n    <div id=\"sectionR_1\" class=\"sectionR\">1</div>\n    <div id=\"sectionR_2\" class=\"sectionR\">2</div>\n</div>\n\n<style>\n    .barR {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionR {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightR{\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionR_1').classList.remove('highlightR');\n            document.getElementById('sectionR_2').classList.remove('highlightR');\n            document.getElementById('sectionR_3').classList.remove('highlightR');\n            document.getElementById('sectionR_4').classList.remove('highlightR');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionR_1').classList.add('highlightR');\n            } else if (newValue === 2) {\n                document.getElementById('sectionR_2').classList.add('highlightR');\n            } else if (newValue === 3) {\n                document.getElementById('sectionR_3').classList.add('highlightR');\n            } else if (newValue === 4) {\n                document.getElementById('sectionR_4').classList.add('highlightR');\n            }\n        });\n    })(scope);\n</script>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 490,
+        "x": 510,
         "y": 980,
         "wires": [
             []
@@ -2518,16 +2660,16 @@
         "g": "56907c240d2b4a89",
         "group": "e2293b2c6ee894f8",
         "name": "Shuttle Left",
-        "order": 16,
+        "order": 22,
         "width": 2,
-        "height": 5,
-        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 50px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
+        "height": 4,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 490,
+        "x": 510,
         "y": 1020,
         "wires": [
             []
@@ -2540,14 +2682,272 @@
         "g": "3984e132198dd61f",
         "group": "e2293b2c6ee894f8",
         "name": "",
-        "order": 7,
+        "order": 6,
         "width": 22,
         "height": 3,
         "columns": [],
         "outputs": 0,
         "cts": false,
-        "x": 470,
+        "x": 570,
         "y": 840,
+        "wires": []
+    },
+    {
+        "id": "675f7a8d8eeda685",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Bin_Left.Full",
+        "program": "",
+        "name": "",
+        "x": 130,
+        "y": 1160,
+        "wires": [
+            [
+                "188485b74e22f7df"
+            ]
+        ]
+    },
+    {
+        "id": "67fe080bbb77a030",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Bin_Right.Full",
+        "program": "",
+        "name": "",
+        "x": 130,
+        "y": 1240,
+        "wires": [
+            [
+                "8ce8599e51e6ef45"
+            ]
+        ]
+    },
+    {
+        "id": "188485b74e22f7df",
+        "type": "ui_led",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "order": 10,
+        "group": "e2293b2c6ee894f8",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Bin_Left.Full",
+        "x": 350,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "8ce8599e51e6ef45",
+        "type": "ui_led",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "order": 14,
+        "group": "e2293b2c6ee894f8",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Bin_Right.Full",
+        "x": 360,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "7d434b8d3479eb80",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "g": "7e446569487d40de",
+        "group": "a994904a1656cdcf",
+        "name": "titlebar styling",
+        "order": 1,
+        "width": 30,
+        "height": 2,
+        "format": "<!DOCTYPE html>\n<html>\n<style>\n    .toolbar-container {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        background-color: rgb(18, 50, 180) !important;\n        height: 100%;\n        padding-right: 10px;\n        overflow: none !important;\n    }\n\n    .logo {\n        max-width: 80px; /* Adjust the width as needed */\n    }\n\n    .time-date-container {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-end;\n        overflow: none;\n    }\n\n    .d_time {\n        font-size: 22px;\n        color: white;\n    }\n\n    .date {\n        font-size: 18px;\n        color: white;\n    }\n</style>\n\n<head>\n    <title>Date and Time</title>\n    <script>\n        function updateDateTime() {\n            var dateTimeElement = document.getElementById(\"datetime\");\n            var dayElement = document.getElementById(\"day\");\n            var currentDate = new Date();\n            currentDate = currentDate.toLocaleString();\n            var date = currentDate.split(\",\");\n            var time = date[1];\n            var day = date[0];\n            dateTimeElement.innerHTML = time.toLocaleString();\n            dayElement.innerHTML = day.toLocaleString();\n        }\n        setInterval(updateDateTime, 1000); // Update every second\n    </script>\n</head>\n\n<body>\n    <div class=\"toolbar-container\">\n        <img src=\"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\" alt=\"Logo\" class=\"logo\">\n        <div class=\"time-date-container\">\n            <div id=\"datetime\" class=\"d_time\"></div>\n            <div id=\"day\" class=\"date\"></div>\n        </div>\n    </div>\n</body>\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "time",
+        "x": 1060,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71ba785f1ab81c27",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "3984e132198dd61f",
+        "endpoint": "11f522e462c02ce7",
+        "mode": "all",
+        "variable": "NR_Stop_Condition_Alarm",
+        "program": "",
+        "name": "",
+        "x": 140,
+        "y": 840,
+        "wires": [
+            [
+                "a295fde53e3d6cef"
+            ]
+        ]
+    },
+    {
+        "id": "e434a1d768cd4988",
+        "type": "debug",
+        "z": "6f8c834d45cb5fa1",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "7619fec0dda00992",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "endpoint": "9171cc06836dc8bf",
+        "mode": "single",
+        "variable": "HMI.StatusDisplay_Lg",
+        "program": "",
+        "name": "",
+        "x": 180,
+        "y": 1340,
+        "wires": [
+            [
+                "b1c2fe65e1b210bd"
+            ]
+        ]
+    },
+    {
+        "id": "b1c2fe65e1b210bd",
+        "type": "function",
+        "z": "6f8c834d45cb5fa1",
+        "name": "function 7",
+        "func": "var message = flow.get(\"status_array\");\nmsg.payload = message[msg.payload]\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar status_msg = [\n    \"SYSTEM STOPPED\",\n    \"ZONE 1 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"ZONE 2 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"SHUTTLE E-STOP ACTIVE\",\n    \"MAIN PANEL E-STOP ACTIVE\",\n    \"CONV. 1 E-STOP ACTIVE\",\n    \"CONV. 2 E-STOP ACTIVE\",\n    \"CONV. 7 E-STOP ACTIVE\",\n    \"BIN FAULT\",\n    \"ZONE 2 PANEL E-STOP ACTIVE\",\n    \"CONV. 6 E-STOP ACTIVE\",\n    \"CONV. 5 E-STOP ACTIVE\",\n    \"CONV. 4 E-STOP ACTIVE\",\n    \"SHUTTLE TRAVEL TIMEOUT FAULT\",\n    \"LEFT TRAILER - FULL\",\n    \"RIGHT TRAILER FULL\",\n    \"ZONE 1 RUNNING\",\n    \"ZONE 2 RUNNING\",\n    \"FILLING LEFT TRAILER\",\n    \"FILLING RIGHT TRAILER\",\n    \"LEFT TRAILER MISSING\",\n    \"RIGHT TRAILER MISSING\",\n    \"SHUTTLE IN HAND MODE\",\n    \"CONVEYOR 1 IN HAND MODE\",\n    \"CONVEYOR 2 IN HAND MODE\",\n    \"CONVEYOR 4 IN HAND MODE\",\n    \"CONVEYOR 5 IN HAND MODE\",\n    \"CONVEYOR 6 IN HAND MODE\",\n    \"CONVEYOR 7 IN HAND MODE\",\n    \"FILL MODE - INDEX WITH MANUAL DELAY\",\n    \"FILL MODE - SMOOTHFILL\",\n    \"FILL MODE - INDEX WITH DYNAMIC DELAY\",\n    \"CONVEYOR 1 OVERLOAD FAULT\",\n    \"CONVEYOR 2 OVERLOAD FAULT\",\n    \"CONVEYOR 3 OVERLOAD FAULT\",\n    \"CONVEYOR 4 OVERLOAD FAULT\",\n    \"CONVEYOR 5 OVERLOAD FAULT\",\n    \"CONVEYOR 6 OVERLOAD FAULT\",\n    \"CONVEYOR 7 OVERLOAD FAULT\",\n    \"CONVEYOR 1 ZERO SPEED FAULT\",\n    \"CONVEYOR 2 ZERO SPEED FAULT\",\n    \"CONVEYOR 3 ZERO SPEED FAULT\",\n    \"CONVEYOR 4 ZERO SPEED FAULT\",\n    \"CONVEYOR 5 ZERO SPEED FAULT\",\n    \"CONVEYOR 6 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 CLUTCH FAULT\",\n    \"\",\n    \"DIVERTER 1 (M2) OVERLOAD TRIP\",\n    \"DIVERTER 2 (M3) OVERLOAD TRIP\",\n    \"REMOTE START SIGNAL 1 - ON\",\n    \"REMOTE START SIGNAL 2 - ON\",\n    \"ZONE 1 IDLE CONDITION ACTIVE\",\n    \"ZONE 2 IDLE CONDITION ACTIVE\",\n    \"\",\n    \"CONVEYOR 1 SHOCK RELAY TRIP\",\n    \"CONVEYOR 2 SHOCK RELAY TRIP\",\n    \"SHUTTLE BELT SHOCK RELAY TRIP\",\n    \"CONVEYOR 4 SHOCK RELAY TRIP\",\n    \"CONVEYOR 5 SHOCK RELAY TRIP\",\n    \"CONVEYOR 6 SHOCK RELAY TRIP\",\n    \"ERROR\"\n];\nflow.set(\"status_array\", status_msg);",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1340,
+        "wires": [
+            [
+                "0fc1f707d0432866"
+            ]
+        ]
+    },
+    {
+        "id": "0fc1f707d0432866",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "group": "e2293b2c6ee894f8",
+        "order": 2,
+        "width": 18,
+        "height": 1,
+        "name": "",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": "25",
+        "color": "#008000",
+        "x": 600,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "d2210e9b8adca547",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "group": "e2293b2c6ee894f8",
+        "order": 9,
+        "width": 4,
+        "height": 1,
+        "name": "Left Bin Full",
+        "label": "",
+        "format": "Left Bin Full",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 370,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "3f8ea797ce848619",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "group": "e2293b2c6ee894f8",
+        "order": 13,
+        "width": 4,
+        "height": 1,
+        "name": "Right Bin Full",
+        "label": "",
+        "format": "Right Bin Full",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 370,
+        "y": 1200,
         "wires": []
     }
 ]
