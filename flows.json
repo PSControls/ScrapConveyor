@@ -286,8 +286,7 @@
         },
         "nodes": [
             "19f2497fdfa9b68e",
-            "354a9b4a63a14d40",
-            "a93dccc8035b3f2b"
+            "354a9b4a63a14d40"
         ],
         "x": 34,
         "y": 299,
@@ -1246,18 +1245,6 @@
         "height": 1
     },
     {
-        "id": "9281ef71918eb02f",
-        "type": "pccc endpoint",
-        "address": "128.121.15.1",
-        "port": "44818",
-        "userouting": false,
-        "routingbuf": "[1,0]",
-        "cycletime": "500",
-        "timeout": "1500",
-        "name": "",
-        "vartable": []
-    },
-    {
         "id": "a82baf579982b80e",
         "type": "eth-ip endpoint",
         "address": "128.121.14.1",
@@ -1267,21 +1254,6 @@
         "vartable": {
             "": {
                 "P04_Continuous_Mode": {
-                    "type": "BOOL"
-                }
-            }
-        }
-    },
-    {
-        "id": "ec166fe34aaf52ea",
-        "type": "eth-ip endpoint",
-        "address": "128.121.49.1",
-        "slot": "0",
-        "cycletime": "500",
-        "name": "",
-        "vartable": {
-            "": {
-                "P39_Continuous_Mode": {
                     "type": "BOOL"
                 }
             }
@@ -1414,25 +1386,6 @@
         ]
     },
     {
-        "id": "a93dccc8035b3f2b",
-        "type": "pccc in",
-        "z": "67cb1218d2e51466",
-        "g": "187ae371413a2c12",
-        "endpoint": "9281ef71918eb02f",
-        "mode": "single",
-        "variable": "test",
-        "diff": false,
-        "name": "",
-        "x": 110,
-        "y": 380,
-        "wires": [
-            [
-                "354a9b4a63a14d40",
-                "0ccaa81856c991f4"
-            ]
-        ]
-    },
-    {
         "id": "0ccaa81856c991f4",
         "type": "debug",
         "z": "67cb1218d2e51466",
@@ -1449,18 +1402,79 @@
         "wires": []
     },
     {
-        "id": "cff8cd82936d86f8",
-        "type": "eth-ip in",
+        "id": "7c8c257801a02c04",
+        "type": "pythonshell in",
         "z": "67cb1218d2e51466",
-        "endpoint": "ec166fe34aaf52ea",
-        "mode": "single",
-        "variable": "P39_Continuous_Mode",
-        "program": "",
         "name": "",
-        "x": 160,
-        "y": 520,
+        "pyfile": "/home/controls-orin-1/.node-red/projects/ScrapConveyor/P05_Continuous_Mode_Tag.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 200,
+        "y": 620,
+        "wires": [
+            [
+                "b20641dbb2fd1a47"
+            ]
+        ]
+    },
+    {
+        "id": "dc5e7a3431c73aeb",
+        "type": "debug",
+        "z": "67cb1218d2e51466",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "c725a50b1b7276f4",
+        "type": "inject",
+        "z": "67cb1218d2e51466",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 740,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "b20641dbb2fd1a47",
+        "type": "json",
+        "z": "67cb1218d2e51466",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 410,
+        "y": 620,
+        "wires": [
+            [
+                "dc5e7a3431c73aeb"
+            ]
         ]
     },
     {

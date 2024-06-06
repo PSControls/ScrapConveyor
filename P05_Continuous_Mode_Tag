@@ -1,0 +1,7 @@
+from pycomm3 import LogixDriver
+
+
+def read_single():
+
+	with LogixDriver('128.121.15.1') as plc:
+		return plc.read('P05_Continuous_Mode')
