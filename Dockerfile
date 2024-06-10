@@ -20,6 +20,8 @@ RUN apt-get install python3
 
 RUN apt-get install python3-pip
 
+echo Y
+
 RUN pip3 install pycomm3
 
 WORKDIR ${PROJECT_DIR}
