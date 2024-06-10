@@ -11,20 +11,19 @@ RUN mkdir -p ${PROJECT_DIR}
 # Set the working directory
 WORKDIR /usr/app
 
-# Install necessary packages and Node-RED as root
-RUN apk update && apk add --no-cache git \
+# Install necessary packages, Node-RED, Python, and pip as root
+RUN apk update && apk add --no-cache git python3 py3-pip \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
-    && npm install -g node-red@${NODE_RED_VERSION} \
-  
-    
+    && npm install -g node-red@${NODE_RED_VERSION}
+
 WORKDIR ${PROJECT_DIR}
-    
+
 # Clone the GitHub repository as root
 RUN git clone https://github.com/PSControls/ScrapConveyor.git ${PROJECT_DIR}
 
 # Change ownership of the project directory to the 'node' user
 RUN chown -R node:node ${PROJECT_DIR} \
-    && echo "Installing node-red dependancies" \
+    && echo "Installing Node-RED dependencies" \
     && npm install node-red-contrib-cip-ethernet-ip \
     && npm install node-red-contrib-controltimer \
     && npm install node-red-node-ui-table \
@@ -32,11 +31,14 @@ RUN chown -R node:node ${PROJECT_DIR} \
     && npm install node-red-dashboard \
     && npm install node-red-contrib-simple-gate
 
-  
-   
-
 # Switch to the 'node' user for better security
 USER node
+
+# Set the working directory to the project directory
+WORKDIR ${PROJECT_DIR}
+
+# Install Python libraries using pip (add your required libraries here)
+RUN pip3 install requests numpy pandas
 
 # Expose the default Node-RED port
 EXPOSE 1880
