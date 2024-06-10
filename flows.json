@@ -36,15 +36,16 @@
             "a85da8f18e1fafeb",
             "295ae9703392b53e",
             "8b1f36c9b429e233",
-            "4545b9321a9d5421",
             "2c89c4f38fb59dd1",
             "cb21b4c41291ee90",
-            "c50f88ce775f2ebe"
+            "c50f88ce775f2ebe",
+            "ccce8bcbab5d3506",
+            "abb3eab636054451"
         ],
         "x": 34,
-        "y": 339,
+        "y": 379,
         "w": 852,
-        "h": 162
+        "h": 182
     },
     {
         "id": "90fb172daa4dab64",
@@ -56,14 +57,15 @@
             "color": "#000000"
         },
         "nodes": [
-            "bcb63e277050cc06",
             "a6b57a173cb17ec1",
-            "cbb1b6c4ddd1d8d4"
+            "cbb1b6c4ddd1d8d4",
+            "074382ef51dea1e1",
+            "9e98cef710a257b8"
         ],
         "x": 34,
-        "y": 199,
+        "y": 219,
         "w": 452,
-        "h": 122
+        "h": 142
     },
     {
         "id": "92508e1e5704960e",
@@ -79,13 +81,14 @@
             "8d4a874c384e5206",
             "65147b74894b4619",
             "5aa12c420e9eb33c",
-            "d0196ba39a92dd67",
-            "d0a56d417e4c2c26"
+            "d0a56d417e4c2c26",
+            "c960d61ac47e18c2",
+            "493cbd2e81b24985"
         ],
         "x": 34,
         "y": 19,
         "w": 952,
-        "h": 162
+        "h": 182
     },
     {
         "id": "ffa33797b8602337",
@@ -114,7 +117,7 @@
             "95d9941ce4b4dacc"
         ],
         "x": 34,
-        "y": 519,
+        "y": 579,
         "w": 1192,
         "h": 262
     },
@@ -133,8 +136,8 @@
             "71ba785f1ab81c27"
         ],
         "x": 34,
-        "y": 799,
-        "w": 612,
+        "y": 759,
+        "w": 572,
         "h": 82
     },
     {
@@ -152,8 +155,8 @@
             "80a45b79f3383e28",
             "3751fe02364d1269"
         ],
-        "x": 34,
-        "y": 939,
+        "x": 514,
+        "y": 579,
         "w": 572,
         "h": 122
     },
@@ -173,7 +176,6 @@
             "31321c89180d5ba1",
             "759e4b08eb657d14",
             "c2f151570f5535dc",
-            "c36d2995e2143d77",
             "4e090530348facda",
             "38c379d69b226e67",
             "0c153caa246d053f",
@@ -187,7 +189,8 @@
             "d5dfca39a0d9502a",
             "46600b88b0a362d1",
             "2eb2f1813eab0534",
-            "8d0567010f964511"
+            "8d0567010f964511",
+            "c36d2995e2143d77"
         ],
         "x": 34,
         "y": 19,
@@ -207,12 +210,11 @@
             "709ac59772bc73ef",
             "c7458e47fee00c6a",
             "75d1854197bc33e8",
-            "31a3c02d400cac20",
             "7d434b8d3479eb80"
         ],
-        "x": 954,
-        "y": 79,
-        "w": 212,
+        "x": 514,
+        "y": 19,
+        "w": 232,
         "h": 322
     },
     {
@@ -232,67 +234,124 @@
             "d2210e9b8adca547",
             "3f8ea797ce848619"
         ],
-        "x": 34,
-        "y": 1079,
+        "x": 514,
+        "y": 359,
         "w": 432,
         "h": 202
     },
     {
-        "id": "20ec85c638a89077",
+        "id": "9a65ca835fc07fd1",
         "type": "group",
         "z": "67cb1218d2e51466",
-        "name": "Capture idle status of P03",
+        "name": "Capture idle status of P03, P04, P05, P12, P13, P16",
         "style": {
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "f67f5a9f5e9ec38f",
-            "364f199aa0a6317d",
-            "498b58b8ac46c9c9"
+            "7c8c257801a02c04",
+            "b20641dbb2fd1a47",
+            "354a9b4a63a14d40",
+            "6f99535b1c25ea73",
+            "26672b4f574390d2"
         ],
         "x": 34,
         "y": 19,
-        "w": 452,
+        "w": 812,
         "h": 122
     },
     {
-        "id": "4aca2ef89bde5686",
+        "id": "10b22c24799add6a",
         "type": "group",
-        "z": "67cb1218d2e51466",
-        "name": "Capture idle status of P04",
+        "z": "6f8c834d45cb5fa1",
+        "name": "Status Display",
         "style": {
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "a1e3d1c1a181f55a",
-            "869e72fa150220fd",
-            "68a16f2fbe8f6d58"
+            "7619fec0dda00992",
+            "b1c2fe65e1b210bd",
+            "0fc1f707d0432866"
+        ],
+        "x": 634,
+        "y": 759,
+        "w": 632,
+        "h": 82
+    },
+    {
+        "id": "7ab948cbd58efd1e",
+        "type": "group",
+        "z": "67cb1218d2e51466",
+        "name": "Capture idle status of P11",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d1b61cfba0809eb4",
+            "d8d50c3c0ec03f08",
+            "9a0638148724150a",
+            "3fcce48ffbb4f880",
+            "e13c51909c89614d",
+            "44114833f7908443",
+            "d1c82117d9a16444"
         ],
         "x": 34,
         "y": 159,
-        "w": 452,
-        "h": 122
+        "w": 932,
+        "h": 162
     },
     {
-        "id": "187ae371413a2c12",
+        "id": "a944d0c33e72efb9",
         "type": "group",
         "z": "67cb1218d2e51466",
-        "name": "Capture idle status of P05",
+        "name": "Capture idle status of P39",
         "style": {
             "label": true,
             "color": "#000000"
         },
         "nodes": [
-            "19f2497fdfa9b68e",
-            "354a9b4a63a14d40",
-            "a93dccc8035b3f2b"
+            "bccb3279352466f7",
+            "944035ec2cde82c5",
+            "dd996cda9636c06f",
+            "a2a4f7cf90d8a032",
+            "c27d7c76184c5ac4",
+            "118b463f12950f68"
         ],
         "x": 34,
-        "y": 299,
-        "w": 612,
-        "h": 122
+        "y": 339,
+        "w": 752,
+        "h": 202
+    },
+    {
+        "id": "f3835c71d654de20",
+        "type": "group",
+        "z": "67cb1218d2e51466",
+        "name": "Handles timer and writes to AB PLC to shut down conveyor on 10 minute idle",
+        "style": {
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "91e7448d6743e0e0",
+            "533d421d6dc214c0",
+            "b1df8a5ce350bfa6",
+            "e3208920783a9e5c",
+            "e42863fdff7b4cab",
+            "b9fcc9fc5a683a23",
+            "58fdf22a77953233",
+            "828a670594811cc9",
+            "40e9dd1d3c996090",
+            "d6e023c3b4783833",
+            "a4fc0dadf80de290",
+            "4192f6e4013998ea",
+            "15f792531f561fd2"
+        ],
+        "x": 34,
+        "y": 559,
+        "w": 1192,
+        "h": 222
     },
     {
         "id": "b36d4cce571bea0d",
@@ -881,24 +940,40 @@
         }
     },
     {
-        "id": "62168526966e15a6",
-        "type": "eth-ip endpoint",
-        "address": "128.121.13.1",
-        "slot": "0",
-        "cycletime": "500",
+        "id": "a08a5eb421dd37b2",
+        "type": "mqtt-broker",
         "name": "",
-        "vartable": {
-            "": {
-                "P03_Continuous_Mode": {
-                    "type": "BOOL"
-                }
-            }
-        }
+        "broker": "128.121.21.11",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
-        "id": "7be315c1129f1afd",
+        "id": "05570ecb80732bf4",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 1,
@@ -906,9 +981,9 @@
         "height": 1
     },
     {
-        "id": "300cdadce7a3492a",
+        "id": "78229cb540f83396",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 3,
@@ -916,9 +991,9 @@
         "height": 1
     },
     {
-        "id": "1c93eff42e5c2e5b",
+        "id": "19106a2dbdfcd202",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 5,
@@ -926,9 +1001,9 @@
         "height": 1
     },
     {
-        "id": "1f6a777f2fceac73",
+        "id": "7f32fdfd6ed2a8e8",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 7,
@@ -936,9 +1011,9 @@
         "height": 1
     },
     {
-        "id": "7cc5f283217ea3f3",
+        "id": "afd5a484332c6602",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 8,
@@ -946,9 +1021,29 @@
         "height": 1
     },
     {
-        "id": "db309badf538188f",
+        "id": "39b55008908f75b3",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 9,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "36517e389c2cec01",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "df36f2da832f54b1",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 11,
@@ -956,49 +1051,39 @@
         "height": 1
     },
     {
-        "id": "cd97a44c7988d359",
+        "id": "e18e017ec851854b",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
-        "order": 12,
+        "order": 14,
         "width": 1,
         "height": 1
     },
     {
-        "id": "e10dfe67e4239801",
+        "id": "21a091abf46a0b24",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 15,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "344ad7d13754fc85",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 16,
         "width": 25,
         "height": 1
     },
     {
-        "id": "de65801d745b8fa2",
+        "id": "0ba7e4f4c16169cc",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 18,
-        "width": 2,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "9a632bdba9c5d95f",
+        "id": "8e007762c8b1062c",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 19,
@@ -1006,9 +1091,9 @@
         "height": 1
     },
     {
-        "id": "413ebd12a27e8769",
+        "id": "dffcb973ba49af06",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 21,
@@ -1016,9 +1101,9 @@
         "height": 1
     },
     {
-        "id": "94326d64187589dd",
+        "id": "172b5975788fcaa2",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 25,
@@ -1026,9 +1111,9 @@
         "height": 1
     },
     {
-        "id": "c0ece27bc22fa61b",
+        "id": "749c7bcbc858acc3",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 26,
@@ -1036,9 +1121,9 @@
         "height": 1
     },
     {
-        "id": "2c299191e3c30192",
+        "id": "8b72a2faea75b595",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 27,
@@ -1046,9 +1131,9 @@
         "height": 1
     },
     {
-        "id": "8741166f38795ac3",
+        "id": "7aa61bd13743cc95",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 28,
@@ -1056,59 +1141,59 @@
         "height": 1
     },
     {
-        "id": "2f495d95df747db5",
+        "id": "785db85e82e4ab42",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 29,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "d555ed2b8c64c6ca",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 31,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "b6b4d213c0dc0f35",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 32,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "9495d5fe77d42d0a",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 33,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "710a239592906a8f",
-        "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
-        "name": "spacer",
-        "group": "e2293b2c6ee894f8",
-        "order": 34,
         "width": 13,
         "height": 1
     },
     {
-        "id": "e925cd46c6e43060",
+        "id": "9f67454874298643",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 30,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "1c2751b88a664fd6",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 31,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "21d3bd8bcf067084",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8de5ac9f4a0dd164",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
+        "name": "spacer",
+        "group": "e2293b2c6ee894f8",
+        "order": 34,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "0404c347ce268751",
+        "type": "ui_spacer",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 35,
@@ -1116,9 +1201,9 @@
         "height": 1
     },
     {
-        "id": "21b7db3b072591d5",
+        "id": "393a3626d8b013ea",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 37,
@@ -1126,9 +1211,9 @@
         "height": 1
     },
     {
-        "id": "e4a85a9f3fd37f3f",
+        "id": "bf25537e9313644c",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 38,
@@ -1136,9 +1221,9 @@
         "height": 1
     },
     {
-        "id": "ed5135f23ce3a9ca",
+        "id": "7d3d4698c8fdc2cd",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 40,
@@ -1146,9 +1231,9 @@
         "height": 1
     },
     {
-        "id": "aebf7ef7a1f8c2e4",
+        "id": "f0e1572272b19ee9",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 41,
@@ -1156,9 +1241,9 @@
         "height": 1
     },
     {
-        "id": "e067c1ede71a46ed",
+        "id": "b9c8b65ae7cc84ad",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 42,
@@ -1166,9 +1251,9 @@
         "height": 1
     },
     {
-        "id": "27d0e37993d56de2",
+        "id": "ed08c0350317542a",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 43,
@@ -1176,9 +1261,9 @@
         "height": 1
     },
     {
-        "id": "8a41c91daa8a8b6a",
+        "id": "0b02dcaf1608d46f",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 45,
@@ -1186,9 +1271,9 @@
         "height": 1
     },
     {
-        "id": "6284ed0843245cae",
+        "id": "a94dd0ba694b3cc9",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 47,
@@ -1196,9 +1281,9 @@
         "height": 1
     },
     {
-        "id": "72268a80801d17d5",
+        "id": "f3c46d5da579c868",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 48,
@@ -1206,9 +1291,9 @@
         "height": 1
     },
     {
-        "id": "27a369a8deb8dbca",
+        "id": "8414a55a2929b89f",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 50,
@@ -1216,9 +1301,9 @@
         "height": 1
     },
     {
-        "id": "513cf9bce36e4d93",
+        "id": "1e45ce0922a58f2d",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 51,
@@ -1226,9 +1311,9 @@
         "height": 1
     },
     {
-        "id": "6b339171263ad7b2",
+        "id": "6aa7351173ddc9da",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 52,
@@ -1236,9 +1321,9 @@
         "height": 1
     },
     {
-        "id": "f5bcbd29fcfebba1",
+        "id": "02c20d4908a70c94",
         "type": "ui_spacer",
-        "z": "6f8c834d45cb5fa1",
+        "z": "67cb1218d2e51466",
         "name": "spacer",
         "group": "e2293b2c6ee894f8",
         "order": 54,
@@ -1246,197 +1331,715 @@
         "height": 1
     },
     {
-        "id": "9281ef71918eb02f",
-        "type": "pccc endpoint",
-        "address": "128.121.15.1",
-        "port": "44818",
-        "userouting": false,
-        "routingbuf": "[1,0]",
-        "cycletime": "500",
-        "timeout": "1500",
-        "name": "",
-        "vartable": []
-    },
-    {
-        "id": "a82baf579982b80e",
-        "type": "eth-ip endpoint",
-        "address": "128.121.14.1",
-        "slot": "0",
-        "cycletime": "500",
-        "name": "",
-        "vartable": {
-            "": {
-                "P04_Continuous_Mode": {
-                    "type": "BOOL"
-                }
-            }
-        }
-    },
-    {
-        "id": "ec166fe34aaf52ea",
+        "id": "c78969b03d1342cb",
         "type": "eth-ip endpoint",
         "address": "128.121.49.1",
-        "slot": "0",
+        "slot": "1",
         "cycletime": "500",
         "name": "",
         "vartable": {
             "": {
-                "P39_Continuous_Mode": {
-                    "type": "BOOL"
+                "PRESS_ANGLE": {
+                    "type": "DINT"
                 }
             }
         }
-    },
-    {
-        "id": "f67f5a9f5e9ec38f",
-        "type": "comment",
-        "z": "67cb1218d2e51466",
-        "g": "20ec85c638a89077",
-        "name": "P03",
-        "info": "",
-        "x": 110,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "364f199aa0a6317d",
-        "type": "eth-ip in",
-        "z": "67cb1218d2e51466",
-        "g": "20ec85c638a89077",
-        "endpoint": "62168526966e15a6",
-        "mode": "single",
-        "variable": "P03_Continuous_Mode",
-        "program": "",
-        "name": "",
-        "x": 160,
-        "y": 100,
-        "wires": [
-            [
-                "498b58b8ac46c9c9"
-            ]
-        ]
-    },
-    {
-        "id": "498b58b8ac46c9c9",
-        "type": "function",
-        "z": "67cb1218d2e51466",
-        "g": "20ec85c638a89077",
-        "name": "set flow variable",
-        "func": "flow.set(\"p03_idle_condition\", !msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a1e3d1c1a181f55a",
-        "type": "comment",
-        "z": "67cb1218d2e51466",
-        "g": "4aca2ef89bde5686",
-        "name": "P04",
-        "info": "",
-        "x": 110,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "869e72fa150220fd",
-        "type": "eth-ip in",
-        "z": "67cb1218d2e51466",
-        "g": "4aca2ef89bde5686",
-        "endpoint": "a82baf579982b80e",
-        "mode": "single",
-        "variable": "P04_Continuous_Mode",
-        "program": "",
-        "name": "",
-        "x": 160,
-        "y": 240,
-        "wires": [
-            [
-                "68a16f2fbe8f6d58"
-            ]
-        ]
-    },
-    {
-        "id": "68a16f2fbe8f6d58",
-        "type": "function",
-        "z": "67cb1218d2e51466",
-        "g": "4aca2ef89bde5686",
-        "name": "set flow variable",
-        "func": "flow.set(\"p04_idle_condition\", !msg.payload)\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "19f2497fdfa9b68e",
-        "type": "comment",
-        "z": "67cb1218d2e51466",
-        "g": "187ae371413a2c12",
-        "name": "P05",
-        "info": "",
-        "x": 110,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "354a9b4a63a14d40",
         "type": "function",
         "z": "67cb1218d2e51466",
-        "g": "187ae371413a2c12",
+        "g": "9a65ca835fc07fd1",
         "name": "set flow variable",
-        "func": "flow.set(\"p05_idle_condition\", !msg.payload)\nreturn msg;",
+        "func": "if (msg.payload.P03 == \"True\"){\n    flow.set('P03_idle_condition', false)\n\n}\nelse{\n    flow.set('P03_idle_condition', true)\n}\nif (msg.payload.P04 == \"True\"){\n    flow.set('P04_idle_condition', false)\n\n}\nelse{\n    flow.set('P04_idle_condition', true)\n}\nif (msg.payload.P05 == \"True\"){\n    flow.set('P05_idle_condition', false)\n\n}\nelse{\n    flow.set('P05_idle_condition', true)\n}\nif (msg.payload.P12 == \"True\"){\n    flow.set('P12_idle_condition', false)\n\n}\nelse{\n    flow.set('P12_idle_condition', true)\n}\nif (msg.payload.P13 == \"True\"){\n    flow.set('P13_idle_condition', false)\n\n}\nelse{\n    flow.set('P13_idle_condition', true)\n}\nif (msg.payload.P14 == \"True\"){\n    flow.set('P14_idle_condition', false)\n\n}\nelse{\n    flow.set('P14_idle_condition', true)\n}\nif (msg.payload.P15 == \"True\"){\n    flow.set('P15_idle_condition', false)\n\n}\nelse{\n    flow.set('P15_idle_condition', true)\n}\nif (msg.payload.P16 == \"True\"){\n    flow.set('P16_idle_condition', false)\n\n}\nelse{\n    flow.set('P16_idle_condition', true)\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
+        "x": 740,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c8c257801a02c04",
+        "type": "pythonshell in",
+        "z": "67cb1218d2e51466",
+        "g": "9a65ca835fc07fd1",
+        "name": "",
+        "pyfile": "/home/controls-orin-1/PyScripts/Idle_Conditions.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 360,
+        "y": 100,
+        "wires": [
+            [
+                "b20641dbb2fd1a47",
+                "26672b4f574390d2"
+            ]
+        ]
+    },
+    {
+        "id": "b20641dbb2fd1a47",
+        "type": "json",
+        "z": "67cb1218d2e51466",
+        "g": "9a65ca835fc07fd1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 550,
+        "y": 100,
+        "wires": [
+            [
+                "354a9b4a63a14d40"
+            ]
+        ]
+    },
+    {
+        "id": "6f99535b1c25ea73",
+        "type": "inject",
+        "z": "67cb1218d2e51466",
+        "g": "9a65ca835fc07fd1",
+        "name": "Start script",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "7c8c257801a02c04"
+            ]
+        ]
+    },
+    {
+        "id": "d1b61cfba0809eb4",
+        "type": "mqtt in",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "",
+        "topic": "Press_11/Batch1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "a08a5eb421dd37b2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "d8d50c3c0ec03f08"
+            ]
+        ]
+    },
+    {
+        "id": "d8d50c3c0ec03f08",
+        "type": "delay",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "3fcce48ffbb4f880"
+            ]
+        ]
+    },
+    {
+        "id": "9a0638148724150a",
+        "type": "change",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "last_value_p11",
+                "pt": "flow",
+                "to": "payload.Press_angle",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fcce48ffbb4f880",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "function 8",
+        "func": "let last_value = flow.get('last_value_p11');\n\nlet change_value = msg.payload.Press_angle - last_value;\n\nif (change_value == 0)\n{\n    flow.set('P11_idle_condition', true)\n}\nelse flow.set('P11_idle_condition', false);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e13c51909c89614d",
+        "type": "complete",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "",
+        "scope": [
+            "3fcce48ffbb4f880"
+        ],
+        "uncaught": false,
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "9a0638148724150a"
+            ]
+        ]
+    },
+    {
+        "id": "bccb3279352466f7",
+        "type": "eth-ip in",
+        "z": "67cb1218d2e51466",
+        "g": "a944d0c33e72efb9",
+        "endpoint": "c78969b03d1342cb",
+        "mode": "single",
+        "variable": "PRESS_ANGLE",
+        "program": "",
+        "name": "",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "944035ec2cde82c5",
+                "a2a4f7cf90d8a032"
+            ]
+        ]
+    },
+    {
+        "id": "944035ec2cde82c5",
+        "type": "controltimer",
+        "z": "67cb1218d2e51466",
+        "g": "a944d0c33e72efb9",
+        "name": "",
+        "timerType": "delay",
+        "timerDurationUnit": "second",
+        "timerDurationType": "num",
+        "timerDuration": 10,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isRunningTimerProgressVisible": true,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": false,
+        "startTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfUnknownMessage": true,
+        "resetTimerOnReceivalOfStartAction": false,
+        "continueTimerOnReceivalOfStartAction": false,
+        "isDebugModeEnabled": false,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 380,
+        "y": 380,
+        "wires": [
+            [
+                "dd996cda9636c06f"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dd996cda9636c06f",
+        "type": "change",
+        "z": "67cb1218d2e51466",
+        "g": "a944d0c33e72efb9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "P39_idle_condition",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
         "y": 380,
         "wires": [
             []
         ]
     },
     {
-        "id": "a93dccc8035b3f2b",
-        "type": "pccc in",
+        "id": "a2a4f7cf90d8a032",
+        "type": "change",
         "z": "67cb1218d2e51466",
-        "g": "187ae371413a2c12",
-        "endpoint": "9281ef71918eb02f",
-        "mode": "single",
-        "variable": "test",
-        "diff": false,
+        "g": "a944d0c33e72efb9",
         "name": "",
-        "x": 110,
-        "y": 380,
+        "rules": [
+            {
+                "t": "set",
+                "p": "P39_idle_condition",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91e7448d6743e0e0",
+        "type": "inject",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 640,
         "wires": [
             [
-                "354a9b4a63a14d40",
-                "0ccaa81856c991f4"
+                "533d421d6dc214c0"
             ]
         ]
     },
     {
-        "id": "0ccaa81856c991f4",
+        "id": "533d421d6dc214c0",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "function 9",
+        "func": "let p03_idle_conditon = flow.get('P03_idle_condition');\nlet p04_idle_conditon = flow.get('P04_idle_condition');\nlet p05_idle_conditon = flow.get('P05_idle_condition');\nlet p11_idle_conditon = flow.get('P11_idle_condition');\nlet p12_idle_conditon = flow.get('P12_idle_condition');\nlet p13_idle_conditon = flow.get('P13_idle_condition');\nlet p14_idle_conditon = flow.get('P14_idle_condition');\nlet p15_idle_conditon = flow.get('P15_idle_condition');\nlet p16_idle_conditon = flow.get('P16_idle_condition');\nlet manual_start_PB = flow.get('start_PB');\n\nif (p03_idle_conditon && \n    p04_idle_conditon && \n    p05_idle_conditon && \n    p11_idle_conditon && \n    p12_idle_conditon && \n    p13_idle_conditon && \n    p14_idle_conditon && \n    p15_idle_conditon &&\n    p16_idle_conditon)\n{\n    msg.payload = \"START\";\n}\nelse \n{\n    msg.payload = \"STOP\";\n}\n\nif (manual_start_PB)\n{\n    msg.payload = \"STOP\";\n    flow.set('start_PB', false);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "828a670594811cc9"
+            ]
+        ]
+    },
+    {
+        "id": "b1df8a5ce350bfa6",
+        "type": "comment",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "need to add connection verification ",
+        "info": "",
+        "x": 200,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "e3208920783a9e5c",
+        "type": "controltimer",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "shut down timer",
+        "timerType": "delay",
+        "timerDurationUnit": "hour",
+        "timerDurationType": "num",
+        "timerDuration": 1,
+        "timerLoopTimeoutUnit": "second",
+        "timerLoopTimeoutType": "num",
+        "timerLoopTimeout": 0,
+        "loopTimeoutMessageType": "str",
+        "loopTimeoutMessage": "LOOP_TIMEOUT",
+        "timerMaxLoopIterationsType": "num",
+        "timerMaxLoopIterations": 0,
+        "loopMaxIterationsMessageType": "str",
+        "loopMaxIterationsMessage": "MAX_LOOP_ITERATIONS",
+        "isRunningTimerProgressVisible": true,
+        "outputReceivedMessageOnTimerTrigger": true,
+        "outputReceivedMessageOnTimerHalt": true,
+        "startTimerOnReceivalOfUnknownMessage": false,
+        "resetTimerOnReceivalOfUnknownMessage": false,
+        "resetTimerOnReceivalOfStartAction": false,
+        "continueTimerOnReceivalOfStartAction": true,
+        "isDebugModeEnabled": true,
+        "timerTriggeredMessageType": "str",
+        "timerTriggeredMessage": "TIMER_TRIGGERED",
+        "timerHaltedMessageType": "str",
+        "timerHaltedMessage": "TIMER_HALTED",
+        "isStartActionEnabled": true,
+        "isStopActionEnabled": true,
+        "isResetActionEnabled": true,
+        "isPauseActionEnabled": true,
+        "isContinueActionEnabled": true,
+        "actionPropertyNameType": "str",
+        "actionPropertyName": "payload",
+        "startActionNameType": "str",
+        "startActionName": "START",
+        "stopActionNameType": "str",
+        "stopActionName": "STOP",
+        "resetActionNameType": "str",
+        "resetActionName": "RESET",
+        "pauseActionNameType": "str",
+        "pauseActionName": "PAUSE",
+        "continueActionNameType": "str",
+        "continueActionName": "CONTINUE",
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "e42863fdff7b4cab"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e42863fdff7b4cab",
+        "type": "change",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9fcc9fc5a683a23",
+        "type": "switch",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "STOP",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "58fdf22a77953233"
+            ]
+        ]
+    },
+    {
+        "id": "58fdf22a77953233",
+        "type": "change",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "828a670594811cc9",
+        "type": "rbe",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "e3208920783a9e5c",
+                "b9fcc9fc5a683a23"
+            ]
+        ]
+    },
+    {
+        "id": "40e9dd1d3c996090",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "function 10",
+        "func": "if (!msg.payload)\n{\n    flow.set('start_PB', true);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6e023c3b4783833",
+        "type": "comment",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "name": "interrupt stop condition if physical start button is pressed",
+        "info": "",
+        "x": 260,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a4fc0dadf80de290",
+        "type": "eth-ip in",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "In_Zone2_MPStop_PB",
+        "program": "",
+        "name": "",
+        "x": 160,
+        "y": 740,
+        "wires": [
+            [
+                "40e9dd1d3c996090"
+            ]
+        ]
+    },
+    {
+        "id": "4192f6e4013998ea",
+        "type": "eth-ip out",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "endpoint": "4e651a6592d36d68",
+        "variable": "NR_Stop_Condition_Z1",
+        "program": "",
+        "name": "",
+        "x": 1090,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "15f792531f561fd2",
+        "type": "eth-ip out",
+        "z": "67cb1218d2e51466",
+        "g": "f3835c71d654de20",
+        "endpoint": "4e651a6592d36d68",
+        "variable": "NR_Stop_Condition_Z1",
+        "program": "",
+        "name": "",
+        "x": 1090,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c27d7c76184c5ac4",
+        "type": "status",
+        "z": "67cb1218d2e51466",
+        "g": "a944d0c33e72efb9",
+        "name": "Error check",
+        "scope": [
+            "bccb3279352466f7"
+        ],
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "118b463f12950f68"
+            ]
+        ]
+    },
+    {
+        "id": "118b463f12950f68",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "a944d0c33e72efb9",
+        "name": "function 11",
+        "func": "if (msg.status.text == \"offline\")\n{\n    flow.set('P39_idle_condition', false)\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44114833f7908443",
+        "type": "status",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "Error check",
+        "scope": [
+            "d1b61cfba0809eb4"
+        ],
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "d1c82117d9a16444"
+            ]
+        ]
+    },
+    {
+        "id": "d1c82117d9a16444",
+        "type": "function",
+        "z": "67cb1218d2e51466",
+        "g": "7ab948cbd58efd1e",
+        "name": "function 12",
+        "func": "if (msg.status.text == \"node-red:common.status.connecting\")\n{\n    flow.set('P11_idle_condition', false)\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26672b4f574390d2",
         "type": "debug",
         "z": "67cb1218d2e51466",
-        "name": "debug 2",
+        "g": "9a65ca835fc07fd1",
+        "name": "debug 3",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -1444,24 +2047,9 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 480,
+        "x": 540,
+        "y": 60,
         "wires": []
-    },
-    {
-        "id": "cff8cd82936d86f8",
-        "type": "eth-ip in",
-        "z": "67cb1218d2e51466",
-        "endpoint": "ec166fe34aaf52ea",
-        "mode": "single",
-        "variable": "P39_Continuous_Mode",
-        "program": "",
-        "name": "",
-        "x": 160,
-        "y": 520,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "189c337b31799d86",
@@ -1478,7 +2066,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 140,
-        "y": 100,
+        "y": 60,
         "wires": [
             [
                 "8d4a874c384e5206"
@@ -1504,7 +2092,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 100,
+        "y": 60,
         "wires": [
             [
                 "5aa12c420e9eb33c"
@@ -1530,7 +2118,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 330,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
                 "8b1f36c9b429e233"
@@ -1558,7 +2146,7 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 140,
+        "y": 100,
         "wires": [
             []
         ]
@@ -1577,7 +2165,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 100,
+        "y": 60,
         "wires": [
             []
         ]
@@ -1603,7 +2191,7 @@
         "to": "",
         "reg": false,
         "x": 750,
-        "y": 460,
+        "y": 500,
         "wires": [
             []
         ]
@@ -1622,43 +2210,10 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 420,
+        "y": 460,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "4545b9321a9d5421",
-        "type": "comment",
-        "z": "b83d70117faba64f",
-        "g": "4d90d2279ce3ce74",
-        "name": "P24",
-        "info": "",
-        "x": 110,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "d0196ba39a92dd67",
-        "type": "comment",
-        "z": "b83d70117faba64f",
-        "g": "92508e1e5704960e",
-        "name": "P21",
-        "info": "",
-        "x": 110,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "bcb63e277050cc06",
-        "type": "comment",
-        "z": "b83d70117faba64f",
-        "g": "90fb172daa4dab64",
-        "name": "P23",
-        "info": "",
-        "x": 110,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "f97a5d90b1d6e3a5",
@@ -1683,7 +2238,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "a415689c27b3e0d8"
@@ -1704,7 +2259,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "32c476b8d60b7d2d"
@@ -1722,7 +2277,7 @@
         ],
         "uncaught": false,
         "x": 530,
-        "y": 140,
+        "y": 100,
         "wires": [
             [
                 "65147b74894b4619"
@@ -1740,7 +2295,7 @@
         ],
         "uncaught": false,
         "x": 550,
-        "y": 460,
+        "y": 500,
         "wires": [
             [
                 "295ae9703392b53e"
@@ -1755,7 +2310,7 @@
         "name": "need to add connection verification ",
         "info": "",
         "x": 200,
-        "y": 600,
+        "y": 660,
         "wires": []
     },
     {
@@ -1779,7 +2334,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "8770020c90566845"
@@ -1805,7 +2360,7 @@
         "repair": false,
         "outputs": 1,
         "x": 610,
-        "y": 700,
+        "y": 760,
         "wires": [
             [
                 "cebac63eedc1b5ea"
@@ -1833,7 +2388,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 700,
+        "y": 760,
         "wires": [
             [
                 "7d1721dd7f67854f"
@@ -1855,7 +2410,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 140,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
                 "a85da8f18e1fafeb"
@@ -1870,7 +2425,7 @@
         "name": "read me",
         "info": "The JSON object from P24 is too large to be read in Node-Red.\nA string is inputted instead.\nThe string is too large to convert to JSON object so I \ntest to see when the first comma occurs in the string, \nthen cut out the rest (that leaves just the press angle JSON object).\nThe shortened string is then converted to JSON object so the Press Angle can be used. ",
         "x": 520,
-        "y": 380,
+        "y": 420,
         "wires": []
     },
     {
@@ -1887,7 +2442,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 740,
+        "y": 800,
         "wires": [
             []
         ]
@@ -1906,7 +2461,7 @@
         "property": "payload",
         "topi": "topic",
         "x": 470,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "d858ffea5a818e9a",
@@ -1922,7 +2477,7 @@
         "name": "interrupt stop condition if physical start button is pressed",
         "info": "",
         "x": 260,
-        "y": 700,
+        "y": 760,
         "wires": []
     },
     {
@@ -1936,7 +2491,7 @@
         "program": "",
         "name": "",
         "x": 160,
-        "y": 740,
+        "y": 800,
         "wires": [
             [
                 "256ec6bbac85e891"
@@ -1954,7 +2509,7 @@
         "program": "",
         "name": "",
         "x": 160,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "cbb1b6c4ddd1d8d4"
@@ -1971,7 +2526,7 @@
         "program": "",
         "name": "",
         "x": 1090,
-        "y": 640,
+        "y": 700,
         "wires": []
     },
     {
@@ -1984,7 +2539,7 @@
         "program": "",
         "name": "",
         "x": 1090,
-        "y": 700,
+        "y": 760,
         "wires": []
     },
     {
@@ -2036,7 +2591,7 @@
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
         "x": 640,
-        "y": 640,
+        "y": 700,
         "wires": [
             [
                 "2f5e98bbd7134ca7"
@@ -2067,7 +2622,7 @@
         "payload": "true",
         "payloadType": "bool",
         "x": 910,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "8770020c90566845"
@@ -2097,7 +2652,7 @@
         "payload": "false",
         "payloadType": "bool",
         "x": 890,
-        "y": 600,
+        "y": 660,
         "wires": [
             [
                 "8770020c90566845"
@@ -2110,7 +2665,7 @@
         "z": "b83d70117faba64f",
         "g": "90fb172daa4dab64",
         "name": "set flow variable",
-        "func": "flow.set(\"p23_idle_condition\", !msg.payload)\nreturn msg;",
+        "func": "flow.set(\"P23_idle_condition\", !msg.payload)\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2118,7 +2673,115 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 280,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c960d61ac47e18c2",
+        "type": "status",
+        "z": "b83d70117faba64f",
+        "g": "92508e1e5704960e",
+        "name": "Error check",
+        "scope": [
+            "189c337b31799d86"
+        ],
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "493cbd2e81b24985"
+            ]
+        ]
+    },
+    {
+        "id": "493cbd2e81b24985",
+        "type": "function",
+        "z": "b83d70117faba64f",
+        "g": "92508e1e5704960e",
+        "name": "function 13",
+        "func": "if (msg.status.text == \"node-red:common.status.connecting\")\n{\n    flow.set('P21_idle_condition', false)\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccce8bcbab5d3506",
+        "type": "status",
+        "z": "b83d70117faba64f",
+        "g": "4d90d2279ce3ce74",
+        "name": "Error check",
+        "scope": [
+            "cb21b4c41291ee90"
+        ],
+        "x": 130,
+        "y": 520,
+        "wires": [
+            [
+                "abb3eab636054451"
+            ]
+        ]
+    },
+    {
+        "id": "abb3eab636054451",
+        "type": "function",
+        "z": "b83d70117faba64f",
+        "g": "4d90d2279ce3ce74",
+        "name": "function 14",
+        "func": "if (msg.status.text == \"node-red:common.status.connecting\")\n{\n    flow.set('P24_idle_condition', false)\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "074382ef51dea1e1",
+        "type": "status",
+        "z": "b83d70117faba64f",
+        "g": "90fb172daa4dab64",
+        "name": "Error check",
+        "scope": [
+            "a6b57a173cb17ec1"
+        ],
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "9e98cef710a257b8"
+            ]
+        ]
+    },
+    {
+        "id": "9e98cef710a257b8",
+        "type": "function",
+        "z": "b83d70117faba64f",
+        "g": "90fb172daa4dab64",
+        "name": "function 15",
+        "func": "if (msg.status.text == \"offline\")\n{\n    flow.set('P23_idle_condition', false)\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 320,
         "wires": [
             []
         ]
@@ -2137,10 +2800,11 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 840,
+        "y": 800,
         "wires": [
             [
-                "a2e080fed0b5b89d"
+                "a2e080fed0b5b89d",
+                "3397ca37ac082602"
             ]
         ]
     },
@@ -2157,8 +2821,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1000,
+        "x": 800,
+        "y": 640,
         "wires": [
             [
                 "30157b91e3f48641"
@@ -2255,8 +2919,8 @@
         "variable": "Bin_Left.Pos_1_Filling",
         "program": "",
         "name": "",
-        "x": 140,
-        "y": 1000,
+        "x": 620,
+        "y": 640,
         "wires": [
             [
                 "3751fe02364d1269"
@@ -2395,7 +3059,7 @@
         "z": "6f8c834d45cb5fa1",
         "g": "7e446569487d40de",
         "group": "e2293b2c6ee894f8",
-        "order": 30,
+        "order": 33,
         "width": 2,
         "height": 1,
         "name": "ZONE 1",
@@ -2407,8 +3071,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1040,
-        "y": 120,
+        "x": 600,
+        "y": 60,
         "wires": []
     },
     {
@@ -2429,30 +3093,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 1040,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "31a3c02d400cac20",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "g": "7e446569487d40de",
-        "group": "e2293b2c6ee894f8",
-        "order": 17,
-        "width": 3,
-        "height": 1,
-        "name": "Shuttle",
-        "label": "",
-        "format": "Shuttle",
-        "layout": "row-center",
-        "className": "table",
-        "style": true,
-        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
-        "fontSize": "20",
-        "color": "#000000",
-        "x": 1040,
-        "y": 240,
+        "x": 600,
+        "y": 120,
         "wires": []
     },
     {
@@ -2465,7 +3107,7 @@
         "order": 49,
         "width": 12,
         "height": 1,
-        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99% ;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n        border-top-right-radius: 40px;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
+        "format": "<style>\n    .horizontal-conveyor6 {\n        width: 99% ;\n        height: 100%;\n        position: relative;\n        overflow: hidden;\n        background-color: red;\n        border-style: solid;\n        border-color: black;\n        //border-top-right-radius: 40px;\n    }\n\n    .horizontal-conveyor6.moving .pattern {\n        background-color: green;\n        animation: move-horizontal6 10s linear infinite;\n    }\n\n    @keyframes move-horizontal6 {\n        from {\n            background-position: 0 0;\n        }\n\n        to {\n            background-position: 100% 0;\n        }\n    }\n\n    .horizontal-conveyor6 .pattern {\n        width: 100%;\n        height: 100%;\n        background-image: linear-gradient(to right, black 10%, transparent 10%);\n        background-size: 20px 100%;\n    }\n\n    .horizontal-conveyor6 .number6{\n        position: absolute;\n        top: 50%;\n        left:50%;\n        transform: translate(-50%, -50%);\n        font-size: 2em;\n        font-weight: bold;\n        color: white;\n    }\n\n\n</style>\n\n<div  class=\"horizontal-conveyor6\" id=\"horizontal-conveyor6\">\n    <div class=\"pattern\"></div>\n    <div class=\"number6\">#6</div>\n\n</div>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(payload) {\n            var conveyor6 = document.getElementById('horizontal-conveyor6');\n            if (payload === true) {\n                conveyor6.classList.add('moving');\n            } else {\n                conveyor6.classList.remove('moving');\n            }\n        });\n    })(scope);\n</script>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -2603,11 +3245,295 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 1030,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30157b91e3f48641",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "g": "56907c240d2b4a89",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle Right",
+        "order": 24,
+        "width": 2,
+        "height": 4,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionR_4\" class=\"sectionR\">4</div>\n    <div id=\"sectionR_3\" class=\"sectionR\">3</div>\n    <div id=\"sectionR_1\" class=\"sectionR\">1</div>\n    <div id=\"sectionR_2\" class=\"sectionR\">2</div>\n</div>\n\n<style>\n    .barR {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionR {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightR{\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionR_1').classList.remove('highlightR');\n            document.getElementById('sectionR_2').classList.remove('highlightR');\n            document.getElementById('sectionR_3').classList.remove('highlightR');\n            document.getElementById('sectionR_4').classList.remove('highlightR');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionR_1').classList.add('highlightR');\n            } else if (newValue === 2) {\n                document.getElementById('sectionR_2').classList.add('highlightR');\n            } else if (newValue === 3) {\n                document.getElementById('sectionR_3').classList.add('highlightR');\n            } else if (newValue === 4) {\n                document.getElementById('sectionR_4').classList.add('highlightR');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b02807a45a85509a",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "g": "56907c240d2b4a89",
+        "group": "e2293b2c6ee894f8",
+        "name": "Shuttle Left",
+        "order": 22,
+        "width": 2,
+        "height": 4,
+        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 990,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2e080fed0b5b89d",
+        "type": "ui_table",
+        "z": "6f8c834d45cb5fa1",
+        "g": "3984e132198dd61f",
+        "group": "e2293b2c6ee894f8",
+        "name": "",
+        "order": 6,
+        "width": 22,
+        "height": 3,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 530,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "675f7a8d8eeda685",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Bin_Left.Full",
+        "program": "",
+        "name": "",
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "188485b74e22f7df"
+            ]
+        ]
+    },
+    {
+        "id": "67fe080bbb77a030",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "endpoint": "4e651a6592d36d68",
+        "mode": "single",
+        "variable": "Bin_Right.Full",
+        "program": "",
+        "name": "",
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "8ce8599e51e6ef45"
+            ]
+        ]
+    },
+    {
+        "id": "188485b74e22f7df",
+        "type": "ui_led",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "order": 13,
+        "group": "e2293b2c6ee894f8",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Bin_Left.Full",
+        "x": 830,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8ce8599e51e6ef45",
+        "type": "ui_led",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "order": 17,
+        "group": "e2293b2c6ee894f8",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Bin_Right.Full",
+        "x": 840,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7d434b8d3479eb80",
+        "type": "ui_template",
+        "z": "6f8c834d45cb5fa1",
+        "g": "7e446569487d40de",
+        "group": "a994904a1656cdcf",
+        "name": "titlebar styling",
+        "order": 1,
+        "width": 30,
+        "height": 2,
+        "format": "<!DOCTYPE html>\n<html>\n<style>\n    .toolbar-container {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        background-color: rgb(18, 50, 180) !important;\n        height: 100%;\n        padding-right: 10px;\n        overflow: none !important;\n    }\n\n    .logo {\n        max-width: 80px; /* Adjust the width as needed */\n    }\n\n    .time-date-container {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-end;\n        overflow: none;\n        padding-right: 50px;\n    }\n\n    .d_time {\n        font-size: 22px;\n        color: white;\n    }\n\n    .date {\n        font-size: 18px;\n        color: white;\n    }\n</style>\n\n<head>\n    <title>Date and Time</title>\n    <script>\n        function updateDateTime() {\n            var dateTimeElement = document.getElementById(\"datetime\");\n            var dayElement = document.getElementById(\"day\");\n            var currentDate = new Date();\n            currentDate = currentDate.toLocaleString();\n            var date = currentDate.split(\",\");\n            var time = date[1];\n            var day = date[0];\n            dateTimeElement.innerHTML = time.toLocaleString();\n            dayElement.innerHTML = day.toLocaleString();\n        }\n        setInterval(updateDateTime, 1000); // Update every second\n    </script>\n</head>\n\n<body>\n    <div class=\"toolbar-container\">\n        <img src=\"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\" alt=\"Logo\" class=\"logo\">\n        <div class=\"time-date-container\">\n            <div id=\"datetime\" class=\"d_time\"></div>\n            <div id=\"day\" class=\"date\"></div>\n        </div>\n    </div>\n</body>\n</html>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "time",
+        "x": 640,
         "y": 300,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "71ba785f1ab81c27",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "3984e132198dd61f",
+        "endpoint": "11f522e462c02ce7",
+        "mode": "all",
+        "variable": "NR_Stop_Condition_Alarm",
+        "program": "",
+        "name": "",
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "a295fde53e3d6cef"
+            ]
+        ]
+    },
+    {
+        "id": "7619fec0dda00992",
+        "type": "eth-ip in",
+        "z": "6f8c834d45cb5fa1",
+        "g": "10b22c24799add6a",
+        "endpoint": "9171cc06836dc8bf",
+        "mode": "single",
+        "variable": "HMI.StatusDisplay_Lg",
+        "program": "",
+        "name": "",
+        "x": 760,
+        "y": 800,
+        "wires": [
+            [
+                "b1c2fe65e1b210bd"
+            ]
+        ]
+    },
+    {
+        "id": "b1c2fe65e1b210bd",
+        "type": "function",
+        "z": "6f8c834d45cb5fa1",
+        "g": "10b22c24799add6a",
+        "name": "function 7",
+        "func": "var message = flow.get(\"status_array\");\nvar message_color = flow.get(\"status_color\");\n\nmsg.color = message_color[msg.payload];\nmsg.payload = message[msg.payload]\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar status_msg = [\n    \"SYSTEM STOPPED\",\n    \"ZONE 1 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"ZONE 2 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"SHUTTLE E-STOP ACTIVE\",\n    \"MAIN PANEL E-STOP ACTIVE\",\n    \"CONV. 1 E-STOP ACTIVE\",\n    \"CONV. 2 E-STOP ACTIVE\",\n    \"CONV. 7 E-STOP ACTIVE\",\n    \"BIN FAULT\",\n    \"ZONE 2 PANEL E-STOP ACTIVE\",\n    \"CONV. 6 E-STOP ACTIVE\",\n    \"CONV. 5 E-STOP ACTIVE\",\n    \"CONV. 4 E-STOP ACTIVE\",\n    \"SHUTTLE TRAVEL TIMEOUT FAULT\",\n    \"LEFT TRAILER - FULL\",\n    \"RIGHT TRAILER FULL\",\n    \"ZONE 1 RUNNING\",\n    \"ZONE 2 RUNNING\",\n    \"FILLING LEFT TRAILER\",\n    \"FILLING RIGHT TRAILER\",\n    \"LEFT TRAILER MISSING\",\n    \"RIGHT TRAILER MISSING\",\n    \"SHUTTLE IN HAND MODE\",\n    \"CONVEYOR 1 IN HAND MODE\",\n    \"CONVEYOR 2 IN HAND MODE\",\n    \"CONVEYOR 4 IN HAND MODE\",\n    \"CONVEYOR 5 IN HAND MODE\",\n    \"CONVEYOR 6 IN HAND MODE\",\n    \"CONVEYOR 7 IN HAND MODE\",\n    \"FILL MODE - INDEX WITH MANUAL DELAY\",\n    \"FILL MODE - SMOOTHFILL\",\n    \"FILL MODE - INDEX WITH DYNAMIC DELAY\",\n    \"CONVEYOR 1 OVERLOAD FAULT\",\n    \"CONVEYOR 2 OVERLOAD FAULT\",\n    \"CONVEYOR 3 OVERLOAD FAULT\",\n    \"CONVEYOR 4 OVERLOAD FAULT\",\n    \"CONVEYOR 5 OVERLOAD FAULT\",\n    \"CONVEYOR 6 OVERLOAD FAULT\",\n    \"CONVEYOR 7 OVERLOAD FAULT\",\n    \"CONVEYOR 1 ZERO SPEED FAULT\",\n    \"CONVEYOR 2 ZERO SPEED FAULT\",\n    \"CONVEYOR 3 ZERO SPEED FAULT\",\n    \"CONVEYOR 4 ZERO SPEED FAULT\",\n    \"CONVEYOR 5 ZERO SPEED FAULT\",\n    \"CONVEYOR 6 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 CLUTCH FAULT\",\n    \"\",\n    \"DIVERTER 1 (M2) OVERLOAD TRIP\",\n    \"DIVERTER 2 (M3) OVERLOAD TRIP\",\n    \"REMOTE START SIGNAL 1 - ON\",\n    \"REMOTE START SIGNAL 2 - ON\",\n    \"ZONE 1 IDLE CONDITION ACTIVE\",\n    \"ZONE 2 IDLE CONDITION ACTIVE\",\n    \"\",\n    \"CONVEYOR 1 SHOCK RELAY TRIP\",\n    \"CONVEYOR 2 SHOCK RELAY TRIP\",\n    \"SHUTTLE BELT SHOCK RELAY TRIP\",\n    \"CONVEYOR 4 SHOCK RELAY TRIP\",\n    \"CONVEYOR 5 SHOCK RELAY TRIP\",\n    \"CONVEYOR 6 SHOCK RELAY TRIP\",\n    \"ERROR\"\n];\n\nvar status_color = [\n    \"red\", \n    \"blue\",\n    \"blue\",\n    \"red\", \n    \"red\", \n    \"red\", \n    \"red\",\n    \"red\", \n    \"red\", \n    \"red\", \n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"black\",\n    \"black\",\n    \"green\",\n    \"green\",\n    \"black\",\n    \"black\",\n    \"black\",\n    \"black\",\n    \"orange\",\n    \"orange\",\n    \"orange\",\n    \"orange\",\n    \"orange\",\n    \"orange\",\n    \"orange\",\n    \"black\",\n    \"black\",\n    \"black\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"green\",\n    \"green\",\n    \"blue\",\n    \"blue\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\",\n    \"red\"\n];\n\nflow.set(\"status_array\", status_msg);\nflow.set(\"status_color\", status_color);",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 800,
+        "wires": [
+            [
+                "0fc1f707d0432866"
+            ]
+        ]
+    },
+    {
+        "id": "0fc1f707d0432866",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "g": "10b22c24799add6a",
+        "group": "e2293b2c6ee894f8",
+        "order": 2,
+        "width": 18,
+        "height": 1,
+        "name": "",
+        "label": "Status:",
+        "format": "<font color = {{msg.color}}> {{msg.payload}} </font>",
+        "layout": "row-left",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "24",
+        "color": "#000000",
+        "x": 1180,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d2210e9b8adca547",
+        "type": "ui_text",
+        "z": "6f8c834d45cb5fa1",
+        "g": "ceef8847d246faf6",
+        "group": "e2293b2c6ee894f8",
+        "order": 12,
+        "width": 3,
+        "height": 1,
+        "name": "Left Bin Full",
+        "label": "",
+        "format": "Left Bin Full",
+        "layout": "row-right",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 850,
+        "y": 400,
+        "wires": []
     },
     {
         "id": "c36d2995e2143d77",
@@ -2632,208 +3558,29 @@
         ]
     },
     {
-        "id": "30157b91e3f48641",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "g": "56907c240d2b4a89",
-        "group": "e2293b2c6ee894f8",
-        "name": "Shuttle Right",
-        "order": 24,
-        "width": 2,
-        "height": 4,
-        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionR_4\" class=\"sectionR\">4</div>\n    <div id=\"sectionR_3\" class=\"sectionR\">3</div>\n    <div id=\"sectionR_1\" class=\"sectionR\">1</div>\n    <div id=\"sectionR_2\" class=\"sectionR\">2</div>\n</div>\n\n<style>\n    .barR {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionR {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightR{\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionR_1').classList.remove('highlightR');\n            document.getElementById('sectionR_2').classList.remove('highlightR');\n            document.getElementById('sectionR_3').classList.remove('highlightR');\n            document.getElementById('sectionR_4').classList.remove('highlightR');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionR_1').classList.add('highlightR');\n            } else if (newValue === 2) {\n                document.getElementById('sectionR_2').classList.add('highlightR');\n            } else if (newValue === 3) {\n                document.getElementById('sectionR_3').classList.add('highlightR');\n            } else if (newValue === 4) {\n                document.getElementById('sectionR_4').classList.add('highlightR');\n            }\n        });\n    })(scope);\n</script>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 510,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b02807a45a85509a",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "g": "56907c240d2b4a89",
-        "group": "e2293b2c6ee894f8",
-        "name": "Shuttle Left",
-        "order": 22,
-        "width": 2,
-        "height": 4,
-        "format": "<div id=\"bar\" class=\"bar\">\n    <div id=\"sectionL_4\" class=\"sectionL\">4</div>\n    <div id=\"sectionL_3\" class=\"sectionL\">3</div>\n    <div id=\"sectionL_1\" class=\"sectionL\">1</div>\n    <div id=\"sectionL_2\" class=\"sectionL\">2</div>\n</div>\n\n<style>\n    .barL {\n        display: flex;\n        flex-direction: column;\n        width: 100%; /* Set the width of the vertical bar */\n        height: 100%; /* Set the height of the vertical bar */\n    }\n    .sectionL {\n        flex: 1;\n        text-align: center;\n        line-height: 46px;\n        border: 1px solid #ccc;\n    }\n    .highlightL {\n        background-color: rgb(105,162,224); /* Highlight color */\n    }\n</style>\n\n<script>\n    (function(scope) {\n        scope.$watch('msg.payload', function(newValue, oldValue) {\n            // Clear all highlights\n            document.getElementById('sectionL_1').classList.remove('highlightL');\n            document.getElementById('sectionL_2').classList.remove('highlightL');\n            document.getElementById('sectionL_3').classList.remove('highlightL');\n            document.getElementById('sectionL_4').classList.remove('highlightL');\n\n            // Highlight the section based on the value\n            if (newValue === 1) {\n                document.getElementById('sectionL_1').classList.add('highlightL');\n            } else if (newValue === 2) {\n                document.getElementById('sectionL_2').classList.add('highlightL');\n            } else if (newValue === 3) {\n                document.getElementById('sectionL_3').classList.add('highlightL');\n            } else if (newValue === 4) {\n                document.getElementById('sectionL_4').classList.add('highlightL');\n            }\n        });\n    })(scope);\n</script>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 510,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a2e080fed0b5b89d",
-        "type": "ui_table",
-        "z": "6f8c834d45cb5fa1",
-        "g": "3984e132198dd61f",
-        "group": "e2293b2c6ee894f8",
-        "name": "",
-        "order": 6,
-        "width": 22,
-        "height": 3,
-        "columns": [],
-        "outputs": 0,
-        "cts": false,
-        "x": 570,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "675f7a8d8eeda685",
-        "type": "eth-ip in",
+        "id": "3f8ea797ce848619",
+        "type": "ui_text",
         "z": "6f8c834d45cb5fa1",
         "g": "ceef8847d246faf6",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Bin_Left.Full",
-        "program": "",
-        "name": "",
-        "x": 130,
-        "y": 1160,
-        "wires": [
-            [
-                "188485b74e22f7df"
-            ]
-        ]
-    },
-    {
-        "id": "67fe080bbb77a030",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "g": "ceef8847d246faf6",
-        "endpoint": "4e651a6592d36d68",
-        "mode": "single",
-        "variable": "Bin_Right.Full",
-        "program": "",
-        "name": "",
-        "x": 130,
-        "y": 1240,
-        "wires": [
-            [
-                "8ce8599e51e6ef45"
-            ]
-        ]
-    },
-    {
-        "id": "188485b74e22f7df",
-        "type": "ui_led",
-        "z": "6f8c834d45cb5fa1",
-        "g": "ceef8847d246faf6",
-        "order": 10,
         "group": "e2293b2c6ee894f8",
-        "width": 1,
+        "order": 16,
+        "width": 3,
         "height": 1,
+        "name": "Right Bin Full",
         "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#808080",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": false,
-        "name": "Bin_Left.Full",
-        "x": 350,
-        "y": 1160,
+        "format": "Right Bin Full",
+        "layout": "row-right",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 850,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "8ce8599e51e6ef45",
-        "type": "ui_led",
-        "z": "6f8c834d45cb5fa1",
-        "g": "ceef8847d246faf6",
-        "order": 14,
-        "group": "e2293b2c6ee894f8",
-        "width": 1,
-        "height": 1,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#808080",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": false,
-        "name": "Bin_Right.Full",
-        "x": 360,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "7d434b8d3479eb80",
-        "type": "ui_template",
-        "z": "6f8c834d45cb5fa1",
-        "g": "7e446569487d40de",
-        "group": "a994904a1656cdcf",
-        "name": "titlebar styling",
-        "order": 1,
-        "width": 30,
-        "height": 2,
-        "format": "<!DOCTYPE html>\n<html>\n<style>\n    .toolbar-container {\n        display: flex;\n        justify-content: space-between;\n        align-items: center;\n        background-color: rgb(18, 50, 180) !important;\n        height: 100%;\n        padding-right: 10px;\n        overflow: none !important;\n    }\n\n    .logo {\n        max-width: 80px; /* Adjust the width as needed */\n    }\n\n    .time-date-container {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-end;\n        overflow: none;\n    }\n\n    .d_time {\n        font-size: 22px;\n        color: white;\n    }\n\n    .date {\n        font-size: 18px;\n        color: white;\n    }\n</style>\n\n<head>\n    <title>Date and Time</title>\n    <script>\n        function updateDateTime() {\n            var dateTimeElement = document.getElementById(\"datetime\");\n            var dayElement = document.getElementById(\"day\");\n            var currentDate = new Date();\n            currentDate = currentDate.toLocaleString();\n            var date = currentDate.split(\",\");\n            var time = date[1];\n            var day = date[0];\n            dateTimeElement.innerHTML = time.toLocaleString();\n            dayElement.innerHTML = day.toLocaleString();\n        }\n        setInterval(updateDateTime, 1000); // Update every second\n    </script>\n</head>\n\n<body>\n    <div class=\"toolbar-container\">\n        <img src=\"https://www.knighthunter.com/Logos/97556/martinrea.png?x=1&align=center&stretch=&url=companyurl\" alt=\"Logo\" class=\"logo\">\n        <div class=\"time-date-container\">\n            <div id=\"datetime\" class=\"d_time\"></div>\n            <div id=\"day\" class=\"date\"></div>\n        </div>\n    </div>\n</body>\n</html>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "time",
-        "x": 1060,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "71ba785f1ab81c27",
-        "type": "eth-ip in",
-        "z": "6f8c834d45cb5fa1",
-        "g": "3984e132198dd61f",
-        "endpoint": "11f522e462c02ce7",
-        "mode": "all",
-        "variable": "NR_Stop_Condition_Alarm",
-        "program": "",
-        "name": "",
-        "x": 140,
-        "y": 840,
-        "wires": [
-            [
-                "a295fde53e3d6cef"
-            ]
-        ]
-    },
-    {
-        "id": "e434a1d768cd4988",
+        "id": "3397ca37ac082602",
         "type": "debug",
         "z": "6f8c834d45cb5fa1",
         "name": "debug 1",
@@ -2844,110 +3591,41 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 340,
-        "y": 760,
+        "x": 640,
+        "y": 740,
         "wires": []
     },
     {
-        "id": "7619fec0dda00992",
-        "type": "eth-ip in",
+        "id": "a80ada6f187ab4d0",
+        "type": "catch",
         "z": "6f8c834d45cb5fa1",
-        "endpoint": "9171cc06836dc8bf",
-        "mode": "single",
-        "variable": "HMI.StatusDisplay_Lg",
-        "program": "",
         "name": "",
-        "x": 180,
-        "y": 1340,
+        "scope": [
+            "675f7a8d8eeda685"
+        ],
+        "uncaught": false,
+        "x": 950,
+        "y": 280,
         "wires": [
             [
-                "b1c2fe65e1b210bd"
+                "7a2ba6d884a6b0e8"
             ]
         ]
     },
     {
-        "id": "b1c2fe65e1b210bd",
-        "type": "function",
+        "id": "7a2ba6d884a6b0e8",
+        "type": "debug",
         "z": "6f8c834d45cb5fa1",
-        "name": "function 7",
-        "func": "var message = flow.get(\"status_array\");\nmsg.payload = message[msg.payload]\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nvar status_msg = [\n    \"SYSTEM STOPPED\",\n    \"ZONE 1 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"ZONE 2 - CONTROL OFF - PRESS CONTROL RESET\",\n    \"SHUTTLE E-STOP ACTIVE\",\n    \"MAIN PANEL E-STOP ACTIVE\",\n    \"CONV. 1 E-STOP ACTIVE\",\n    \"CONV. 2 E-STOP ACTIVE\",\n    \"CONV. 7 E-STOP ACTIVE\",\n    \"BIN FAULT\",\n    \"ZONE 2 PANEL E-STOP ACTIVE\",\n    \"CONV. 6 E-STOP ACTIVE\",\n    \"CONV. 5 E-STOP ACTIVE\",\n    \"CONV. 4 E-STOP ACTIVE\",\n    \"SHUTTLE TRAVEL TIMEOUT FAULT\",\n    \"LEFT TRAILER - FULL\",\n    \"RIGHT TRAILER FULL\",\n    \"ZONE 1 RUNNING\",\n    \"ZONE 2 RUNNING\",\n    \"FILLING LEFT TRAILER\",\n    \"FILLING RIGHT TRAILER\",\n    \"LEFT TRAILER MISSING\",\n    \"RIGHT TRAILER MISSING\",\n    \"SHUTTLE IN HAND MODE\",\n    \"CONVEYOR 1 IN HAND MODE\",\n    \"CONVEYOR 2 IN HAND MODE\",\n    \"CONVEYOR 4 IN HAND MODE\",\n    \"CONVEYOR 5 IN HAND MODE\",\n    \"CONVEYOR 6 IN HAND MODE\",\n    \"CONVEYOR 7 IN HAND MODE\",\n    \"FILL MODE - INDEX WITH MANUAL DELAY\",\n    \"FILL MODE - SMOOTHFILL\",\n    \"FILL MODE - INDEX WITH DYNAMIC DELAY\",\n    \"CONVEYOR 1 OVERLOAD FAULT\",\n    \"CONVEYOR 2 OVERLOAD FAULT\",\n    \"CONVEYOR 3 OVERLOAD FAULT\",\n    \"CONVEYOR 4 OVERLOAD FAULT\",\n    \"CONVEYOR 5 OVERLOAD FAULT\",\n    \"CONVEYOR 6 OVERLOAD FAULT\",\n    \"CONVEYOR 7 OVERLOAD FAULT\",\n    \"CONVEYOR 1 ZERO SPEED FAULT\",\n    \"CONVEYOR 2 ZERO SPEED FAULT\",\n    \"CONVEYOR 3 ZERO SPEED FAULT\",\n    \"CONVEYOR 4 ZERO SPEED FAULT\",\n    \"CONVEYOR 5 ZERO SPEED FAULT\",\n    \"CONVEYOR 6 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 ZERO SPEED FAULT\",\n    \"CONVEYOR 7 CLUTCH FAULT\",\n    \"\",\n    \"DIVERTER 1 (M2) OVERLOAD TRIP\",\n    \"DIVERTER 2 (M3) OVERLOAD TRIP\",\n    \"REMOTE START SIGNAL 1 - ON\",\n    \"REMOTE START SIGNAL 2 - ON\",\n    \"ZONE 1 IDLE CONDITION ACTIVE\",\n    \"ZONE 2 IDLE CONDITION ACTIVE\",\n    \"\",\n    \"CONVEYOR 1 SHOCK RELAY TRIP\",\n    \"CONVEYOR 2 SHOCK RELAY TRIP\",\n    \"SHUTTLE BELT SHOCK RELAY TRIP\",\n    \"CONVEYOR 4 SHOCK RELAY TRIP\",\n    \"CONVEYOR 5 SHOCK RELAY TRIP\",\n    \"CONVEYOR 6 SHOCK RELAY TRIP\",\n    \"ERROR\"\n];\nflow.set(\"status_array\", status_msg);",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 1340,
-        "wires": [
-            [
-                "0fc1f707d0432866"
-            ]
-        ]
-    },
-    {
-        "id": "0fc1f707d0432866",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "group": "e2293b2c6ee894f8",
-        "order": 2,
-        "width": 18,
-        "height": 1,
-        "name": "",
-        "label": "Status:",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
-        "fontSize": "25",
-        "color": "#008000",
-        "x": 600,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "d2210e9b8adca547",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "g": "ceef8847d246faf6",
-        "group": "e2293b2c6ee894f8",
-        "order": 9,
-        "width": 4,
-        "height": 1,
-        "name": "Left Bin Full",
-        "label": "",
-        "format": "Left Bin Full",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 370,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "3f8ea797ce848619",
-        "type": "ui_text",
-        "z": "6f8c834d45cb5fa1",
-        "g": "ceef8847d246faf6",
-        "group": "e2293b2c6ee894f8",
-        "order": 13,
-        "width": 4,
-        "height": 1,
-        "name": "Right Bin Full",
-        "label": "",
-        "format": "Right Bin Full",
-        "layout": "row-left",
-        "className": "",
-        "style": true,
-        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
-        "fontSize": 16,
-        "color": "#000000",
-        "x": 370,
-        "y": 1200,
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 280,
         "wires": []
     }
 ]
