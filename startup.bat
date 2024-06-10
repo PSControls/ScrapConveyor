@@ -3,12 +3,12 @@
 REM Define variables
 set CONTAINER_NAME=nr-ScrapConveyor-container
 set PROJECT_NAME=ScrapConveyor
-set DEST_DIR=%HOMEPATH%\nr-projects\ScrapConveyor
+set DEST_DIR=%USERPROFILE%\nr-projects\ScrapConveyor
 set DOCKERFILE_URL=https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/Dockerfile
 
 REM Create the destination directory if it doesn't exist
 if not exist "%DEST_DIR%" (
-    mkdir -p "%DEST_DIR%"
+    mkdir "%DEST_DIR%"
 )
 
 REM Change to the destination directory
