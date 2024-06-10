@@ -18,3 +18,9 @@ git clone https://github.com/PSControls/ScrapConveyor.git
 cd ScrapConveyor
 .\startup.bat
 ```
+The above command for Windows assumes the user has Docker Desktop installed. If any authentication errors occur on download, run: 
+```
+Docker login
+```
+in terminal and login with your Docker Desktop credentials. 
+
