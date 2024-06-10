@@ -7,8 +7,8 @@
         "node-red-contrib-controltimer": "~0.4.1",
         "node-red-dashboard": "~3.6.5",
         "node-red-node-ui-table": "~0.4.3",
-        "node-red-contrib-ui-led": "0.4.11",
-        "node-red-contrib-pythonshell": "1.5.4"
+        "node-red-contrib-pythonshell": "1.5.4",
+        "node-red-contrib-ui-led": "0.4.11"
     },
     "node-red": {
         "settings": {
