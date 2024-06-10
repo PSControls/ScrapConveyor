@@ -4,7 +4,7 @@ REM Define variables
 set CONTAINER_NAME=nr-ScrapConveyor-container
 set PROJECT_NAME=ScrapConveyor
 set DEST_DIR=%USERPROFILE%\nr-projects\ScrapConveyor
-set DOCKERFILE_URL=https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/Dockerfile
+set DOCKERFILE_URL=https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/Dockerfile ?token=$(date +%s)
 
 REM Create the destination directory if it doesn't exist
 if not exist "%DEST_DIR%" (
@@ -15,7 +15,7 @@ REM Change to the destination directory
 cd /d "%DEST_DIR%"
 
 REM Download the Dockerfile
-powershell -Command "Invoke-WebRequest -Uri %DOCKERFILE_URL% ?token=$(date +%s) -OutFile \"%DEST_DIR%\Dockerfile\""
+powershell -Command "Invoke-WebRequest -Uri %DOCKERFILE_URL% -OutFile \"%DEST_DIR%\Dockerfile\""
 
 REM Verify the download
 if exist "%DEST_DIR%\Dockerfile" (
