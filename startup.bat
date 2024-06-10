@@ -1,56 +1,61 @@
-@echo off
+#!/bin/bash
 
-REM Define variables
-set CONTAINER_NAME=nr-ScrapConveyor-container
-set PROJECT_NAME=ScrapConveyor
-set DEST_DIR=%USERPROFILE%\nr-projects\ScrapConveyor
-set DOCKERFILE_URL=https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/Dockerfile
+# Define variables
+CONTAINER_NAME="nr-scrap-conveyor-container"
+PROJECT_NAME="scrap-conveyor"
+DEST_DIR="$HOME/scrap-conveyor-container"
+DOCKERFILE_URL="https://raw.githubusercontent.com/PSControls/test-project/main/Dockerfile"
 
-REM Create the destination directory if it doesn't exist
-if not exist "%DEST_DIR%" (
-    mkdir "%DEST_DIR%"
-)
+# Create the destination directory if it doesn't exist
+mkdir -p "$DEST_DIR"
 
-REM Change to the destination directory
-cd /d "%DEST_DIR%"
+# Change to the destination directory
+cd "$DEST_DIR" || { echo "Failed to change directory to $DEST_DIR"; exit 1; }
 
-REM Download the Dockerfile
-powershell -Command "Invoke-WebRequest -Uri %DOCKERFILE_URL% ?token=$(date +%s)" -OutFile \"%DEST_DIR%\Dockerfile\"
+# Download the Dockerfile and overwrite if it exists
+echo "Downloading Dockerfile..."
+curl -fsSL -o "$DEST_DIR/Dockerfile" "$DOCKERFILE_URL"
 
-REM Verify the download
-if exist "%DEST_DIR%\Dockerfile" (
-    echo Dockerfile has been successfully downloaded to %DEST_DIR%
-) else (
-    echo Failed to download Dockerfile
-    pause
-)
+# Verify the download
+if [ -f "$DEST_DIR/Dockerfile" ]; then
+    echo "Dockerfile has been successfully downloaded to $DEST_DIR"
+else
+    echo "Failed to download Dockerfile"
+    exit 1
+fi
 
-REM Build the Docker image
+# Build the Docker image
+echo "Building Docker image..."
 docker build --no-cache -t node-red-project .
 
-REM Check if the image was built successfully
-if errorlevel 1 (
-    echo Docker build failed
-   pause
-)
+# Check if the image was built successfully
+if [ $? -ne 0 ]; then
+    echo "Docker build failed"
+    exit 1
+fi
 
-REM Check if a container with the same name already exists
-for /f "tokens=* usebackq" %%i in (`docker ps -a -q -f "name=%CONTAINER_NAME%"`) do set EXISTING_CONTAINER=%%i
+# Check if a container with the same name already exists
+EXISTING_CONTAINER=$(docker ps -a -q -f name=$CONTAINER_NAME)
 
-if not "%EXISTING_CONTAINER%"=="" (
-    echo A container with the name %CONTAINER_NAME% already exists. Removing it...
-    docker rm -f %CONTAINER_NAME%
+if [ "$EXISTING_CONTAINER" ]; then
+    echo "A container with the name $CONTAINER_NAME already exists. Removing it..."
+    docker rm -f $EXISTING_CONTAINER
 
-    REM Check if the container was removed successfully
-    if errorlevel 1 (
-        echo Failed to remove existing container
-        pause
-    )
-)
+    # Check if the container was removed successfully
+    if [ $? -ne 0 ]; then
+        echo "Failed to remove existing container"
+        exit 1
+    fi
+fi
 
-REM Run the Docker container
-docker run --name %CONTAINER_NAME% -p 1880:1880 -d node-red-project
+# Run the Docker container
+echo "Running Docker container..."
+docker run --name $CONTAINER_NAME -p 1880:1880 -d node-red-project
 
+# Check if the container started successfully
+if [ $? -ne 0 ]; then
+    echo "Docker run failed"
+    exit 1
+fi
 
-echo A docker container is up and running the NODE-RED project '%PROJECT_NAME%' on port 1880
-
+echo "A Docker container is up and running the Node-RED project '$PROJECT_NAME' on port 1880"
