@@ -1,7 +1,11 @@
 ScrapConveyor
 =============
 
+### About
+
 A Node-Red program for controlling and monitoring the scrap conveyor.
+
+### Getting Started
 
 To run the project on Linux: 
 ```
@@ -12,9 +16,4 @@ To run the project on Windows:
 ```
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/winStartUp.sh"
 ```
-
-### About
-
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
 
