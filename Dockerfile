@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install git \
 
 RUN apt-get install python3 
 
-RUN apt-get install python3-pip
+RUN echo Y | apt-get install python3-pip
 
-echo Y
+
 
 RUN pip3 install pycomm3
 
