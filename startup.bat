@@ -1,4 +1,4 @@
-
+@echo off
 
 REM Define variables
 set CONTAINER_NAME=nr-ScrapConveyor-container
@@ -51,4 +51,6 @@ if not "%EXISTING_CONTAINER%"=="" (
 REM Run the Docker container
 docker run --name %CONTAINER_NAME% -p 1880:1880 -d node-red-project
 
+
+echo A docker container is up and running the NODE-RED project '%PROJECT_NAME%' on port 1880
 
