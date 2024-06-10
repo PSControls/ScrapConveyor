@@ -10,8 +10,7 @@ curl -o - https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/startu
 
 To run the project on Windows:
 ```
-tbd curl -o - https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/startup.sh | bash
-```
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/winStartUp.sh" ```
 
 ### About
 
