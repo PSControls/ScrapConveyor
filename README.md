@@ -14,6 +14,16 @@ curl -o - https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/startu
 
 To run the project on Windows:
 ```
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/winStartUp.sh"
+git clone https://github.com/PSControls/ScrapConveyor.get
+```
+then, 
+
+```
+cd ScrapConveyor
+```
+to run enter:
+
 ```
 
+.\startup.bat
+```
