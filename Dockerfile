@@ -21,9 +21,6 @@ RUN apt-get install python3
 RUN echo Y | apt-get install python3-pip
 
 
-
-RUN pip3 install python3-pycomm3
-
 WORKDIR ${PROJECT_DIR}
 
 # Clone the GitHub repository as root
