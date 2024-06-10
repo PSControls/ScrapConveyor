@@ -14,7 +14,7 @@ WORKDIR /usr/app
 # Install necessary packages and Node-RED as root
 RUN apk update && apk add --no-cache git \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
-    && npm install -g --unsafe-perm node-red@${NODE_RED_VERSION} 
+    && npm install -g node-red@${NODE_RED_VERSION} 
     
 WORKDIR ${PROJECT_DIR}
     
@@ -23,8 +23,14 @@ RUN git clone https://github.com/PSControls/test-project.git ${PROJECT_DIR}
 
 # Change ownership of the project directory to the 'node' user
 RUN chown -R node:node ${PROJECT_DIR} \
-    && echo "Installing node-red-contrib-cip-ethernet-ip" \
-    && npm install --unsafe-perm node-red-contrib-cip-ethernet-ip
+    && echo "Installing node-red dependancies" \
+    && npm install node-red-contrib-cip-ethernet-ip
+    && npm install node-red-contrib-controltimer
+    && npm install node-red-contrib-pythonshell
+    && npm install node-red-contrib-ui-led
+    && npm install node-red-dashboard
+    && npm install node-red-node-ui-table
+   
 
 # Switch to the 'node' user for better security
 USER node
@@ -34,4 +40,3 @@ EXPOSE 1880
 
 # Start Node-RED with the project directory
 CMD ["node-red", "--userDir", "/home/node-red/project"]
-
