@@ -19,7 +19,7 @@ RUN apk update && apk add --no-cache git \
 WORKDIR ${PROJECT_DIR}
     
 # Clone the GitHub repository as root
-RUN git clone https://github.com/PSControls/test-project.git ${PROJECT_DIR}
+RUN git clone https://github.com/PSControls/ScrapConveyor.git ${PROJECT_DIR}
 
 # Change ownership of the project directory to the 'node' user
 RUN chown -R node:node ${PROJECT_DIR} \
