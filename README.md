@@ -14,7 +14,7 @@ curl -o - https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/startu
 
 To run the project on Windows:
 ```
-git clone https://github.com/PSControls/ScrapConveyor.git
+git clone https://github.com/PSControls/ScrapConveyor/main/startup.bat
 cd ScrapConveyor
 .\startup.bat
 ```
