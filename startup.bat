@@ -8,7 +8,7 @@ set DOCKERFILE_URL=https://raw.githubusercontent.com/PSControls/ScrapConveyor/ma
 
 REM Create the destination directory if it doesn't exist
 if not exist "%DEST_DIR%" (
-    mkdir "%DEST_DIR%"
+    mkdir -p "%DEST_DIR%"
 )
 
 REM Change to the destination directory
