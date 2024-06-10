@@ -15,7 +15,7 @@ REM Change to the destination directory
 cd /d "%DEST_DIR%"
 
 REM Download the Dockerfile
-powershell -Command "Invoke-WebRequest -Uri %DOCKERFILE_URL% ?token=$(date +%s) -OutFile \"%DEST_DIR%\Dockerfile\""
+powershell -Command "Invoke-WebRequest -Uri %DOCKERFILE_URL% ?token=$(date +%s) -OutFile \"%DEST_DIR%\Dockerfile\"
 
 REM Verify the download
 if exist "%DEST_DIR%\Dockerfile" (
