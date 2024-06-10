@@ -46,7 +46,7 @@ USER node
 WORKDIR ${PROJECT_DIR}
 
 # Install Python libraries using pip (add your required libraries here)
-RUN pip3 install requests numpy pandas
+RUN pip3 install requests numpy pandas pycomm3
 
 # Expose the default Node-RED port
 EXPOSE 1880
