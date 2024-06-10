@@ -24,11 +24,11 @@ RUN git clone https://github.com/PSControls/test-project.git ${PROJECT_DIR}
 # Change ownership of the project directory to the 'node' user
 RUN chown -R node:node ${PROJECT_DIR} \
     && echo "Installing node-red dependancies" \
-    && npm install node-red-contrib-cip-ethernet-ip
-    && npm install node-red-contrib-controltimer
-    && npm install node-red-contrib-pythonshell
-    && npm install node-red-contrib-ui-led
-    && npm install node-red-dashboard
+    && npm install node-red-contrib-cip-ethernet-ip \
+    && npm install node-red-contrib-controltimer \
+    && npm install node-red-contrib-pythonshell \
+    && npm install node-red-contrib-ui-led \
+    && npm install node-red-dashboard \
     && npm install node-red-node-ui-table
    
 
