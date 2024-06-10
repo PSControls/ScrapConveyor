@@ -22,7 +22,7 @@ RUN echo Y | apt-get install python3-pip
 
 
 
-RUN pip3 install pycomm3
+RUN pip3 install python3-pycomm3
 
 WORKDIR ${PROJECT_DIR}
 
