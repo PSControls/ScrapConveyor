@@ -14,7 +14,9 @@ WORKDIR /usr/app
 # Install necessary packages and Node-RED as root
 RUN apk update && apk add --no-cache git \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
-    && npm install -g node-red@${NODE_RED_VERSION} 
+    && npm install -g node-red@${NODE_RED_VERSION} \
+    && python3 \
+    && py3 -pip
     
 WORKDIR ${PROJECT_DIR}
     
