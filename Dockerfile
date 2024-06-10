@@ -12,7 +12,7 @@ RUN mkdir -p ${PROJECT_DIR}
 WORKDIR /usr/app
 
 # Install necessary packages, Node-RED, Python, and pip as root
-RUN apt-get update && apt-get install --no-cache git \
+RUN apt-get update && apt-get install git \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
     && npm install -g node-red@${NODE_RED_VERSION}
 
