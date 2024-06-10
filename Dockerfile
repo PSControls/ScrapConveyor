@@ -12,9 +12,12 @@ RUN mkdir -p ${PROJECT_DIR}
 WORKDIR /usr/app
 
 # Install necessary packages, Node-RED, Python, and pip as root
-RUN apk update && apk add --no-cache git python3 py3-pip \
+RUN apk update && apk add --no-cache git \
+    && py3-pip \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
     && npm install -g node-red@${NODE_RED_VERSION}
+
+RUN pip3 install python3
 
 WORKDIR ${PROJECT_DIR}
 
