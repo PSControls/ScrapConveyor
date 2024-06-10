@@ -1,5 +1,5 @@
 # Use the official Node.js 22 image based on Alpine 3.19
-FROM node:22-alpine3.19
+FROM node:22-bookworm
 
 # Set environment variables for the project
 ENV PROJECT_DIR=/home/node-red/project
@@ -13,11 +13,12 @@ WORKDIR /usr/app
 
 # Install necessary packages, Node-RED, Python, and pip as root
 RUN apk update && apk add --no-cache git \
-    && py3-pip \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
     && npm install -g node-red@${NODE_RED_VERSION}
 
-RUN pip3 install python3
+RUN apt-get install python3 
+
+RUN pip3 install pycomm3
 
 WORKDIR ${PROJECT_DIR}
 
