@@ -39,6 +39,9 @@ RUN chown -R node:node ${PROJECT_DIR} \
 # Switch to the 'node' user for better security
 USER node
 
+
+RUN pip install --no-cache-dir pycomm3
+
 # Set the working directory to the project directory
 WORKDIR ${PROJECT_DIR}
 
