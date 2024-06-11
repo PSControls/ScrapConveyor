@@ -39,7 +39,7 @@ USER node
 WORKDIR ${PROJECT_DIR}
 
 # Install pycomm3 using pip as the 'node' user
-RUN pip3 install --no-cache-dir pycomm3
+RUN pip install --no-cache-dir pycomm3
 
 # Expose the default Node-RED port
 EXPOSE 1880
