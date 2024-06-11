@@ -1,4 +1,4 @@
-# Use the official Node.js 22 image based on Alpine 3.19
+# Use the official Node.js 22 image based on Debian Bookworm
 FROM node:22-bookworm
 
 # Set environment variables for the project
@@ -12,10 +12,13 @@ RUN mkdir -p ${PROJECT_DIR}
 WORKDIR /usr/app
 
 # Install necessary packages, Node-RED, Python, and pip as root
-RUN apt-get update \
-    && apt-get install -y git python3 python3-pip \
+RUN apt-get update && apt-get install -y \
+    git \
+    python3 \
+    python3-pip \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
-    && npm install -g node-red@${NODE_RED_VERSION}
+    && npm install -g node-red@${NODE_RED_VERSION} \
+    && apt-get clean
 
 WORKDIR ${PROJECT_DIR}
 
@@ -38,8 +41,8 @@ USER node
 # Set the working directory to the project directory
 WORKDIR ${PROJECT_DIR}
 
-# Install pycomm3 using pip as the 'node' user
-RUN pip install --no-cache-dir pycomm3
+# Install pycomm3 using pip with --break-system-packages flag
+RUN python3 -m pip install --no-cache-dir --break-system-packages pycomm3
 
 # Expose the default Node-RED port
 EXPOSE 1880
