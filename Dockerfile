@@ -40,7 +40,7 @@ RUN chown -R node:node ${PROJECT_DIR} \
 USER node
 
 
-RUN pip install --no-cache-dir pycomm3
+RUN pip3 install --no-cache-dir pycomm3
 
 # Set the working directory to the project directory
 WORKDIR ${PROJECT_DIR}
