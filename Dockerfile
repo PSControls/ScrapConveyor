@@ -12,14 +12,10 @@ RUN mkdir -p ${PROJECT_DIR}
 WORKDIR /usr/app
 
 # Install necessary packages, Node-RED, Python, and pip as root
-RUN apt-get update && apt-get install git \
+RUN apt-get update \
+    && apt-get install -y git python3 python3-pip \
     && echo "Installing Node-RED version ${NODE_RED_VERSION}" \
     && npm install -g node-red@${NODE_RED_VERSION}
-
-RUN apt-get install python3 
-
-RUN echo Y | apt-get install python3-pip
-
 
 WORKDIR ${PROJECT_DIR}
 
@@ -39,12 +35,11 @@ RUN chown -R node:node ${PROJECT_DIR} \
 # Switch to the 'node' user for better security
 USER node
 
-
-RUN pip3 install --no-cache-dir pycomm3
-
 # Set the working directory to the project directory
 WORKDIR ${PROJECT_DIR}
 
+# Install pycomm3 using pip as the 'node' user
+RUN pip3 install --no-cache-dir pycomm3
 
 # Expose the default Node-RED port
 EXPOSE 1880
