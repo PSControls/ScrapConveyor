@@ -16,7 +16,7 @@ To run the project on Windows:
 ```
 git clone https://github.com/PSControls/ScrapConveyor.git
 cd ScrapConveyor
-.\startup.bat
+.\Startup.bat
 ```
 The above command for Windows assumes the user has Docker Desktop installed. If any authentication errors occur on download, run: 
 ```
