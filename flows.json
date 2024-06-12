@@ -112,14 +112,12 @@
             "3e805050ecc39aac",
             "4750fb59f6bfac88",
             "8770020c90566845",
-            "7d1721dd7f67854f",
-            "4f25565b9bd8c104",
-            "95d9941ce4b4dacc"
+            "7d1721dd7f67854f"
         ],
         "x": 34,
-        "y": 579,
+        "y": 619,
         "w": 1192,
-        "h": 262
+        "h": 222
     },
     {
         "id": "3984e132198dd61f",
@@ -249,16 +247,15 @@
             "color": "#000000"
         },
         "nodes": [
-            "7c8c257801a02c04",
             "b20641dbb2fd1a47",
             "354a9b4a63a14d40",
             "6f99535b1c25ea73",
-            "26672b4f574390d2"
+            "2b47a43ff23d36e8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 812,
-        "h": 122
+        "y": 31.5,
+        "w": 792,
+        "h": 97
     },
     {
         "id": "10b22c24799add6a",
@@ -336,7 +333,6 @@
         "nodes": [
             "91e7448d6743e0e0",
             "533d421d6dc214c0",
-            "b1df8a5ce350bfa6",
             "e3208920783a9e5c",
             "e42863fdff7b4cab",
             "b9fcc9fc5a683a23",
@@ -351,7 +347,7 @@
         "x": 34,
         "y": 559,
         "w": 1192,
-        "h": 222
+        "h": 182
     },
     {
         "id": "b36d4cce571bea0d",
@@ -420,7 +416,7 @@
         "type": "eth-ip endpoint",
         "address": "128.121.50.1",
         "slot": "0",
-        "cycletime": "10",
+        "cycletime": "200",
         "name": "",
         "vartable": {
             "": {
@@ -458,6 +454,9 @@
                     "type": "BOOL"
                 },
                 "NR_Stop_Condition_Z2": {
+                    "type": "BOOL"
+                },
+                "In_Zone1_MPStop_PB": {
                     "type": "BOOL"
                 }
             }
@@ -816,16 +815,17 @@
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#0094CE",
-                    "value": "#1232b4",
+                    "value": "#0094CE",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#1232b4",
+                    "value": "#0094CE",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -833,11 +833,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#294fea",
+                    "value": "#1bbfff",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -853,7 +853,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#1232b4",
+                    "value": "#0094ce",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -876,7 +876,7 @@
             "name": "Scrap Conveyor",
             "hideToolbar": "false",
             "allowSwipe": "false",
-            "lockMenu": "false",
+            "lockMenu": "true",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
@@ -1358,29 +1358,10 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 100,
+        "x": 720,
+        "y": 80,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "7c8c257801a02c04",
-        "type": "pythonshell in",
-        "z": "67cb1218d2e51466",
-        "g": "9a65ca835fc07fd1",
-        "name": "",
-        "pyfile": "/home/controls-orin-1/PyScripts/Idle_Conditions.py",
-        "virtualenv": "",
-        "continuous": false,
-        "stdInData": false,
-        "x": 360,
-        "y": 100,
-        "wires": [
-            [
-                "b20641dbb2fd1a47",
-                "26672b4f574390d2"
-            ]
         ]
     },
     {
@@ -1393,7 +1374,7 @@
         "action": "",
         "pretty": true,
         "x": 550,
-        "y": 100,
+        "y": 80,
         "wires": [
             [
                 "354a9b4a63a14d40"
@@ -1415,7 +1396,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "3",
+        "repeat": "10",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -1423,10 +1404,10 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 100,
+        "y": 80,
         "wires": [
             [
-                "7c8c257801a02c04"
+                "2b47a43ff23d36e8"
             ]
         ]
     },
@@ -1692,7 +1673,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "533d421d6dc214c0"
@@ -1713,23 +1694,12 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "828a670594811cc9"
             ]
         ]
-    },
-    {
-        "id": "b1df8a5ce350bfa6",
-        "type": "comment",
-        "z": "67cb1218d2e51466",
-        "g": "f3835c71d654de20",
-        "name": "need to add connection verification ",
-        "info": "",
-        "x": 200,
-        "y": 600,
-        "wires": []
     },
     {
         "id": "e3208920783a9e5c",
@@ -1780,7 +1750,7 @@
         "continueActionNameType": "str",
         "continueActionName": "CONTINUE",
         "x": 640,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "e42863fdff7b4cab"
@@ -1809,7 +1779,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 640,
+        "y": 600,
         "wires": [
             []
         ]
@@ -1833,7 +1803,7 @@
         "repair": false,
         "outputs": 1,
         "x": 610,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "58fdf22a77953233"
@@ -1861,7 +1831,7 @@
         "to": "",
         "reg": false,
         "x": 860,
-        "y": 700,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1880,7 +1850,7 @@
         "property": "payload",
         "topi": "topic",
         "x": 470,
-        "y": 640,
+        "y": 600,
         "wires": [
             [
                 "e3208920783a9e5c",
@@ -1902,7 +1872,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 740,
+        "y": 700,
         "wires": [
             []
         ]
@@ -1915,7 +1885,7 @@
         "name": "interrupt stop condition if physical start button is pressed",
         "info": "",
         "x": 260,
-        "y": 700,
+        "y": 660,
         "wires": []
     },
     {
@@ -1925,11 +1895,11 @@
         "g": "f3835c71d654de20",
         "endpoint": "4e651a6592d36d68",
         "mode": "single",
-        "variable": "In_Zone2_MPStop_PB",
+        "variable": "In_Zone1_MPStop_PB",
         "program": "",
         "name": "",
         "x": 160,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "40e9dd1d3c996090"
@@ -1946,7 +1916,7 @@
         "program": "",
         "name": "",
         "x": 1090,
-        "y": 640,
+        "y": 600,
         "wires": []
     },
     {
@@ -1959,7 +1929,7 @@
         "program": "",
         "name": "",
         "x": 1090,
-        "y": 700,
+        "y": 660,
         "wires": []
     },
     {
@@ -2035,21 +2005,27 @@
         ]
     },
     {
-        "id": "26672b4f574390d2",
-        "type": "debug",
+        "id": "2b47a43ff23d36e8",
+        "type": "exec",
         "z": "67cb1218d2e51466",
         "g": "9a65ca835fc07fd1",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 60,
-        "wires": []
+        "command": "python3 /home/controls-orin-1/PyScripts/Idle_Conditions.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "30",
+        "winHide": true,
+        "oldrc": false,
+        "name": "exec py script",
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "b20641dbb2fd1a47"
+            ],
+            [],
+            []
+        ]
     },
     {
         "id": "189c337b31799d86",
@@ -2600,66 +2576,6 @@
         ]
     },
     {
-        "id": "4f25565b9bd8c104",
-        "type": "inject",
-        "z": "b83d70117faba64f",
-        "g": "ffa33797b8602337",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 910,
-        "y": 620,
-        "wires": [
-            [
-                "8770020c90566845"
-            ]
-        ]
-    },
-    {
-        "id": "95d9941ce4b4dacc",
-        "type": "inject",
-        "z": "b83d70117faba64f",
-        "g": "ffa33797b8602337",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 890,
-        "y": 660,
-        "wires": [
-            [
-                "8770020c90566845"
-            ]
-        ]
-    },
-    {
         "id": "cbb1b6c4ddd1d8d4",
         "type": "function",
         "z": "b83d70117faba64f",
@@ -2803,8 +2719,7 @@
         "y": 800,
         "wires": [
             [
-                "a2e080fed0b5b89d",
-                "3397ca37ac082602"
+                "a2e080fed0b5b89d"
             ]
         ]
     },
@@ -3577,55 +3492,6 @@
         "color": "#000000",
         "x": 850,
         "y": 480,
-        "wires": []
-    },
-    {
-        "id": "3397ca37ac082602",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "a80ada6f187ab4d0",
-        "type": "catch",
-        "z": "6f8c834d45cb5fa1",
-        "name": "",
-        "scope": [
-            "675f7a8d8eeda685"
-        ],
-        "uncaught": false,
-        "x": 950,
-        "y": 280,
-        "wires": [
-            [
-                "7a2ba6d884a6b0e8"
-            ]
-        ]
-    },
-    {
-        "id": "7a2ba6d884a6b0e8",
-        "type": "debug",
-        "z": "6f8c834d45cb5fa1",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 280,
         "wires": []
     }
 ]
