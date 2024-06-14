@@ -4,7 +4,7 @@
 CONTAINER_NAME="nr-scrap-conveyor-container"
 PROJECT_NAME="scrap-conveyor"
 DEST_DIR="$HOME/scrap-conveyor-container"
-DOCKERFILE_URL="https://raw.githubusercontent.com/PSControls/test-project/main/Dockerfile"
+DOCKERFILE_URL="https://raw.githubusercontent.com/PSControls/ScrapConveyor/main/Dockerfile"
 
 # Create the destination directory if it doesn't exist
 mkdir -p "$DEST_DIR"
